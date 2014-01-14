@@ -1,0 +1,42 @@
+<section class="studies-listing">
+  <hgroup>
+    <h4><a href="{{ include.row.link }}">{{ include.row.title }}</a></h4>
+    <h5>{{ include.row.authors }}</h5>
+    <h6>{{ include.row.journal }}</h6>
+  </hgroup>
+  
+  <table>
+    <tr>
+      <td class="category">Location</td>
+      <td>{{ include.row.location }}</td>
+    </tr>
+    <tr>
+      <td class="category">Population</td>
+      <td>{{ include.row.population }}</td>
+    </tr>
+    <tr>
+      <td class="category">Intervention Description</td>
+      <td>{{ include.row.intervention }}</td>
+    </tr>
+    <tr>
+      <td class="category">Outcomes</td>
+      <td>{{ include.row.outcomes }}</td>
+    </tr>
+    <tr>
+      <td class="category">Design</td>
+      <td>{{ include.row.design }}</td>
+    </tr>
+    <tr>
+      <td class="category">Sampling Method</td>
+      <td>{{ include.row.sampling }}</td>
+    </tr>
+    <tr>
+      <td class="category">Strength of Evidence Score</td>
+      <td>{{ include.row.soe }}</td>
+    </tr>
+    <tr>
+      <td class="category">Social Marketing Benchmark Criteria</td>
+      <td>{{ include.row.smbc }}</td>
+    </tr>
+  </table>
+</section>

@@ -3,8 +3,8 @@ source "https://rubygems.org"
 
 group :development do
   # main assets
-  # gem 'jekyll' # not needed if using github-pages
-  gem 'github-pages'
+  gem 'jekyll' # not needed if using github-pages
+  # gem 'github-pages'
   gem 'json'
   gem 'sass', '~>3.2.0'
   gem 'compass', '~>0.12.0'
@@ -21,6 +21,6 @@ group :development do
   gem 'guard-compass'
   gem 'guard-concat'
   # gem 'guard-uglify'
-  # gem 'guard-jekyll-plus' not compatible with github-pages : (
+  # gem 'guard-jekyll-plus' # not compatible with github-pages : (
   gem 'guard-livereload'
 end

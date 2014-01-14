@@ -23,20 +23,7 @@ html {
   // set up the base font size at each breakpoint
   // this will scale the whole layout proportionately as the screen size changes
   // and we only have to change one thing
-  font-size: percent($type-size--default);
-
-  // @include breakpoint($small) {
-  //     font-size: percent($base-font-size--small);
-  // }
-
-  // @include breakpoint($medium) {
-  //     font-size: percent($base-font-size--medium);
-  // }
-
-  // @include breakpoint($large) {
-  //     font-size: percent($base-font-size--large);
-  // }
-
+  font-size: 100%;
   line-height: $type-line_height;
 
   // set everything to roll with border-box sizing

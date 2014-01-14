@@ -8,7 +8,12 @@ $base-duration: 0.5; // in seconds
 
 // Colors
 // --------------------------------------------------------------------------
-
+$orange: #F7941E;
+$green: #73A533;
+$gray: #6B7073;
+$maroon: #69321F;
+$beige: #A99A6F;
+$blue: #003845;
 
 // text
 $color-text--primary: #333;
@@ -28,13 +33,12 @@ $type-line_height: 1.5;
 // --------------------------------------------------------------------------
 
 // --- breakpoints ----------------------------------------------------------
-$breakpoints: breakpoints();
+$xsmall: 480px;
+$small: 768px;
+$medium: 1240px;
+$large: 1440px;
 
-$xsmall: nth($breakpoints, 1);
-$small: nth($breakpoints, 2);
-$medium: nth($breakpoints, 3);
-$large: nth($breakpoints, 4);
-
+$breakpoint-to-ems: true;
 
 // --- grid variables -------------------------------------------------------
 $grid-gutter: 24px; // convert to rem/em/percent

@@ -1,6 +1,7 @@
-name: SITE NAME
-url: http://SITE_URL.com
+name: PSI SMEB
+url: http://smeb.jayperryworks.com
 baseurl: 
+permalink: none
 
 markdown: redcarpet
 pygments: true
