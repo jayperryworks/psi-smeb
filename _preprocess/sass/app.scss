@@ -1,0 +1,154 @@
+// ===============================================================================
+// Frameworks
+// ===============================================================================
+
+@import "vendor/bourbon/bourbon";
+@import "singularitygs";
+
+// ===============================================================================
+// Settings & resets
+// ===============================================================================
+
+@import "core/fonts";
+
+@import "core/settings";
+@import "core/normalize";
+
+
+// ===============================================================================
+// Core style imports
+// ===============================================================================
+
+@import "core/helpers";
+@import "core/base";
+@import "core/print";
+// @import "core/syntax";
+@import "core/layout";
+@import "core/content";
+
+// ===============================================================================
+// Modules & components
+// ===============================================================================
+
+// // components
+// @import "modules/button";
+
+// // modules
+// @import "modules/header";
+// @import "modules/navigation";
+// @import "modules/footer";
+// @import "modules/button";
+// @import "modules/post";
+
+// ===============================================================================
+// Styles of Shame
+// -> put quick and dirty hacks here, then clean up & organize later
+// ===============================================================================
+
+#home section {
+  border-top: 1px solid #ccc;
+}
+
+[role="main"] {
+  margin: 0 auto;
+  max-width: 624px;
+}
+
+.posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#{headers()} {
+  line-height: emCalc(18px);
+}
+
+h4 {
+  font-size: emCalc(18px);
+  font-weight: bold;
+  padding: 0;
+}
+
+h5, h6 {
+  font-size: emCalc(14px);
+  line-height: emCalc(14px);
+  font-weight: bold;
+  margin-top: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 2em;
+  width: 624px;
+}
+
+.node-type-page {
+  img {
+    float: none;
+    max-width: 100%;
+  }
+}
+
+$table-cols: 9;
+$hairline: 1px solid #ccc;
+$hairline-light: 1px solid #eee;
+
+table {
+  width: 100%;
+  margin: emCalc(12px) 0;
+  
+  tr {
+    border-top: $hairline-light;
+  }
+  
+  td {
+    //width: 100%/$table-cols;
+    padding: emCalc(3px) emCalc(6px) 0 0;
+    vertical-align: top;
+  }
+}
+
+  .category {
+    font-weight: bold;
+    width: 40%;
+  }
+
+.studies {
+  clear: both;
+  overflow: hidden;
+}
+
+.studies-listing {
+  border-top: $hairline;
+  clear: both;
+  
+  dl {
+    margin: emCalc(12px) 0;
+    clear: both;
+    overflow: hidden;
+    
+    &:after {
+      @include clearfix;
+    }
+  }
+  
+  dt {
+    font-weight: bold;
+    display: table-cell;
+    float: left;
+    clear: left;
+    width: 40%;
+    margin-right: emCalc(5px);
+  }
+  
+  dd {
+    display: table-cell;
+    margin-left: 0;
+    clear: right;
+    width: 55%;
+    float: left;
+  }
+}
