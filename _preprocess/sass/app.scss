@@ -51,6 +51,7 @@ html, body {
 
 #home section {
   border-top: 1px solid #ccc;
+  padding: rem(12) 0;
 }
 
 [role="main"] {
@@ -60,12 +61,18 @@ html, body {
 
 .posts {
   list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
+
+  li {
+    list-style: none;
+    list-style-type: none;
+  }
 }
 
 #{headers()} {
-  line-height: em(18);
+  line-height: 1.4;
 }
 
 h4 {
@@ -116,6 +123,7 @@ table {
 
     p {
       font-size: inherit;
+      margin-top: 0;
 
       strong {
         font-size: inherit;
