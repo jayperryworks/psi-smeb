@@ -31,7 +31,19 @@ layout: default
     </tr>
     <tr>
       <td class="category">Outcomes</td>
-      <td>{{ row.outcomes }}</td>
+      <td>
+        {% if row.outcomes-bf %}
+        <p><strong>Behavioral Factors:</strong> {{ row.outcomes-bf }}</p>
+        {% endif %}
+
+        {% if row.outcomes-behavior %}
+        <p><strong>Behaviors:</strong> {{ row.outcomes-behavior }}</p>
+        {% endif %}
+        
+        {% if row.outcomes-health %}
+        <p><strong>Health:</strong> {{ row.outcomes-health }}</p>
+        {% endif %}
+      </td>
     </tr>
     <tr>
       <td class="category">Design</td>
