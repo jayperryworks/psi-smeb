@@ -1,6 +1,18 @@
 ---
 layout: default
 ---
+
+<h1>{{ page.categories | first | replace: '_',' ' | capitalize }}</h1>
+
+<nav role="navigation" class="tabs">
+  <ul>
+    {% capture cat %}{{ page.categories | first }}{% endcapture %}
+    {% for post in site.categories.[cat] %}
+      <li><a href="{{ post.url }}"{% if post.title == page.title %} class="active"{% endif %}>{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+
 <h2>{{ page.title }}</h2>
 
 <div class="post">

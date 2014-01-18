@@ -48,6 +48,10 @@
 // Special effects & CSS graphical stuff
 // ==================================================================================
 
+@mixin base-transition {
+  @include transition (all $base-duration ease-in-out);
+}
+
 @mixin cursor($type) {
   @if ($type == "pointer") {
     cursor: pointer;
@@ -85,7 +89,7 @@
 // http://www.cheesetoast.co.uk/add-grayscale-images-hover-css-black-white/
 // http://stackoverflow.com/questions/609273/convert-an-image-to-grayscale-in-html-css
 %img-grayscale {
-	@include single-transition;
+	@include base-transition;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);  /* For Webkit browsers */
   filter: gray;  /* For IE 6 - 9 */
@@ -270,6 +274,24 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+}
+
+@mixin unstyled-list {
+  list-style: none;
+  list-style-type: none;
+
+  li {
+    list-style: none;
+    list-style-type: none;
+  }
+}
+
+@mixin inline-list {
+  @include unstyled-list;
+
+  li {
+    @include inline-block;
+  }
 }
 
 // kill default margins/padding on lists used as a nav. can use with inline-list and inline-block

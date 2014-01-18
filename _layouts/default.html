@@ -43,10 +43,13 @@
       <script src="{{ site.baseurl }}{{ relativepath }}assets/js/vendor/modernizr.custom.11128.js"></script>
   </head>
   <body id="{% if page.slug %}{{ page.slug | downcase }}{% else %}{{ page.title | downcase }}{% endif %}">
+    {% if page.slug != "home" %}
     <header role="banner">
       <nav role="navigation">
+        <a href="/">&lsaquo; Back to list</a>
       </nav>
     </header>
+    {% endif %}
 
     <main role="main">
 

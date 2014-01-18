@@ -420,7 +420,7 @@ table {
 }
 
 @-moz-keyframes spin {
-  /* line 150, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 154, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -428,7 +428,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 157, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 161, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -438,7 +438,7 @@ table {
 }
 
 @-webkit-keyframes spin {
-  /* line 165, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 169, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -446,7 +446,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 172, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 176, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -456,7 +456,7 @@ table {
 }
 
 @-o-keyframes spin {
-  /* line 180, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 184, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -464,7 +464,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 187, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 191, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -474,7 +474,7 @@ table {
 }
 
 @-ms-keyframes spin {
-  /* line 195, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 199, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -482,7 +482,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 202, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 206, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -492,7 +492,7 @@ table {
 }
 
 @keyframes spin {
-  /* line 210, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 214, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -500,7 +500,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 217, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 221, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -702,9 +702,9 @@ ol, ul {
 
 /* line 61, ../../_preprocess/sass/core/_content.scss */
 a {
-  -webkit-animation: all 0.5;
-  -moz-animation: all 0.5;
-  animation: all 0.5;
+  -webkit-animation: all 0.3s;
+  -moz-animation: all 0.3s;
+  animation: all 0.3s;
 }
 
 /* line 65, ../../_preprocess/sass/core/_content.scss */
@@ -720,44 +720,112 @@ html, body {
   background: #fff;
 }
 
-/* line 52, ../../_preprocess/sass/app.scss */
+/* line 56, ../../_preprocess/sass/app.scss */
+header {
+  max-width: 624px;
+  margin: 0 auto;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.75rem;
+}
+
+/* line 64, ../../_preprocess/sass/app.scss */
 #home section {
   border-top: 1px solid #ccc;
   padding: 0.75rem 0;
 }
 
-/* line 57, ../../_preprocess/sass/app.scss */
+/* line 69, ../../_preprocess/sass/app.scss */
 [role="main"] {
   margin: 1.125rem auto;
   max-width: 624px;
 }
 
-/* line 62, ../../_preprocess/sass/app.scss */
+/* line 74, ../../_preprocess/sass/app.scss */
+.tabs {
+  list-style: none;
+  list-style-type: none;
+  margin-bottom: 1.5rem;
+  border-bottom: 4px solid #eeeeee;
+}
+/* line 283, ../../_preprocess/sass/core/_helpers.scss */
+.tabs li {
+  list-style: none;
+  list-style-type: none;
+}
+/* line 292, ../../_preprocess/sass/core/_helpers.scss */
+.tabs li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 85, ../../_preprocess/sass/app.scss */
+.tabs li {
+  margin: 0 -3px 0 0;
+  padding: 0;
+}
+/* line 90, ../../_preprocess/sass/app.scss */
+.tabs a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out false;
+  -o-transition: all 0.3s ease-in-out false;
+  transition: all 0.3s ease-in-out;
+  padding: 0.75em 0.75em;
+  margin: 0 1px -4px 0;
+  border-bottom: 4px solid #eeeeee;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+/* line 100, ../../_preprocess/sass/app.scss */
+.tabs a:hover {
+  color: #666666;
+  border-bottom-color: #d4d4d4;
+}
+/* line 105, ../../_preprocess/sass/app.scss */
+.tabs a.active {
+  color: #333333;
+  border-bottom-color: #73a533;
+}
+/* line 112, ../../_preprocess/sass/app.scss */
+.tabs a.active:hover {
+  border-bottom-color: #73a533;
+}
+
+/* line 119, ../../_preprocess/sass/app.scss */
 .posts {
   list-style: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 68, ../../_preprocess/sass/app.scss */
+/* line 283, ../../_preprocess/sass/core/_helpers.scss */
 .posts li {
   list-style: none;
   list-style-type: none;
 }
 
-/* line 74, ../../_preprocess/sass/app.scss */
+/* line 125, ../../_preprocess/sass/app.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
 }
 
-/* line 78, ../../_preprocess/sass/app.scss */
+/* line 129, ../../_preprocess/sass/app.scss */
 h4 {
   font-size: 1.125rem;
   font-weight: bold;
   padding: 0;
 }
 
-/* line 84, ../../_preprocess/sass/app.scss */
+/* line 135, ../../_preprocess/sass/app.scss */
 h5, h6 {
   font-size: 0.875rem;
   font-weight: bold;
@@ -765,7 +833,7 @@ h5, h6 {
   padding: 0;
 }
 
-/* line 92, ../../_preprocess/sass/app.scss */
+/* line 143, ../../_preprocess/sass/app.scss */
 .wrapper {
   position: relative;
   margin: 0 auto;
@@ -773,57 +841,57 @@ h5, h6 {
   width: 624px;
 }
 
-/* line 100, ../../_preprocess/sass/app.scss */
+/* line 151, ../../_preprocess/sass/app.scss */
 .node-type-page img {
   float: none;
   max-width: 100%;
 }
 
-/* line 110, ../../_preprocess/sass/app.scss */
+/* line 157, ../../_preprocess/sass/app.scss */
 table {
   width: 100%;
   margin: 0.75em 0;
   font-size: 0.875rem;
 }
-/* line 115, ../../_preprocess/sass/app.scss */
+/* line 162, ../../_preprocess/sass/app.scss */
 table tr {
   border-top: 1px solid #eeeeee;
 }
-/* line 119, ../../_preprocess/sass/app.scss */
+/* line 166, ../../_preprocess/sass/app.scss */
 table td {
-  padding: 0.375em 0.375em 0 0;
+  padding: 0.375em 0.375em;
   vertical-align: top;
 }
-/* line 124, ../../_preprocess/sass/app.scss */
+/* line 171, ../../_preprocess/sass/app.scss */
 table td p {
   font-size: inherit;
   margin-top: 0;
 }
-/* line 128, ../../_preprocess/sass/app.scss */
+/* line 175, ../../_preprocess/sass/app.scss */
 table td p strong {
   font-size: inherit;
 }
 
-/* line 135, ../../_preprocess/sass/app.scss */
+/* line 182, ../../_preprocess/sass/app.scss */
 .category {
   font-weight: bold;
   width: 40%;
 }
 
-/* line 140, ../../_preprocess/sass/app.scss */
+/* line 187, ../../_preprocess/sass/app.scss */
 .studies {
   clear: both;
   overflow: hidden;
 }
 
-/* line 145, ../../_preprocess/sass/app.scss */
+/* line 192, ../../_preprocess/sass/app.scss */
 .studies-listing {
   border-top: 1px solid #cccccc;
   clear: both;
   padding-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-/* line 151, ../../_preprocess/sass/app.scss */
+/* line 198, ../../_preprocess/sass/app.scss */
 .studies-listing dl {
   margin: 0.75em 0;
   clear: both;
@@ -835,7 +903,7 @@ table td p strong {
   display: table;
   clear: both;
 }
-/* line 161, ../../_preprocess/sass/app.scss */
+/* line 208, ../../_preprocess/sass/app.scss */
 .studies-listing dt {
   font-weight: bold;
   display: table-cell;
@@ -844,7 +912,7 @@ table td p strong {
   width: 40%;
   margin-right: 0.3125em;
 }
-/* line 170, ../../_preprocess/sass/app.scss */
+/* line 217, ../../_preprocess/sass/app.scss */
 .studies-listing dd {
   display: table-cell;
   margin-left: 0;

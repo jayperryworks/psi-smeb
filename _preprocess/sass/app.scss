@@ -49,26 +49,77 @@ html, body {
   background: #fff;
 }
 
+$table-cols: 9;
+$hairline: 1px solid #ccc;
+$hairline-light: 1px solid #eee;
+
+header {
+  max-width: $page-width;
+  margin: 0 auto;
+  padding: rem(12px) 0;
+  border-bottom: $hairline-light;
+  font-size: rem(12px);
+}
+
 #home section {
   border-top: 1px solid #ccc;
   padding: rem(12) 0;
 }
 
 [role="main"] {
-  margin: rem(18) auto;
-  max-width: 624px;
+  margin: rem(18px) auto;
+  max-width: $page-width;
+}
+
+.tabs {
+  $border-width: 4px;
+  $border-color: #eee;
+  @include inline-list;
+  margin-bottom: rem(24px);
+  border-bottom: $border-width solid $border-color;
+
+  ul {
+    
+  }
+
+  li {
+    margin: 0 -3px 0 0;
+    padding: 0;
+  }
+
+  a {
+    @include inline-block;
+    @include base-transition;
+    padding: em(12) em(12);
+    margin: 0 1px -#{$border-width} 0;
+    // background: $beige--light;
+    border-bottom: $border-width solid $border-color;
+    color: lighten($color-text--primary, 50);
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($color-text--primary, 20);
+      border-bottom-color: darken($border-color, 10);
+    }
+
+    &.active {
+      // color: white;
+      // background: green;
+      color: $color-text--primary;
+      border-bottom-color: $green;
+      // border-bottom-color: $green;
+
+      &:hover {
+        border-bottom-color: $green;
+      }
+    }
+  }
 }
 
 .posts {
-  list-style: none;
-  list-style-type: none;
+  @include unstyled-list;
   margin: 0;
   padding: 0;
-
-  li {
-    list-style: none;
-    list-style-type: none;
-  }
 }
 
 #{headers()} {
@@ -76,13 +127,13 @@ html, body {
 }
 
 h4 {
-  font-size: rem(18);
+  font-size: rem(18px);
   font-weight: bold;
   padding: 0;
 }
 
 h5, h6 {
-  font-size: rem(14);
+  font-size: rem(14px);
   // line-height: em(14);
   font-weight: bold;
   margin-top: 0;
@@ -103,14 +154,10 @@ h5, h6 {
   }
 }
 
-$table-cols: 9;
-$hairline: 1px solid #ccc;
-$hairline-light: 1px solid #eee;
-
 table {
   width: 100%;
   margin: em(12) 0;
-  font-size: rem(14);
+  font-size: rem(14px);
   
   tr {
     border-top: $hairline-light;
@@ -118,7 +165,7 @@ table {
   
   td {
     //width: 100%/$table-cols;
-    padding: em(6) em(6) 0 0;
+    padding: em(6) em(6);
     vertical-align: top;
 
     p {
@@ -145,8 +192,8 @@ table {
 .studies-listing {
   border-top: $hairline;
   clear: both;
-  padding-top: rem(24);
-  margin-bottom: rem(24);
+  padding-top: rem(24px);
+  margin-bottom: rem(24px);
   
   dl {
     margin: em(12) 0;
