@@ -631,80 +631,6 @@ p {
   text-align: left;
 }
 
-@media print {
-  /* line 7, ../../_preprocess/sass/core/_print.scss */
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  /* line 15, ../../_preprocess/sass/core/_print.scss */
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  /* line 19, ../../_preprocess/sass/core/_print.scss */
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  /* line 23, ../../_preprocess/sass/core/_print.scss */
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /* line 32, ../../_preprocess/sass/core/_print.scss */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-
-  /* line 37, ../../_preprocess/sass/core/_print.scss */
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /* line 42, ../../_preprocess/sass/core/_print.scss */
-  thead {
-    display: table-header-group;
-  }
-
-  /* line 47, ../../_preprocess/sass/core/_print.scss */
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  /* line 51, ../../_preprocess/sass/core/_print.scss */
-  img {
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
-}
-
-  /* line 61, ../../_preprocess/sass/core/_print.scss */
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  /* line 67, ../../_preprocess/sass/core/_print.scss */
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
 /* line 10, ../../_preprocess/sass/core/_content.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: inherit;
@@ -790,45 +716,49 @@ a {
 }
 
 /* line 48, ../../_preprocess/sass/app.scss */
+html, body {
+  background: #fff;
+}
+
+/* line 52, ../../_preprocess/sass/app.scss */
 #home section {
   border-top: 1px solid #ccc;
 }
 
-/* line 52, ../../_preprocess/sass/app.scss */
+/* line 56, ../../_preprocess/sass/app.scss */
 [role="main"] {
-  margin: 0 auto;
+  margin: 1.125rem auto;
   max-width: 624px;
 }
 
-/* line 57, ../../_preprocess/sass/app.scss */
+/* line 61, ../../_preprocess/sass/app.scss */
 .posts {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 63, ../../_preprocess/sass/app.scss */
+/* line 67, ../../_preprocess/sass/app.scss */
 h1, h2, h3, h4, h5, h6 {
-  line-height: emCalc(18px);
+  line-height: 1.125em;
 }
 
-/* line 67, ../../_preprocess/sass/app.scss */
+/* line 71, ../../_preprocess/sass/app.scss */
 h4 {
-  font-size: emCalc(18px);
+  font-size: 1.125rem;
   font-weight: bold;
   padding: 0;
 }
 
-/* line 73, ../../_preprocess/sass/app.scss */
+/* line 77, ../../_preprocess/sass/app.scss */
 h5, h6 {
-  font-size: emCalc(14px);
-  line-height: emCalc(14px);
+  font-size: 0.875rem;
   font-weight: bold;
   margin-top: 0;
   padding: 0;
 }
 
-/* line 81, ../../_preprocess/sass/app.scss */
+/* line 85, ../../_preprocess/sass/app.scss */
 .wrapper {
   position: relative;
   margin: 0 auto;
@@ -836,47 +766,58 @@ h5, h6 {
   width: 624px;
 }
 
-/* line 89, ../../_preprocess/sass/app.scss */
+/* line 93, ../../_preprocess/sass/app.scss */
 .node-type-page img {
   float: none;
   max-width: 100%;
 }
 
-/* line 99, ../../_preprocess/sass/app.scss */
+/* line 103, ../../_preprocess/sass/app.scss */
 table {
   width: 100%;
-  margin: emCalc(12px) 0;
+  margin: 0.75em 0;
+  font-size: 0.875rem;
 }
-/* line 103, ../../_preprocess/sass/app.scss */
+/* line 108, ../../_preprocess/sass/app.scss */
 table tr {
   border-top: 1px solid #eeeeee;
 }
-/* line 107, ../../_preprocess/sass/app.scss */
+/* line 112, ../../_preprocess/sass/app.scss */
 table td {
-  padding: emCalc(3px) emCalc(6px) 0 0;
+  padding: 0.375em 0.375em 0 0;
   vertical-align: top;
 }
+/* line 117, ../../_preprocess/sass/app.scss */
+table td p {
+  font-size: inherit;
+}
+/* line 120, ../../_preprocess/sass/app.scss */
+table td p strong {
+  font-size: inherit;
+}
 
-/* line 114, ../../_preprocess/sass/app.scss */
+/* line 127, ../../_preprocess/sass/app.scss */
 .category {
   font-weight: bold;
   width: 40%;
 }
 
-/* line 119, ../../_preprocess/sass/app.scss */
+/* line 132, ../../_preprocess/sass/app.scss */
 .studies {
   clear: both;
   overflow: hidden;
 }
 
-/* line 124, ../../_preprocess/sass/app.scss */
+/* line 137, ../../_preprocess/sass/app.scss */
 .studies-listing {
   border-top: 1px solid #cccccc;
   clear: both;
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-/* line 128, ../../_preprocess/sass/app.scss */
+/* line 143, ../../_preprocess/sass/app.scss */
 .studies-listing dl {
-  margin: emCalc(12px) 0;
+  margin: 0.75em 0;
   clear: both;
   overflow: hidden;
 }
@@ -886,16 +827,16 @@ table td {
   display: table;
   clear: both;
 }
-/* line 138, ../../_preprocess/sass/app.scss */
+/* line 153, ../../_preprocess/sass/app.scss */
 .studies-listing dt {
   font-weight: bold;
   display: table-cell;
   float: left;
   clear: left;
   width: 40%;
-  margin-right: emCalc(5px);
+  margin-right: 0.3125em;
 }
-/* line 147, ../../_preprocess/sass/app.scss */
+/* line 162, ../../_preprocess/sass/app.scss */
 .studies-listing dd {
   display: table-cell;
   margin-left: 0;

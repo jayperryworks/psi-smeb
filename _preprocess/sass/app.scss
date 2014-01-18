@@ -21,7 +21,7 @@
 
 @import "core/helpers";
 @import "core/base";
-@import "core/print";
+// @import "core/print";
 // @import "core/syntax";
 @import "core/layout";
 @import "core/content";
@@ -45,12 +45,16 @@
 // -> put quick and dirty hacks here, then clean up & organize later
 // ===============================================================================
 
+html, body {
+  background: #fff;
+}
+
 #home section {
   border-top: 1px solid #ccc;
 }
 
 [role="main"] {
-  margin: 0 auto;
+  margin: rem(18) auto;
   max-width: 624px;
 }
 
@@ -61,18 +65,18 @@
 }
 
 #{headers()} {
-  line-height: emCalc(18px);
+  line-height: em(18);
 }
 
 h4 {
-  font-size: emCalc(18px);
+  font-size: rem(18);
   font-weight: bold;
   padding: 0;
 }
 
 h5, h6 {
-  font-size: emCalc(14px);
-  line-height: emCalc(14px);
+  font-size: rem(14);
+  // line-height: em(14);
   font-weight: bold;
   margin-top: 0;
   padding: 0;
@@ -98,7 +102,8 @@ $hairline-light: 1px solid #eee;
 
 table {
   width: 100%;
-  margin: emCalc(12px) 0;
+  margin: em(12) 0;
+  font-size: rem(14);
   
   tr {
     border-top: $hairline-light;
@@ -106,8 +111,16 @@ table {
   
   td {
     //width: 100%/$table-cols;
-    padding: emCalc(3px) emCalc(6px) 0 0;
+    padding: em(6) em(6) 0 0;
     vertical-align: top;
+
+    p {
+      font-size: inherit;
+
+      strong {
+        font-size: inherit;
+      }
+    }
   }
 }
 
@@ -124,9 +137,11 @@ table {
 .studies-listing {
   border-top: $hairline;
   clear: both;
+  padding-top: rem(24);
+  margin-bottom: rem(24);
   
   dl {
-    margin: emCalc(12px) 0;
+    margin: em(12) 0;
     clear: both;
     overflow: hidden;
     
@@ -141,7 +156,7 @@ table {
     float: left;
     clear: left;
     width: 40%;
-    margin-right: emCalc(5px);
+    margin-right: em(5);
   }
   
   dd {
