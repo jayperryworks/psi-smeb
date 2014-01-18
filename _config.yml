@@ -1,9 +1,0 @@
-name: PSI SMEB
-url: http://smeb.jayperryworks.com
-baseurl: 
-permalink: none
-
-markdown: redcarpet
-pygments: true
-
-exclude: ["README.md", "config.rb", "scratch.html", "psi-smeb-updates.sublime-project", "psi-smeb-updates.sublime-workspace", "Guardfile", "Gemfile", "Gemfile.lock", ".sass-cache"]
