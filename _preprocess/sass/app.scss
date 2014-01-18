@@ -49,6 +49,10 @@ html, body {
   background: #fff;
 }
 
+body {
+  padding-bottom: rem(36px);
+}
+
 $table-cols: 9;
 $hairline: 1px solid #ccc;
 $hairline-light: 1px solid #eee;
