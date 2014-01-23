@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {% capture level %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+    {% capture relativepath %}{% for i in (3..level) %}../{% endfor %}{% endcapture %}
+
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ relativepath }}assets/css/pdf.css">
+    
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header>
+        <h1>{{ page.categories | first | replace: '_',' ' | capitalize }}: {{ page.title }}</h1>
+      </header>
+
+      <table>
+        <thead>
+          <tr>
+            <th class="title">Title</th>
+            <!-- <th class="link">Link</th> -->
+            <th class="author">Authors</th>
+            <th class="journal">Journal, Date, volume(Issue): Page</th>
+            <th class="location">Location</th>
+            <th class="population">Population</th>
+            <th class="intervention">Intervention Description</th>
+            <th class="outcomes">Outcomes</th>
+            <th class="design">Design</th>
+            <th class="sampling">Sampling Method</th>
+            <th class="soe">SOE Score</th>
+            <th class="smbc">Social Marketing Benchmark Criteria</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in site.data.[page.data].content_hash %}
+          <tr>
+            <td class="title">
+              {{ row.title }}<br /><br />
+              <span class="link">{{ row.link }}</span>
+            </td>
+            <!-- <td class="link">{{ row.link }}</td> -->
+            <td class="author">{{ row.authors }}</td>
+            <td class="journal">{{ row.journal }}</td>
+            <td class="location">{{ row.location }}</td>
+            <td class="population">{{ row.population }}</td>
+            <td class="intervention">{{ row.intervention }}</td>
+            <td class="outcomes">
+              {% if row.outcomes-bf %}
+              <p><strong>Behavioral Factors:</strong> {{ row.outcomes-bf }}</p>
+              {% endif %}
+
+              {% if row.outcomes-behavior %}
+              <p><strong>Behaviors:</strong> {{ row.outcomes-behavior }}</p>
+              {% endif %}
+              
+              {% if row.outcomes-health %}
+              <p><strong>Health:</strong> {{ row.outcomes-health }}</p>
+              {% endif %}
+            </td>
+            <td class="design">{{ row.design }}</td>
+            <td class="sampling">{{ row.sampling }}</td>
+            <td class="soe">{{ row.soe }}</td>
+            <td class="smbc">{{ row.smbc }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <footer>
+        <small>
+          <ul>
+            <li>&copy; Copyright 2014 Population Services International</li>
+            <li>1120 19th Street, NW, Suite 600</li>
+            <li>Washington, DC 20036</li>
+            <li><strong>P</strong> (202) 785-0072 | <strong>F</strong> (202) 785-0120</li>
+          </ul>
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>

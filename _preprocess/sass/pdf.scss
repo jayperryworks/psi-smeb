@@ -1,0 +1,129 @@
+// ===============================================================================
+// Frameworks
+// ===============================================================================
+
+@import "vendor/bourbon/bourbon";
+@import "singularitygs";
+
+// ===============================================================================
+// Settings & resets
+// ===============================================================================
+
+@import "core/fonts";
+
+@import "core/settings";
+@import "core/normalize";
+
+// ===============================================================================
+// Core style imports
+// ===============================================================================
+
+@import "core/helpers";
+@import "core/base";
+@import "core/print";
+// @import "core/syntax";
+@import "core/layout";
+@import "core/content";
+
+// ===============================================================================
+// PDF-specific styles
+// ===============================================================================
+
+$total-cols: 24;
+
+@mixin colspan($cols) {
+  width: (100%/$total-cols) * $cols;
+}
+
+@mixin wrap {
+  -ms-word-break: break-all;
+
+     /* Be VERY careful with this, breaks normal words wh_erever */
+     word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+
+.wrapper {
+  // margin: 0 auto;
+  // width: rem(800px);
+}
+
+table {
+  width: 100%;
+
+  p {
+    margin: 0 0 1em 0;
+  }
+}
+
+tr {
+  vertical-align: top;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+thead {
+  border-bottom: 2px solid #ccc;
+  background: #efefef;
+}
+
+td, th {
+  padding: rem(12px);
+}
+
+.title {
+  @include colspan(5);
+  font-weight: bold;
+}
+
+.link {
+  // @include colspan(2);
+  @include wrap;
+  font-weight: normal;
+}
+
+.author {
+  @include colspan(4);
+}
+
+// .journal {
+//   @include colspan(2);
+// }
+
+// .location {
+//   @include colspan(2);
+// }
+
+// .population {
+//   @include colspan(2);
+// }
+
+.intervention {
+  @include colspan(4);
+}
+
+.outcomes {
+  @include colspan(5);
+}
+
+// .design {
+//   @include colspan(2);
+// }
+
+// .sampling {
+//   @include colspan(2);
+// }
+
+.soe {
+  @include colspan(1);
+}
+
+// .smbc {
+//   @include colspan(2);
+// }

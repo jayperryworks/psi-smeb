@@ -8,7 +8,9 @@ layout: default
   <ul>
     {% capture cat %}{{ page.categories | first }}{% endcapture %}
     {% for post in site.categories.[cat] %}
+      {% unless post.categories contains "print" %}
       <li><a href="{{ post.url }}"{% if post.title == page.title %} class="active"{% endif %}>{{ post.title }}</a></li>
+      {% endunless %}
     {% endfor %}
   </ul>
 </nav>
