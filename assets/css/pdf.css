@@ -557,13 +557,13 @@ main {
  */
 /* line 46, ../../_preprocess/sass/core/_base.scss */
 ::-moz-selection {
-  background: red;
+  background: #f7941e;
   text-shadow: none;
 }
 
 /* line 51, ../../_preprocess/sass/core/_base.scss */
 ::selection {
-  background: red;
+  background: #f7941e;
   text-shadow: none;
 }
 
@@ -705,83 +705,168 @@ p {
     page-break-after: avoid;
   }
 }
+/* line 7, ../../_preprocess/sass/core/_layout.scss */
+html, body {
+  background: #fff;
+}
+
+/* line 11, ../../_preprocess/sass/core/_layout.scss */
+body {
+  padding-bottom: 36px;
+  padding-bottom: 2.25rem;
+}
+
+/* line 15, ../../_preprocess/sass/core/_layout.scss */
+header {
+  max-width: 624px;
+  margin: 0 auto;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.75rem;
+}
+
+/* line 23, ../../_preprocess/sass/core/_layout.scss */
+#home section {
+  border-top: 1px solid #ccc;
+  padding: 0.75rem 0;
+}
+
+/* line 28, ../../_preprocess/sass/core/_layout.scss */
+[role="main"] {
+  margin: 1.125rem auto;
+  max-width: 624px;
+}
+
+/* line 33, ../../_preprocess/sass/core/_layout.scss */
+.posts {
+  list-style: none;
+  list-style-type: none;
+  margin: 0 0 0.75rem 0;
+  padding: 0;
+}
+/* line 283, ../../_preprocess/sass/core/_helpers.scss */
+.posts li {
+  list-style: none;
+  list-style-type: none;
+}
+
+/* line 39, ../../_preprocess/sass/core/_layout.scss */
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 2em;
+  width: 624px;
+}
+
+/* line 7, ../../_preprocess/sass/core/_content.scss */
+hgroup {
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
+}
 /* line 10, ../../_preprocess/sass/core/_content.scss */
+hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {
+  margin-bottom: 0;
+}
+
+/* line 15, ../../_preprocess/sass/core/_content.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+  margin-top: 0;
+  padding: 0;
+}
+/* line 20, ../../_preprocess/sass/core/_content.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: inherit;
 }
-/* line 13, ../../_preprocess/sass/core/_content.scss */
+/* line 23, ../../_preprocess/sass/core/_content.scss */
 h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:hover, h4 a:active, h5 a:hover, h5 a:active, h6 a:hover, h6 a:active {
   color: inherit;
   border-bottom: none;
 }
 
-/* line 20, ../../_preprocess/sass/core/_content.scss */
+/* line 30, ../../_preprocess/sass/core/_content.scss */
 h1 {
   font-size: 32px;
   font-size: 2rem;
+  line-height: 1.2;
 }
 
-/* line 24, ../../_preprocess/sass/core/_content.scss */
+/* line 35, ../../_preprocess/sass/core/_content.scss */
 h2 {
   font-size: 27px;
   font-size: 1.6875rem;
 }
 
-/* line 28, ../../_preprocess/sass/core/_content.scss */
+/* line 39, ../../_preprocess/sass/core/_content.scss */
 h3 {
   font-size: 18px;
   font-size: 1.125rem;
 }
 
-/* line 32, ../../_preprocess/sass/core/_content.scss */
+/* line 43, ../../_preprocess/sass/core/_content.scss */
 h4 {
   font-size: 18px;
   font-size: 1.125rem;
+  font-weight: bold;
 }
 
-/* line 36, ../../_preprocess/sass/core/_content.scss */
+/* line 48, ../../_preprocess/sass/core/_content.scss */
 h5 {
   font-size: 14px;
   font-size: 0.875rem;
+  font-weight: bold;
 }
 
-/* line 40, ../../_preprocess/sass/core/_content.scss */
+/* line 53, ../../_preprocess/sass/core/_content.scss */
 h6 {
   font-size: 12px;
   font-size: 0.75rem;
+  font-weight: bold;
 }
 
-/* line 45, ../../_preprocess/sass/core/_content.scss */
+/* line 59, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h1, #social-marketing-evidence-base h2, #social-marketing-evidence-base h3, #social-marketing-evidence-base h4, #social-marketing-evidence-base h5, #social-marketing-evidence-base h6 {
+  color: #f7941e;
+  text-transform: uppercase;
+}
+
+/* line 65, ../../_preprocess/sass/core/_content.scss */
+.category {
+  font-weight: bold;
+  width: 40%;
+}
+
+/* line 74, ../../_preprocess/sass/core/_content.scss */
 .intro {
   font-size: 21px;
   font-size: 1.3125rem;
 }
 
-/* line 49, ../../_preprocess/sass/core/_content.scss */
+/* line 78, ../../_preprocess/sass/core/_content.scss */
 p, table, li {
   font-size: 16px;
   font-size: 1rem;
 }
 
-/* line 53, ../../_preprocess/sass/core/_content.scss */
+/* line 82, ../../_preprocess/sass/core/_content.scss */
 ol, ul {
   margin-left: 1.5em;
 }
 @media (min-width: 48em) {
-  /* line 53, ../../_preprocess/sass/core/_content.scss */
+  /* line 82, ../../_preprocess/sass/core/_content.scss */
   ol, ul {
     margin-left: 0;
   }
 }
 
-/* line 61, ../../_preprocess/sass/core/_content.scss */
+/* line 90, ../../_preprocess/sass/core/_content.scss */
 a {
   -webkit-animation: all 0.3s;
   -moz-animation: all 0.3s;
   animation: all 0.3s;
 }
 
-/* line 65, ../../_preprocess/sass/core/_content.scss */
+/* line 94, ../../_preprocess/sass/core/_content.scss */
 .amp {
   font-family: "Baskerville", "Palatino", "Book Antiqua", serif;
   font-style: italic;

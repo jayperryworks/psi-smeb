@@ -2,3 +2,43 @@
 // Global layout styles
 // ==============================================================================
 
+// Dev site styles
+// -------------------------------------------------------------------------------
+html, body {
+  background: #fff;
+}
+
+body {
+  @include rem(padding-bottom, 36px);
+}
+
+header {
+  max-width: $page-width;
+  margin: 0 auto;
+  padding: rem(12px) 0;
+  border-bottom: $hairline-light;
+  font-size: rem(12px);
+}
+
+#home section {
+  border-top: 1px solid #ccc;
+  padding: rem(12) 0;
+}
+
+[role="main"] {
+  margin: rem(18px) auto;
+  max-width: $page-width;
+}
+
+.posts {
+  @include unstyled-list;
+  margin: 0 0 rem(12px) 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 2em;
+  width: 624px;
+}

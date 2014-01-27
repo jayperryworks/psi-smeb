@@ -2,11 +2,21 @@
 // 	Global type
 // ==============================================================================
 
+// Headers
+// ------------------------------------------------------------------------------
 hgroup {
-	
+	@include rem(margin-bottom, 18px);
+
+	#{headers()} {
+		margin-bottom: 0;
+	}
 }
 
-h1, h2, h3, h4, h5, h6 {
+#{headers()} {
+	line-height: 1.4;
+	margin-top: 0;
+	padding: 0;
+
 	a {
 		color: inherit;
 
@@ -19,6 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, %h1 {
 	@include rem(font-size, 32px);
+	line-height: 1.2;
 }
 
 h2, %h2 {
@@ -31,15 +42,33 @@ h3, %h3 {
 
 h4, %h4 {
 	@include rem(font-size, 18px);
+	font-weight: bold;
 }
 
 h5, %h5 {
 	@include rem(font-size, 14px);
+	font-weight: bold;
 }
 
 h6, %h6 {
 	@include rem(font-size, 12px);
+	font-weight: bold;
 }
+
+#social-marketing-evidence-base {
+	#{headers()} {
+		color: $orange;
+		text-transform: uppercase;
+	}
+}
+
+.category {
+  font-weight: bold;
+  width: 40%;
+}
+
+// Body type
+// ------------------------------------------------------------------------------
 
 // bigger first paragraph
 .intro {

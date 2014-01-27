@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="{{ site.baseurl }}{{ relativepath }}assets/css/app.css">
     <script src="{{ site.baseurl }}{{ relativepath }}assets/js/vendor/modernizr.custom.11128.js"></script>
   </head>
-  <body id="{% if page.slug %}{{ page.slug | downcase }}{% else %}{{ page.title | downcase }}{% endif %}">
+  <body id="{% if page.slug %}{{ page.slug | replace: ' ','-' | downcase }}{% else %}{{ page.title | replace: ' ','-' | downcase }}{% endif %}">
     {% if page.slug != "home" %}
     <header role="banner">
       <nav role="navigation">

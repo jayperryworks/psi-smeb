@@ -20,8 +20,7 @@ $blue: #003845;
 $color-text--primary: #333;
 $color-text--secondary: #999;
 
-$color-selection: red;
-
+$color-selection: $orange;
 
 // Typography
 // --------------------------------------------------------------------------
@@ -33,6 +32,11 @@ $type-line_height: 1.5;
 // Containers/layout
 // --------------------------------------------------------------------------
 $page-width: 624px;
+
+$table-cols: 9;
+
+$hairline: 1px solid #ccc;
+$hairline-light: 1px solid #eee;
 
 // --- breakpoints ----------------------------------------------------------
 $xsmall: 480px;

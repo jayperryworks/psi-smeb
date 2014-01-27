@@ -1,0 +1,49 @@
+// ==========================================================================
+//  Navigation modules
+// ==========================================================================
+
+
+// BASE
+// -----------------------------------------------------------------------------
+ 
+.studies {
+  clear: both;
+  overflow: hidden;
+}
+
+// SUBMODULES
+// -----------------------------------------------------------------------------
+
+.studies-listing {
+  border-top: $hairline;
+  clear: both;
+  padding-top: rem(24px);
+  margin-bottom: rem(24px);
+  
+  dl {
+    margin: em(12) 0;
+    clear: both;
+    overflow: hidden;
+    
+    &:after {
+      @include clearfix;
+    }
+  }
+  
+  dt {
+    font-weight: bold;
+    display: table-cell;
+    float: left;
+    clear: left;
+    width: 40%;
+    margin-right: em(5);
+  }
+  
+  dd {
+    display: table-cell;
+    margin-left: 0;
+    clear: right;
+    width: 55%;
+    float: left;
+  }
+}
