@@ -48,8 +48,9 @@
 // Special effects & CSS graphical stuff
 // ==================================================================================
 
+// requires bourbon library
 @mixin base-transition {
-  @include transition (all $base-duration ease-in-out);
+  @include transition(all $base-duration ease-in-out);
 }
 
 @mixin cursor($type) {

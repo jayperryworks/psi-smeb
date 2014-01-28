@@ -42,3 +42,35 @@ header {
   padding: 2em;
   width: 624px;
 }
+
+#social-marketing-evidence-base {
+
+  section {
+    @include rem(padding, 24px 12px);
+    border-top: 2px dotted $green;
+
+    &.first {
+      @include rem(margin-top, 24px);
+    }
+  }
+  
+  .subsection {
+    @include rem(margin-top, 2px);
+    border-top: none;
+    background: lighten($beige--light, 8%);
+
+    &.first, &.light.first {
+      @include rem(margin-top, 24px);
+    }
+
+    #{headers()}, strong {
+      color: $blue--dark;
+    }
+
+    &.light {
+      #{headers()}, strong {
+        color: $blue;
+      }
+    }
+  }
+}

@@ -420,7 +420,7 @@ table {
 }
 
 @-moz-keyframes spin {
-  /* line 154, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 155, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -428,7 +428,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 161, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 162, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -438,7 +438,7 @@ table {
 }
 
 @-webkit-keyframes spin {
-  /* line 169, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 170, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -446,7 +446,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 176, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 177, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -456,7 +456,7 @@ table {
 }
 
 @-o-keyframes spin {
-  /* line 184, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 185, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -464,7 +464,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 191, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 192, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -474,7 +474,7 @@ table {
 }
 
 @-ms-keyframes spin {
-  /* line 199, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 200, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -482,7 +482,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 206, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 207, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -492,7 +492,7 @@ table {
 }
 
 @keyframes spin {
-  /* line 214, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 215, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -500,7 +500,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 221, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 222, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -538,6 +538,9 @@ textarea {
 html {
   font-size: 100%;
   line-height: 1.5;
+}
+/* line 29, ../../_preprocess/sass/core/_base.scss */
+html * {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;
@@ -545,7 +548,7 @@ html {
   box-sizing: border-box;
 }
 
-/* line 36, ../../_preprocess/sass/core/_base.scss */
+/* line 38, ../../_preprocess/sass/core/_base.scss */
 main {
   display: block;
 }
@@ -555,13 +558,13 @@ main {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 46, ../../_preprocess/sass/core/_base.scss */
+/* line 48, ../../_preprocess/sass/core/_base.scss */
 ::-moz-selection {
   background: #f7941e;
   text-shadow: none;
 }
 
-/* line 51, ../../_preprocess/sass/core/_base.scss */
+/* line 53, ../../_preprocess/sass/core/_base.scss */
 ::selection {
   background: #f7941e;
   text-shadow: none;
@@ -570,7 +573,7 @@ main {
 /*
  * A better looking default horizontal rule
  */
-/* line 60, ../../_preprocess/sass/core/_base.scss */
+/* line 62, ../../_preprocess/sass/core/_base.scss */
 hr {
   display: block;
   height: 1px;
@@ -584,7 +587,7 @@ hr {
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-/* line 77, ../../_preprocess/sass/core/_base.scss */
+/* line 79, ../../_preprocess/sass/core/_base.scss */
 audio,
 canvas,
 img,
@@ -596,7 +599,7 @@ video {
 /*
  * Remove default fieldset styles.
  */
-/* line 86, ../../_preprocess/sass/core/_base.scss */
+/* line 88, ../../_preprocess/sass/core/_base.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -606,12 +609,12 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 96, ../../_preprocess/sass/core/_base.scss */
+/* line 98, ../../_preprocess/sass/core/_base.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 101, ../../_preprocess/sass/core/_base.scss */
+/* line 103, ../../_preprocess/sass/core/_base.scss */
 ol, ul, dl {
   margin-bottom: 0;
 }
@@ -619,14 +622,14 @@ ol, ul, dl {
 /*
  * Reset lists that appear in nav elements
  */
-/* line 108, ../../_preprocess/sass/core/_base.scss */
+/* line 110, ../../_preprocess/sass/core/_base.scss */
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 114, ../../_preprocess/sass/core/_base.scss */
+/* line 116, ../../_preprocess/sass/core/_base.scss */
 p {
   text-align: left;
 }
@@ -647,7 +650,7 @@ header {
   max-width: 624px;
   margin: 0 auto;
   padding: 0.75rem 0;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #dddddd;
   font-size: 0.75rem;
 }
 
@@ -670,7 +673,7 @@ header {
   margin: 0 0 0.75rem 0;
   padding: 0;
 }
-/* line 283, ../../_preprocess/sass/core/_helpers.scss */
+/* line 284, ../../_preprocess/sass/core/_helpers.scss */
 .posts li {
   list-style: none;
   list-style-type: none;
@@ -684,10 +687,41 @@ header {
   width: 624px;
 }
 
+/* line 48, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base section {
+  padding: 24px 12px;
+  padding: 1.5rem 0.75rem;
+  border-top: 2px dotted #73a533;
+}
+/* line 52, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base section.first {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+/* line 57, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base .subsection {
+  margin-top: 2px;
+  margin-top: 0.125rem;
+  border-top: none;
+  background: #efeee5;
+}
+/* line 62, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base .subsection.first, #social-marketing-evidence-base .subsection.light.first {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+/* line 66, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base .subsection h1, #social-marketing-evidence-base .subsection h2, #social-marketing-evidence-base .subsection h3, #social-marketing-evidence-base .subsection h4, #social-marketing-evidence-base .subsection h5, #social-marketing-evidence-base .subsection h6, #social-marketing-evidence-base .subsection strong {
+  color: #013846;
+}
+/* line 71, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base .subsection.light h1, #social-marketing-evidence-base .subsection.light h2, #social-marketing-evidence-base .subsection.light h3, #social-marketing-evidence-base .subsection.light h4, #social-marketing-evidence-base .subsection.light h5, #social-marketing-evidence-base .subsection.light h6, #social-marketing-evidence-base .subsection.light strong {
+  color: #086878;
+}
+
 /* line 7, ../../_preprocess/sass/core/_content.scss */
 hgroup {
-  margin-bottom: 18px;
-  margin-bottom: 1.125rem;
+  margin: 0 0 1em 0;
 }
 /* line 10, ../../_preprocess/sass/core/_content.scss */
 hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {
@@ -696,8 +730,8 @@ hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {
 
 /* line 15, ../../_preprocess/sass/core/_content.scss */
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.4;
-  margin-top: 0;
+  line-height: 1.2;
+  margin: 0 0 0.5em 0;
   padding: 0;
 }
 /* line 20, ../../_preprocess/sass/core/_content.scss */
@@ -755,44 +789,63 @@ h6 {
   color: #f7941e;
   text-transform: uppercase;
 }
+/* line 64, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h3 {
+  color: #013846;
+}
+/* line 67, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h3.light {
+  color: #086878;
+}
+/* line 72, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h4 {
+  color: #086878;
+  font-weight: normal;
+}
+/* line 76, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h4 strong {
+  color: #f7941e;
+  font-weight: bold;
+}
 
-/* line 65, ../../_preprocess/sass/core/_content.scss */
+/* line 83, ../../_preprocess/sass/core/_content.scss */
 .category {
   font-weight: bold;
   width: 40%;
 }
 
-/* line 74, ../../_preprocess/sass/core/_content.scss */
+/* line 92, ../../_preprocess/sass/core/_content.scss */
 .intro {
   font-size: 21px;
   font-size: 1.3125rem;
 }
 
-/* line 78, ../../_preprocess/sass/core/_content.scss */
+/* line 96, ../../_preprocess/sass/core/_content.scss */
 p, table, li {
   font-size: 16px;
   font-size: 1rem;
 }
 
-/* line 82, ../../_preprocess/sass/core/_content.scss */
+/* line 100, ../../_preprocess/sass/core/_content.scss */
 ol, ul {
   margin-left: 1.5em;
 }
 @media (min-width: 48em) {
-  /* line 82, ../../_preprocess/sass/core/_content.scss */
+  /* line 100, ../../_preprocess/sass/core/_content.scss */
   ol, ul {
     margin-left: 0;
   }
 }
 
-/* line 90, ../../_preprocess/sass/core/_content.scss */
+/* line 108, ../../_preprocess/sass/core/_content.scss */
 a {
-  -webkit-animation: all 0.3s;
-  -moz-animation: all 0.3s;
-  animation: all 0.3s;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out false;
+  -o-transition: all 0.5s ease-in-out false;
+  transition: all 0.5s ease-in-out;
 }
 
-/* line 94, ../../_preprocess/sass/core/_content.scss */
+/* line 112, ../../_preprocess/sass/core/_content.scss */
 .amp {
   font-family: "Baskerville", "Palatino", "Book Antiqua", serif;
   font-style: italic;
@@ -800,20 +853,50 @@ a {
   font-size: 1.1em;
 }
 
-/* line 9, ../../_preprocess/sass/modules/studies.scss */
+/* line 120, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base p {
+  margin: 0 0 0.5em 0;
+}
+/* line 124, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base p, #social-marketing-evidence-base li, #social-marketing-evidence-base td {
+  color: #086878;
+}
+
+/* line 129, ../../_preprocess/sass/core/_content.scss */
+.credits {
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  display: block;
+}
+
+/* line 9, ../../_preprocess/sass/modules/_studies.scss */
 .studies {
   clear: both;
   overflow: hidden;
 }
 
-/* line 17, ../../_preprocess/sass/modules/studies.scss */
+/* line 17, ../../_preprocess/sass/modules/_studies.scss */
 .studies-listing {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #c1c1c1;
   clear: both;
   padding-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-/* line 23, ../../_preprocess/sass/modules/studies.scss */
+/* line 23, ../../_preprocess/sass/modules/_studies.scss */
+.studies-listing hgroup {
+  margin-bottom: 1em;
+}
+/* line 26, ../../_preprocess/sass/modules/_studies.scss */
+.studies-listing hgroup h1, .studies-listing hgroup h2, .studies-listing hgroup h3, .studies-listing hgroup h4, .studies-listing hgroup h5, .studies-listing hgroup h6 {
+  margin: 0 0 0.5em 0;
+}
+/* line 30, ../../_preprocess/sass/modules/_studies.scss */
+.studies-listing hgroup h6 {
+  color: #999999;
+}
+/* line 35, ../../_preprocess/sass/modules/_studies.scss */
 .studies-listing dl {
   margin: 0.75em 0;
   clear: both;
@@ -825,7 +908,7 @@ a {
   display: table;
   clear: both;
 }
-/* line 33, ../../_preprocess/sass/modules/studies.scss */
+/* line 45, ../../_preprocess/sass/modules/_studies.scss */
 .studies-listing dt {
   font-weight: bold;
   display: table-cell;
@@ -834,7 +917,7 @@ a {
   width: 40%;
   margin-right: 0.3125em;
 }
-/* line 42, ../../_preprocess/sass/modules/studies.scss */
+/* line 54, ../../_preprocess/sass/modules/_studies.scss */
 .studies-listing dd {
   display: table-cell;
   margin-left: 0;
@@ -850,12 +933,12 @@ a {
   margin-bottom: 1.5rem;
   border-bottom: 4px solid #eeeeee;
 }
-/* line 283, ../../_preprocess/sass/core/_helpers.scss */
+/* line 284, ../../_preprocess/sass/core/_helpers.scss */
 [role="navigation"].tabs li {
   list-style: none;
   list-style-type: none;
 }
-/* line 292, ../../_preprocess/sass/core/_helpers.scss */
+/* line 293, ../../_preprocess/sass/core/_helpers.scss */
 [role="navigation"].tabs li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -877,10 +960,10 @@ a {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out false;
-  -o-transition: all 0.3s ease-in-out false;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out false;
+  -o-transition: all 0.5s ease-in-out false;
+  transition: all 0.5s ease-in-out;
   padding: 0.75em 0.75em;
   margin: 0 1px -4px 0;
   border-bottom: 4px solid #eeeeee;
@@ -900,4 +983,343 @@ a {
 /* line 59, ../../_preprocess/sass/modules/_navigation.scss */
 [role="navigation"].tabs a.active:hover {
   border-bottom-color: #73a533;
+}
+
+/* line 70, ../../_preprocess/sass/modules/_navigation.scss */
+[role="navigation"].tile-grid {
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
+  text-align: center;
+}
+/* line 74, ../../_preprocess/sass/modules/_navigation.scss */
+[role="navigation"].tile-grid ul {
+  list-style: none;
+  list-style-type: none;
+}
+/* line 284, ../../_preprocess/sass/core/_helpers.scss */
+[role="navigation"].tile-grid ul li {
+  list-style: none;
+  list-style-type: none;
+}
+/* line 293, ../../_preprocess/sass/core/_helpers.scss */
+[role="navigation"].tile-grid ul li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 78, ../../_preprocess/sass/modules/_navigation.scss */
+[role="navigation"].tile-grid ul li {
+  vertical-align: top;
+  width: 20%;
+  margin-right: -3px;
+}
+
+/* line 86, ../../_preprocess/sass/modules/_navigation.scss */
+.tile {
+  padding: 6px;
+  padding: 0.375rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  display: block;
+  vertical-align: top;
+}
+/* line 92, ../../_preprocess/sass/modules/_navigation.scss */
+.tile:hover, .tile:active {
+  background: #f3f2ec;
+}
+/* line 96, ../../_preprocess/sass/modules/_navigation.scss */
+.tile img {
+  vertical-align: top;
+}
+
+/* line 9, ../../_preprocess/sass/modules/_table.scss */
+table {
+  width: 100%;
+  margin: 0.75em 0;
+  font-size: 0.875rem;
+}
+/* line 14, ../../_preprocess/sass/modules/_table.scss */
+table tr {
+  border-top: 1px solid #dddddd;
+}
+/* line 18, ../../_preprocess/sass/modules/_table.scss */
+table td {
+  padding: 0.375em 0.375em;
+  vertical-align: top;
+}
+/* line 23, ../../_preprocess/sass/modules/_table.scss */
+table td p {
+  font-size: inherit;
+  margin-top: 0;
+}
+/* line 27, ../../_preprocess/sass/modules/_table.scss */
+table td p strong {
+  font-size: inherit;
+}
+
+/* line 37, ../../_preprocess/sass/modules/_table.scss */
+.findings {
+  vertical-align: middle;
+}
+/* line 40, ../../_preprocess/sass/modules/_table.scss */
+.findings thead tr {
+  border-top: none;
+  border-bottom: 1px solid #c1c1c1;
+}
+/* line 45, ../../_preprocess/sass/modules/_table.scss */
+.findings th {
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 6px;
+  padding: 0.375rem;
+  color: #999999;
+}
+/* line 52, ../../_preprocess/sass/modules/_table.scss */
+.findings tr:nth-child(2n) {
+  background: #f3f2ec;
+}
+/* line 57, ../../_preprocess/sass/modules/_table.scss */
+.findings td {
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding: 6px;
+  padding: 0.375rem;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  color: #f7941e !important;
+}
+
+/* line 67, ../../_preprocess/sass/modules/_table.scss */
+.findings-icon {
+  text-align: left;
+}
+
+/* line 14, ../../_preprocess/sass/modules/_list.scss */
+.has-icons, .has-numbers {
+  list-style: none;
+  list-style-type: none;
+}
+/* line 284, ../../_preprocess/sass/core/_helpers.scss */
+.has-icons li, .has-numbers li {
+  list-style: none;
+  list-style-type: none;
+}
+/* line 17, ../../_preprocess/sass/modules/_list.scss */
+.has-icons strong, .has-numbers strong {
+  text-transform: uppercase;
+}
+
+/* line 22, ../../_preprocess/sass/modules/_list.scss */
+.icon, .number {
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  margin-top: 18px;
+  margin-top: 1.125rem;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  position: relative;
+  width: 50%;
+  margin-right: -3px;
+  vertical-align: top;
+  clear: both;
+}
+/* line 36, ../../_preprocess/sass/modules/_list.scss */
+.icon > img, .number > img {
+  margin-top: -12px;
+  margin-top: -0.75rem;
+  padding: 0 12px 0 0;
+  padding: 0 0.75rem 0 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 43, ../../_preprocess/sass/modules/_list.scss */
+.icon > p, .number > p {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 65%;
+  vertical-align: top;
+}
+
+/* line 54, ../../_preprocess/sass/modules/_list.scss */
+.number {
+  padding-left: 46px;
+  padding-left: 2.875rem;
+}
+/* line 60, ../../_preprocess/sass/modules/_list.scss */
+.number:before {
+  height: 40px;
+  height: 2.5rem;
+  width: 40px;
+  width: 2.5rem;
+  display: block;
+  position: absolute;
+  left: -2px;
+  top: 0;
+  content: " ";
+  vertical-align: middle;
+}
+/* line 71, ../../_preprocess/sass/modules/_list.scss */
+.number.one:before {
+  background: url("../images/infographic/number-1.png") center center no-repeat;
+}
+/* line 75, ../../_preprocess/sass/modules/_list.scss */
+.number.two:before {
+  background: url("../images/infographic/number-2.png") center center no-repeat;
+}
+/* line 79, ../../_preprocess/sass/modules/_list.scss */
+.number.three:before {
+  background: url("../images/infographic/number-3.png") center center no-repeat;
+}
+/* line 83, ../../_preprocess/sass/modules/_list.scss */
+.number.four:before {
+  background: url("../images/infographic/number-4.png") center center no-repeat;
+}
+
+/* line 88, ../../_preprocess/sass/modules/_list.scss */
+.details {
+  display: none;
+}
+
+/* line 95, ../../_preprocess/sass/modules/_list.scss */
+.wizard {
+  list-style: none;
+  list-style-type: none;
+}
+/* line 284, ../../_preprocess/sass/core/_helpers.scss */
+.wizard li {
+  list-style: none;
+  list-style-type: none;
+}
+/* line 293, ../../_preprocess/sass/core/_helpers.scss */
+.wizard li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 102, ../../_preprocess/sass/modules/_list.scss */
+.wizard.with-arrows .wizard-step:before {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 12px;
+  border-left-color: white;
+  content: ' ';
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  margin-top: -12px;
+  z-index: 999;
+}
+/* line 112, ../../_preprocess/sass/modules/_list.scss */
+.wizard.with-arrows .wizard-step:after {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 12px;
+  border-left-color: #4b8998;
+  content: ' ';
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  margin-top: -12px;
+  z-index: 10000;
+}
+
+/* line 125, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step {
+  padding: 6px 6px 6px 22px;
+  padding: 0.375rem 0.375rem 0.375rem 1.375rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  position: relative;
+  color: white !important;
+  margin-left: -3px;
+  border-left: 1px solid white;
+}
+/* line 134, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step:first-child {
+  margin-left: 0;
+}
+/* line 138, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step.light {
+  background: #4b8998;
+}
+/* line 141, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step.light:after {
+  border-left-color: #4b8998 !important;
+}
+/* line 146, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step.medium {
+  background: #086878;
+}
+/* line 149, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step.medium:after {
+  border-left-color: #086878 !important;
+}
+/* line 154, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step.dark {
+  background: #013846;
+}
+/* line 157, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step.dark:after {
+  border-left-color: #013846 !important;
+}
+
+/* line 165, ../../_preprocess/sass/modules/_list.scss */
+#social-marketing-evidence-base .wizard-step {
+  height: 80px;
+  height: 5rem;
+  width: 20%;
+}
+/* line 170, ../../_preprocess/sass/modules/_list.scss */
+#social-marketing-evidence-base .wizard-label {
+  font-size: 10px;
+  font-size: 0.625rem;
+  margin-top: 6px;
+  margin-top: 0.375rem;
+  height: 12px;
+  height: 0.75rem;
+  display: block;
+  position: relative;
+  width: 60%;
+  left: 40%;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #73a533;
+  border-left: 2px solid #73a533;
+  border-right: 2px solid #73a533;
+}
+/* line 186, ../../_preprocess/sass/modules/_list.scss */
+#social-marketing-evidence-base .wizard-label > span {
+  padding: 6px 10px;
+  padding: 0.375rem 0.625rem;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background: white;
 }

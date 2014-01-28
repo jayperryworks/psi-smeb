@@ -420,7 +420,7 @@ table {
 }
 
 @-moz-keyframes spin {
-  /* line 154, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 155, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -428,7 +428,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 161, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 162, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -438,7 +438,7 @@ table {
 }
 
 @-webkit-keyframes spin {
-  /* line 169, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 170, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -446,7 +446,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 176, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 177, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -456,7 +456,7 @@ table {
 }
 
 @-o-keyframes spin {
-  /* line 184, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 185, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -464,7 +464,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 191, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 192, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -474,7 +474,7 @@ table {
 }
 
 @-ms-keyframes spin {
-  /* line 199, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 200, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -482,7 +482,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 206, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 207, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -492,7 +492,7 @@ table {
 }
 
 @keyframes spin {
-  /* line 214, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 215, ../../_preprocess/sass/core/_helpers.scss */
   0% {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -500,7 +500,7 @@ table {
     transform: rotate(0deg);
   }
 
-  /* line 221, ../../_preprocess/sass/core/_helpers.scss */
+  /* line 222, ../../_preprocess/sass/core/_helpers.scss */
   100% {
     -moz-transform: rotate(359deg);
     -o-transform: rotate(359deg);
@@ -538,6 +538,9 @@ textarea {
 html {
   font-size: 100%;
   line-height: 1.5;
+}
+/* line 29, ../../_preprocess/sass/core/_base.scss */
+html * {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;
@@ -545,7 +548,7 @@ html {
   box-sizing: border-box;
 }
 
-/* line 36, ../../_preprocess/sass/core/_base.scss */
+/* line 38, ../../_preprocess/sass/core/_base.scss */
 main {
   display: block;
 }
@@ -555,13 +558,13 @@ main {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 46, ../../_preprocess/sass/core/_base.scss */
+/* line 48, ../../_preprocess/sass/core/_base.scss */
 ::-moz-selection {
   background: #f7941e;
   text-shadow: none;
 }
 
-/* line 51, ../../_preprocess/sass/core/_base.scss */
+/* line 53, ../../_preprocess/sass/core/_base.scss */
 ::selection {
   background: #f7941e;
   text-shadow: none;
@@ -570,7 +573,7 @@ main {
 /*
  * A better looking default horizontal rule
  */
-/* line 60, ../../_preprocess/sass/core/_base.scss */
+/* line 62, ../../_preprocess/sass/core/_base.scss */
 hr {
   display: block;
   height: 1px;
@@ -584,7 +587,7 @@ hr {
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-/* line 77, ../../_preprocess/sass/core/_base.scss */
+/* line 79, ../../_preprocess/sass/core/_base.scss */
 audio,
 canvas,
 img,
@@ -596,7 +599,7 @@ video {
 /*
  * Remove default fieldset styles.
  */
-/* line 86, ../../_preprocess/sass/core/_base.scss */
+/* line 88, ../../_preprocess/sass/core/_base.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -606,12 +609,12 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 96, ../../_preprocess/sass/core/_base.scss */
+/* line 98, ../../_preprocess/sass/core/_base.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 101, ../../_preprocess/sass/core/_base.scss */
+/* line 103, ../../_preprocess/sass/core/_base.scss */
 ol, ul, dl {
   margin-bottom: 0;
 }
@@ -619,14 +622,14 @@ ol, ul, dl {
 /*
  * Reset lists that appear in nav elements
  */
-/* line 108, ../../_preprocess/sass/core/_base.scss */
+/* line 110, ../../_preprocess/sass/core/_base.scss */
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 114, ../../_preprocess/sass/core/_base.scss */
+/* line 116, ../../_preprocess/sass/core/_base.scss */
 p {
   text-align: left;
 }
@@ -721,7 +724,7 @@ header {
   max-width: 624px;
   margin: 0 auto;
   padding: 0.75rem 0;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #dddddd;
   font-size: 0.75rem;
 }
 
@@ -744,7 +747,7 @@ header {
   margin: 0 0 0.75rem 0;
   padding: 0;
 }
-/* line 283, ../../_preprocess/sass/core/_helpers.scss */
+/* line 284, ../../_preprocess/sass/core/_helpers.scss */
 .posts li {
   list-style: none;
   list-style-type: none;
@@ -758,10 +761,41 @@ header {
   width: 624px;
 }
 
+/* line 48, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base section {
+  padding: 24px 12px;
+  padding: 1.5rem 0.75rem;
+  border-top: 2px dotted #73a533;
+}
+/* line 52, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base section.first {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+/* line 57, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base .subsection {
+  margin-top: 2px;
+  margin-top: 0.125rem;
+  border-top: none;
+  background: #efeee5;
+}
+/* line 62, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base .subsection.first, #social-marketing-evidence-base .subsection.light.first {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+/* line 66, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base .subsection h1, #social-marketing-evidence-base .subsection h2, #social-marketing-evidence-base .subsection h3, #social-marketing-evidence-base .subsection h4, #social-marketing-evidence-base .subsection h5, #social-marketing-evidence-base .subsection h6, #social-marketing-evidence-base .subsection strong {
+  color: #013846;
+}
+/* line 71, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base .subsection.light h1, #social-marketing-evidence-base .subsection.light h2, #social-marketing-evidence-base .subsection.light h3, #social-marketing-evidence-base .subsection.light h4, #social-marketing-evidence-base .subsection.light h5, #social-marketing-evidence-base .subsection.light h6, #social-marketing-evidence-base .subsection.light strong {
+  color: #086878;
+}
+
 /* line 7, ../../_preprocess/sass/core/_content.scss */
 hgroup {
-  margin-bottom: 18px;
-  margin-bottom: 1.125rem;
+  margin: 0 0 1em 0;
 }
 /* line 10, ../../_preprocess/sass/core/_content.scss */
 hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {
@@ -770,8 +804,8 @@ hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {
 
 /* line 15, ../../_preprocess/sass/core/_content.scss */
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.4;
-  margin-top: 0;
+  line-height: 1.2;
+  margin: 0 0 0.5em 0;
   padding: 0;
 }
 /* line 20, ../../_preprocess/sass/core/_content.scss */
@@ -829,44 +863,63 @@ h6 {
   color: #f7941e;
   text-transform: uppercase;
 }
+/* line 64, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h3 {
+  color: #013846;
+}
+/* line 67, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h3.light {
+  color: #086878;
+}
+/* line 72, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h4 {
+  color: #086878;
+  font-weight: normal;
+}
+/* line 76, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h4 strong {
+  color: #f7941e;
+  font-weight: bold;
+}
 
-/* line 65, ../../_preprocess/sass/core/_content.scss */
+/* line 83, ../../_preprocess/sass/core/_content.scss */
 .category {
   font-weight: bold;
   width: 40%;
 }
 
-/* line 74, ../../_preprocess/sass/core/_content.scss */
+/* line 92, ../../_preprocess/sass/core/_content.scss */
 .intro {
   font-size: 21px;
   font-size: 1.3125rem;
 }
 
-/* line 78, ../../_preprocess/sass/core/_content.scss */
+/* line 96, ../../_preprocess/sass/core/_content.scss */
 p, table, li {
   font-size: 16px;
   font-size: 1rem;
 }
 
-/* line 82, ../../_preprocess/sass/core/_content.scss */
+/* line 100, ../../_preprocess/sass/core/_content.scss */
 ol, ul {
   margin-left: 1.5em;
 }
 @media (min-width: 48em) {
-  /* line 82, ../../_preprocess/sass/core/_content.scss */
+  /* line 100, ../../_preprocess/sass/core/_content.scss */
   ol, ul {
     margin-left: 0;
   }
 }
 
-/* line 90, ../../_preprocess/sass/core/_content.scss */
+/* line 108, ../../_preprocess/sass/core/_content.scss */
 a {
-  -webkit-animation: all 0.3s;
-  -moz-animation: all 0.3s;
-  animation: all 0.3s;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out false;
+  -o-transition: all 0.5s ease-in-out false;
+  transition: all 0.5s ease-in-out;
 }
 
-/* line 94, ../../_preprocess/sass/core/_content.scss */
+/* line 112, ../../_preprocess/sass/core/_content.scss */
 .amp {
   font-family: "Baskerville", "Palatino", "Book Antiqua", serif;
   font-style: italic;
@@ -874,40 +927,68 @@ a {
   font-size: 1.1em;
 }
 
-/* line 57, ../../_preprocess/sass/pdf.scss */
+/* line 120, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base p {
+  margin: 0 0 0.5em 0;
+}
+/* line 124, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base p, #social-marketing-evidence-base li, #social-marketing-evidence-base td {
+  color: #086878;
+}
+
+/* line 129, ../../_preprocess/sass/core/_content.scss */
+.credits {
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  display: block;
+}
+
+/* line 52, ../../_preprocess/sass/pdf.scss */
+.wrapper {
+  width: 100%;
+}
+
+/* line 58, ../../_preprocess/sass/pdf.scss */
+header {
+  max-width: 100%;
+}
+
+/* line 62, ../../_preprocess/sass/pdf.scss */
 table {
   width: 100%;
 }
-/* line 60, ../../_preprocess/sass/pdf.scss */
+/* line 65, ../../_preprocess/sass/pdf.scss */
 table p {
   margin: 0 0 1em 0;
 }
 
-/* line 65, ../../_preprocess/sass/pdf.scss */
+/* line 70, ../../_preprocess/sass/pdf.scss */
 tr {
   vertical-align: top;
   text-align: left;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 71, ../../_preprocess/sass/pdf.scss */
+/* line 76, ../../_preprocess/sass/pdf.scss */
 thead {
   border-bottom: 2px solid #ccc;
   background: #efefef;
 }
 
-/* line 76, ../../_preprocess/sass/pdf.scss */
+/* line 81, ../../_preprocess/sass/pdf.scss */
 td, th {
   padding: 0.75rem;
 }
 
-/* line 80, ../../_preprocess/sass/pdf.scss */
+/* line 85, ../../_preprocess/sass/pdf.scss */
 .title {
   width: 20.83333%;
   font-weight: bold;
 }
 
-/* line 85, ../../_preprocess/sass/pdf.scss */
+/* line 90, ../../_preprocess/sass/pdf.scss */
 .link {
   -ms-word-break: break-all;
   /* Be VERY careful with this, breaks normal words wh_erever */
@@ -920,22 +1001,22 @@ td, th {
   font-weight: normal;
 }
 
-/* line 91, ../../_preprocess/sass/pdf.scss */
+/* line 96, ../../_preprocess/sass/pdf.scss */
 .author {
   width: 16.66667%;
 }
 
-/* line 107, ../../_preprocess/sass/pdf.scss */
+/* line 112, ../../_preprocess/sass/pdf.scss */
 .intervention {
   width: 16.66667%;
 }
 
-/* line 111, ../../_preprocess/sass/pdf.scss */
+/* line 116, ../../_preprocess/sass/pdf.scss */
 .outcomes {
   width: 20.83333%;
 }
 
-/* line 123, ../../_preprocess/sass/pdf.scss */
+/* line 128, ../../_preprocess/sass/pdf.scss */
 .soe {
   width: 4.16667%;
 }

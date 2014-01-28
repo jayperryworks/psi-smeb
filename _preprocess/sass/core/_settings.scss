@@ -4,7 +4,7 @@
 
 $path-images: "../images/";
 
-$base-duration: 0.3s; // in seconds
+$base-duration: 0.5s; // in seconds
 
 // Colors
 // --------------------------------------------------------------------------
@@ -14,7 +14,9 @@ $gray: #6B7073;
 $maroon: #69321F;
 $beige: #A99A6F;
 $beige--light: #E0DDCC;
-$blue: #003845;
+$blue--light: #4B8998;
+$blue: #086878;
+$blue--dark: #013846;
 
 // text
 $color-text--primary: #333;
@@ -32,11 +34,12 @@ $type-line_height: 1.5;
 // Containers/layout
 // --------------------------------------------------------------------------
 $page-width: 624px;
+$margin-whitespace: -3px;
 
 $table-cols: 9;
 
-$hairline: 1px solid #ccc;
-$hairline-light: 1px solid #eee;
+$hairline: 1px solid #c1c1c1;
+$hairline-light: 1px solid #ddd;
 
 // --- breakpoints ----------------------------------------------------------
 $xsmall: 480px;

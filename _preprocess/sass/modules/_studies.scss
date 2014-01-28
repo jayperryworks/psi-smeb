@@ -19,7 +19,19 @@
   clear: both;
   padding-top: rem(24px);
   margin-bottom: rem(24px);
-  
+
+  hgroup {
+    margin-bottom: 1em;
+
+    #{headers()} {
+      margin: 0 0 0.5em 0;
+    }
+
+    h6 {
+      color: $color-text--secondary;
+    }
+  }
+
   dl {
     margin: em(12) 0;
     clear: both;

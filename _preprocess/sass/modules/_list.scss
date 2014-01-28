@@ -1,0 +1,193 @@
+// ==========================================================================
+//  List modules
+// ==========================================================================
+
+
+// BASE
+// -----------------------------------------------------------------------------
+
+
+
+// SUBMODULES
+// -----------------------------------------------------------------------------
+
+.has-icons {
+ @include unstyled-list;
+
+ strong {
+  text-transform: uppercase;
+ }
+}
+
+  .icon {
+    @include rem(padding-right, 12px);
+    @include rem(margin-top, 18px);
+    @include inline-block;
+    position: relative;
+    width: 50%;
+    margin-right: $margin-whitespace;
+    vertical-align: top;
+    clear: both;
+
+    // &:first-child {
+    //   @include rem(margin-top, 24px);
+    // }
+    
+    & > img {
+      @include rem(margin-top, -12px);
+      @include rem(padding, 0 12px 0 0);
+      @include inline-block;
+      vertical-align: top;
+    }
+
+    & > p {
+      @include inline-block;
+      width: 65%;
+      vertical-align: top;
+    }
+  }
+
+.has-numbers {
+  @extend .has-icons;
+}
+
+  .number {
+    $size: 40px;
+    $margin: 6px;
+    @extend .icon;
+    @include rem(padding-left, $size + $margin);
+
+    &:before {
+      @include rem(height, $size);
+      @include rem(width, $size);
+      display: block;
+      position: absolute;
+      left: -#{$margin/3};
+      top: 0;
+      content: " ";
+      vertical-align: middle;
+    }
+
+    &.one:before {
+      background: url("#{$path-images}infographic/number-1.png") center center no-repeat;
+    }
+
+    &.two:before {
+      background: url("#{$path-images}infographic/number-2.png") center center no-repeat;
+    }
+
+    &.three:before {
+      background: url("#{$path-images}infographic/number-3.png") center center no-repeat;
+    }
+
+    &.four:before {
+      background: url("#{$path-images}infographic/number-4.png") center center no-repeat;
+    }
+  }
+
+.details {
+  display: none;
+}
+
+
+// ------- Wizard -------------------------------------------
+
+  .wizard {
+    @include inline-list;
+
+    &.with-arrows {
+      .wizard-step {
+        $size: 24px;
+
+        &:before {
+          @include triangle($size, white, right);
+          content: ' ';
+          position: absolute;
+          right: -($size);
+          top: 50%;
+          margin-top: -($size/2);
+          z-index: 999;
+        }
+
+        &:after {
+          @include triangle($size, $blue--light, right);
+          content: ' ';
+          position: absolute;
+          right: -($size - 2px);
+          top: 50%;
+          margin-top: -($size/2);
+          z-index: 10000;
+        }
+      }
+    }
+  }
+
+    .wizard-step {
+      @include rem(padding, 6px 6px 6px 22px);
+      @include rem(font-size, 14px);
+      // vertical-align: top;
+      position: relative;
+      color: white !important;
+      margin-left: $margin-whitespace;
+      border-left: 1px solid white;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &.light {
+        background: $blue--light;
+
+        &:after {
+          border-left-color: $blue--light !important;
+        }
+      }
+
+      &.medium {
+        background: $blue;
+
+        &:after {
+          border-left-color: $blue !important;
+        }
+      }
+
+      &.dark {
+        background: $blue--dark;
+
+        &:after {
+          border-left-color: $blue--dark !important;
+        }
+      }
+    }
+
+    #social-marketing-evidence-base {
+
+      .wizard-step {
+        @include rem(height, 80px);
+        width: 20%;
+      }
+
+      .wizard-label {
+        $border: 2px solid $green;
+        @include rem(font-size, 10px);
+        @include rem(margin-top, 6px);
+        @include rem(height, 12px);
+        // margin-left: $margin-whitespace;
+        display: block;
+        position: relative;
+        width: 60%;
+        left: 40%;
+        text-align: center;
+        text-transform: uppercase;
+        border-bottom: $border;
+        border-left: $border;
+        border-right: $border;
+
+        & > span {
+          // @include rem(margin-bottom, -2px);
+          @include rem(padding, 6px 10px);
+          @include inline-block;
+          background: white;
+        }
+      }
+    }

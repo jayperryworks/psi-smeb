@@ -62,3 +62,42 @@
     }
   }
 }
+
+// ------- Tiles/thumbs -------------------------------------------
+
+$tile-cols: 3;
+
+[role="navigation"].tile-grid {
+  @include rem(margin-bottom, 18px);
+  text-align: center;
+
+  ul {
+    @include inline-list;
+    // vertical-align: top;
+
+    li {
+      vertical-align: top;
+      width: 20%;
+      margin-right: $margin-whitespace;
+    }
+  }
+}
+
+  .tile {
+    @include rem(padding, 6px);
+    @include rem(font-size, 14px);
+    display: block;
+    vertical-align: top;
+
+    &:hover, &:active {
+      background: lighten($beige--light, 10%);
+    }
+
+    img {
+      vertical-align: top;
+    }
+  }
+
+
+
+

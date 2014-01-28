@@ -5,7 +5,7 @@
 // Headers
 // ------------------------------------------------------------------------------
 hgroup {
-	@include rem(margin-bottom, 18px);
+	margin: 0 0 1em 0;
 
 	#{headers()} {
 		margin-bottom: 0;
@@ -13,8 +13,8 @@ hgroup {
 }
 
 #{headers()} {
-	line-height: 1.4;
-	margin-top: 0;
+	line-height: 1.2;
+	margin: 0 0 0.5em 0;
 	padding: 0;
 
 	a {
@@ -60,6 +60,24 @@ h6, %h6 {
 		color: $orange;
 		text-transform: uppercase;
 	}
+
+	h3 {
+		color: $blue--dark;
+
+		&.light {
+			color: $blue;
+		}
+	}
+
+	h4 {
+		color: $blue;
+		font-weight: normal;
+
+		strong {
+			color: $orange;
+			font-weight: bold;
+		}
+	}
 }
 
 .category {
@@ -88,7 +106,7 @@ ol, ul {
 }
 
 a {
-	@include animation(all $base-duration);
+	@include base-transition;
 }
 
 .amp {
@@ -98,6 +116,21 @@ a {
 	font-size: 1.1em; // relative to whatever type surrounds it -- it renders slightly bigger
 }
 
+#social-marketing-evidence-base {
+	p {
+		margin: 0 0 0.5em 0;
+	}
+
+	p, li, td {
+		color: $blue;
+	}
+}
+
+.credits {
+	@include rem(font-size, 12px);
+	@include rem(margin-top, 24px);
+	display: block;
+}
 
 // ==============================================================================
 // 	Themes
