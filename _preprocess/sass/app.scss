@@ -47,3 +47,7 @@
 // Styles of Shame
 // -> put quick and dirty hacks here, then clean up & organize later
 // ===============================================================================
+
+.posts-sub {
+  @include rem(margin-left, 12px);
+}

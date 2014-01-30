@@ -6,4 +6,4 @@ categories: reproductive_health
 tags:       logic-model
 ---
 
-![Reproductive Health Logic Model]({{ site.baseurl }}{{ relativepath }}/assets/images/logic-models/logic_model-r2_RH.png "Reproductive Health Logic Model")
+![Reproductive Health Logic Model]({{ site.baseurl }}{{ relativepath }}/assets/images/logic-models/logic_model-r3_RH.png "Reproductive Health Logic Model")

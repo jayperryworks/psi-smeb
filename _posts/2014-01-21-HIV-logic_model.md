@@ -6,4 +6,4 @@ categories: HIV
 tags:       logic-model
 ---
 
-![HIV Logic Model]({{ site.baseurl }}{{ relativepath }}/assets/images/logic-models/logic_model-r2_HIV.png "HIV Logic Model")
+![HIV Logic Model]({{ site.baseurl }}{{ relativepath }}/assets/images/logic-models/logic_model-r3_HIV.png "HIV Logic Model")

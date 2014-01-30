@@ -927,19 +927,17 @@ a {
 }
 
 /* line 25, ../../_preprocess/sass/modules/_navigation.scss */
-[role="navigation"].tabs {
+.tabs {
   list-style: none;
   list-style-type: none;
-  margin-bottom: 1.5rem;
-  border-bottom: 4px solid #eeeeee;
 }
 /* line 284, ../../_preprocess/sass/core/_helpers.scss */
-[role="navigation"].tabs li {
+.tabs li {
   list-style: none;
   list-style-type: none;
 }
 /* line 293, ../../_preprocess/sass/core/_helpers.scss */
-[role="navigation"].tabs li {
+.tabs li {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
@@ -947,13 +945,8 @@ a {
   zoom: 1;
   *display: inline;
 }
-/* line 32, ../../_preprocess/sass/modules/_navigation.scss */
-[role="navigation"].tabs li {
-  margin: 0 -3px 0 0;
-  padding: 0;
-}
-/* line 37, ../../_preprocess/sass/modules/_navigation.scss */
-[role="navigation"].tabs a {
+/* line 28, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs a {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
@@ -964,34 +957,48 @@ a {
   -moz-transition: all 0.5s ease-in-out false;
   -o-transition: all 0.5s ease-in-out false;
   transition: all 0.5s ease-in-out;
+}
+
+/* line 34, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level1 {
+  margin-bottom: 1.5rem;
+  border-bottom: 4px solid #eeeeee;
+}
+/* line 41, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level1 li {
+  margin: 0 -3px 0 0;
+  padding: 0;
+}
+/* line 46, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level1 a {
   padding: 0.75em 0.75em;
   margin: 0 1px -4px 0;
   border-bottom: 4px solid #eeeeee;
   color: #b3b3b3;
   text-decoration: none;
 }
-/* line 47, ../../_preprocess/sass/modules/_navigation.scss */
-[role="navigation"].tabs a:hover {
+/* line 54, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level1 a:hover {
   color: #666666;
   border-bottom-color: #d4d4d4;
 }
-/* line 52, ../../_preprocess/sass/modules/_navigation.scss */
-[role="navigation"].tabs a.active {
+/* line 59, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level1 a.active {
   color: #333333;
   border-bottom-color: #73a533;
 }
-/* line 59, ../../_preprocess/sass/modules/_navigation.scss */
-[role="navigation"].tabs a.active:hover {
+/* line 66, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level1 a.active:hover {
   border-bottom-color: #73a533;
 }
 
-/* line 70, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 81, ../../_preprocess/sass/modules/_navigation.scss */
 [role="navigation"].tile-grid {
   margin-bottom: 18px;
   margin-bottom: 1.125rem;
   text-align: center;
 }
-/* line 74, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 85, ../../_preprocess/sass/modules/_navigation.scss */
 [role="navigation"].tile-grid ul {
   list-style: none;
   list-style-type: none;
@@ -1010,14 +1017,14 @@ a {
   zoom: 1;
   *display: inline;
 }
-/* line 78, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 89, ../../_preprocess/sass/modules/_navigation.scss */
 [role="navigation"].tile-grid ul li {
   vertical-align: top;
   width: 20%;
   margin-right: -3px;
 }
 
-/* line 86, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 97, ../../_preprocess/sass/modules/_navigation.scss */
 .tile {
   padding: 6px;
   padding: 0.375rem;
@@ -1026,11 +1033,11 @@ a {
   display: block;
   vertical-align: top;
 }
-/* line 92, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 103, ../../_preprocess/sass/modules/_navigation.scss */
 .tile:hover, .tile:active {
   background: #f3f2ec;
 }
-/* line 96, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 107, ../../_preprocess/sass/modules/_navigation.scss */
 .tile img {
   vertical-align: top;
 }
@@ -1322,4 +1329,10 @@ table td p strong {
   zoom: 1;
   *display: inline;
   background: white;
+}
+
+/* line 51, ../../_preprocess/sass/app.scss */
+.posts-sub {
+  margin-left: 12px;
+  margin-left: 0.75rem;
 }

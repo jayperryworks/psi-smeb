@@ -6,4 +6,4 @@ categories: tuberculosis
 tags:       logic-model
 ---
 
-![Tuberculosis Logic Model]({{ site.baseurl }}{{ relativepath }}/assets/images/logic-models/logic_model-r2_TB.png "Tuberculosis Logic Model")
+![Tuberculosis Logic Model]({{ site.baseurl }}{{ relativepath }}/assets/images/logic-models/logic_model-r3_TB.png "Tuberculosis Logic Model")
