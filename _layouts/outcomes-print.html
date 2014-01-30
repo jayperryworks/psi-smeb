@@ -41,6 +41,12 @@
         </thead>
         <tbody>
           {% for row in site.data.[page.data].content_hash %}
+          <!-- <hgroup>
+            <h4><a href="{{ row.link }}">{{ row.title }}</a></h4>
+            <h5>{{ row.authors }}</h5>
+            <h6>{{ row.journal }}</h6>
+          </hgroup> -->
+
           <tr>
             <td class="title">
               {{ row.title }}<br /><br />
