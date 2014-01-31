@@ -1,10 +1,10 @@
 ---
 layout:     post
 title:      "Health"
-date:       2014-01-29 00:00:01
+date:       2014-01-02 00:00:01
 categories: 
   - child_survival
-  - diarrheal_disease
+topic: diarrheal_disease
 tags:       
   - studies
   - health

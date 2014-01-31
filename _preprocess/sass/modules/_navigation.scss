@@ -7,7 +7,7 @@
 // -----------------------------------------------------------------------------
 
 [role="navigation"], .nav {
-	
+	@include rem(margin-bottom, 24px);
 }
 
 // SUBMODULES
@@ -22,20 +22,23 @@
 
 // ------- Local nav -------------------------------------------
 
+$color--inactive: lighten($color-text--primary, 50);
+$color--hover: lighten($color-text--primary, 20);
+
 .tabs {
   @include inline-list;
 
   a {
     @include inline-block;
     @include base-transition;
+    text-decoration: none;
   }
 }
 
   .tabs.level1 {
     $border-width: 4px;
     $border-color: #eee;
-    
-    margin-bottom: rem(24px);
+
     border-bottom: $border-width solid $border-color;
 
     li {
@@ -48,11 +51,10 @@
       margin: 0 1px -#{$border-width} 0;
       // background: $beige--light;
       border-bottom: $border-width solid $border-color;
-      color: lighten($color-text--primary, 50);
-      text-decoration: none;
+      color: $color--inactive;
 
       &:hover {
-        color: lighten($color-text--primary, 20);
+        color: $color--hover;
         border-bottom-color: darken($border-color, 10);
       }
 
@@ -71,7 +73,26 @@
   }
 
   .tabs.level2 {
+    @include rem(margin, 6px 0 0 0);
+    border-bottom: $hairline--light;
 
+    a {
+      @include rem(font-size, 14px);
+      padding: em(4) em(16);
+      margin: em(16) 0;
+      color: $color--inactive;
+
+      &:hover {
+        color: $color--hover;
+      }
+
+      &.active {
+        color: white;
+        background: $color-text--primary;
+        border-radius: 100px;
+
+      }
+    }
   }
 
 // ------- Tiles/thumbs -------------------------------------------

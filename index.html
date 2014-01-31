@@ -14,7 +14,9 @@ slug: home
     {% for posts in category %}
     {% for post in posts %}
     {% unless post.categories contains 'print' %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li>
+      <a href="{{ post.url }}">{% if post.topic %}{{ post.topic | replace: '_',' ' | capitalize }} &rsaquo; {% endif %}{{ post.title }}</a>
+    </li>
     {% endunless %}
     {% endfor %}
     {% endfor %}

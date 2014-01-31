@@ -1,11 +1,10 @@
 ---
 layout:     post
 title:      "Behavioral Factors"
-date:       2014-01-29 00:00:03
+date:       2014-01-02 00:00:03
 categories: 
   - child_survival
-  - diarrheal_disease
-subcategories:
+topic: diarrheal_disease
 tags:       
   - studies
   - behavioral-factors

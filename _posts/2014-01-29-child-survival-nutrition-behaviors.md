@@ -1,10 +1,10 @@
 ---
 layout:     post
 title:      "Behaviors"
-date:       2014-01-29 00:00:02
+date:       2014-01-03 00:00:02
 categories: 
   - child_survival
-  - nutrition
+topic: nutrition
 tags:       
   - studies
   - behaviors

@@ -1,10 +1,10 @@
 ---
 layout:     post
 title:      "Logic Model"
-date:       2014-01-29 00:00:04
+date:       2014-01-04 00:00:04
 categories: 
   - child_survival
-  - logic_model
+topic: logic_model
 tags:       
   - behavioral-factors
 ---

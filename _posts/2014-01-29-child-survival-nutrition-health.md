@@ -1,10 +1,10 @@
 ---
 layout:     post
 title:      "Health"
-date:       2014-01-29 00:00:01
+date:       2014-01-03 00:00:01
 categories: 
   - child_survival
-  - nutrition
+topic: nutrition
 tags:       
   - studies
   - health

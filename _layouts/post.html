@@ -7,27 +7,30 @@ layout: default
 <nav role="navigation">
   {% capture cat %}{{ page.categories | first }}{% endcapture %}
   {% comment %} If a page has a second category, create another local nav {% endcomment %}
-  {% if page.categories.size > 1 %}
-  {% capture minorcat %}{{ page.categories[1] }}{% endcapture %}
+  {% if page.topic %}
+  {% capture topic %}{{ page.topic }}{% endcapture %}
   <ul class="tabs level1">
     {% for post in site.categories.[cat] %}
+    {% if post.topic %}
     {% if post.tags contains "behavioral-factors" || if post.tags contains "logic-model" %}
-    <li><a href="{{ post.url }}"{% if post.categories[1] == minorcat %} class="active"{% endif %}>{{ post.categories[1] | replace: '_',' ' | capitalize }}</a></li>
+    <li><a href="{{ post.url }}"{% if post.topic == topic %} class="active"{% endif %}>{{ post.topic | replace: '_',' ' | capitalize }}</a></li>
+    {% endif %}
     {% endif %}
     {% endfor %}
     {% comment %} Use the second category (subcategory) to build the second row of tabs {% endcomment %}
-    {% assign cat = minorcat %}
   </ul>
   {% endif %}
-  <ul class="tabs level2">
-    {% if site.categories.[cat].size > 1 %}
-    {% for post in site.categories.[cat] %}
-      {% unless post.categories contains "print" %}
-      <li><a href="{{ post.url }}"{% if post.title == page.title %} class="active"{% endif %}>{{ post.title }}</a></li>
-      {% endunless %}
-    {% endfor %}
-    {% endif %}
+  
+  <ul class="tabs {% if page.topic %}level2{% else %}level1{% endif %}">
+  {% for post in site.categories.[cat] %}
+  {% if post.topic == topic %}
+    {% unless post.categories contains "print" %}
+    <li><a href="{{ post.url }}"{% if post.title == page.title %} class="active"{% endif %}>{{ post.title }}</a></li>
+    {% endunless %}
+  {% endif %}
+  {% endfor %}
   </ul>
+
 </nav>
 
 <h2>{{ page.title }}</h2>

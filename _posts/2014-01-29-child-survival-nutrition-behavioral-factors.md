@@ -1,10 +1,10 @@
 ---
 layout:     post
 title:      "Behavioral Factors"
-date:       2014-01-29 00:00:03
+date:       2014-01-03 00:00:03
 categories: 
   - child_survival
-  - nutrition
+topic: nutrition
 tags:       
   - studies
   - behavioral-factors

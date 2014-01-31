@@ -1,10 +1,10 @@
 ---
 layout:     post
 title:      "Behavioral Factors"
-date:       2014-01-29 00:00:02
+date:       2014-01-01 00:00:03
 categories: 
   - child_survival
-  - maternal-neonatal_mortality
+topic: maternal-neonatal_mortality
 tags:       
   - studies
   - behavioral-factors
