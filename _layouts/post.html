@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1>{{ page.categories | first | replace: '_',' ' | capitalize }}</h1>
+<h1>{% if page.categories contains 'HIV' %}{{ page.categories | first | upcase }}{% else %}{{ page.categories | first | replace: '_',' ' | capitalize }}{% endif %}</h1>
 
 <nav role="navigation">
   {% capture cat %}{{ page.categories | first }}{% endcapture %}
@@ -12,7 +12,7 @@ layout: default
   <ul class="tabs level1">
     {% for post in site.categories.[cat] %}
     {% if post.topic %}
-    {% if post.tags contains "behavioral-factors" || if post.tags contains "logic-model" %}
+    {% if post.tags contains "behavioral-factors" %}
     <li><a href="{{ post.url }}"{% if post.topic == topic %} class="active"{% endif %}>{{ post.topic | replace: '_',' ' | capitalize }}</a></li>
     {% endif %}
     {% endif %}
