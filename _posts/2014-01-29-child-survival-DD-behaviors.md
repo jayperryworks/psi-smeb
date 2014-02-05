@@ -3,13 +3,13 @@ layout:     post
 title:      "Behaviors"
 date:       2014-01-02 00:00:02
 categories: 
-  - child_survival
+  - Child Survival
 topic: diarrheal_disease
 tags:       
   - studies
   - behaviors
 
-data:       child_survival-DD-behavior
+data:       Child Survival-DD-behavior
 ---
 
 [Download a PDF of all {{ page.title }} Outcome studies (link TBD)]()

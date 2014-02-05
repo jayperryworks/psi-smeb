@@ -2,7 +2,8 @@
 layout:     post
 title:      "Logic Model"
 date:       2014-01-14 00:00:04
-categories: reproductive_health
+categories: 
+  - Reproductive Health
 tags:       logic-model
 ---
 

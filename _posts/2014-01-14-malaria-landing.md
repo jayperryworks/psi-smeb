@@ -2,7 +2,7 @@
 layout: post
 title:  "Overview"
 date:   2014-01-14 00:00:05
-categories: malaria
+categories: Malaria
 tags: overview
 ---
 

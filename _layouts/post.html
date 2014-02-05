@@ -2,7 +2,9 @@
 layout: default
 ---
 
-<h1>{% if page.categories contains 'HIV' %}{{ page.categories | first | upcase }}{% else %}{{ page.categories | first | replace: '_',' ' | capitalize }}{% endif %}</h1>
+{% assign words = page.categories[0] | split: " " %}
+
+<h1>{% if page.categories[0] != "hiv" %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% else %}{{ page.categories | first | upcase }}{% endif %}</h1>
 
 <nav role="navigation">
   {% capture cat %}{{ page.categories | first }}{% endcapture %}

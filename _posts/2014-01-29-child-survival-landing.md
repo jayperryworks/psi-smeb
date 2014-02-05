@@ -3,7 +3,7 @@ layout: post
 title:  "Overview"
 date:   2014-01-05 00:00:05
 categories: 
-  - child_survival
+  - Child Survival
 topic: overview
 tags:       
   - behavioral-factors

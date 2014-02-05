@@ -3,7 +3,7 @@ layout:     post
 title:      "Behaviors"
 date:       2014-01-14 00:00:02
 categories: 
-  - reproductive_health
+  - Reproductive Health
 tags:       
   - studies
   - behaviors

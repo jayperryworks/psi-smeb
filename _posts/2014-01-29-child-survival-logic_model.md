@@ -3,7 +3,7 @@ layout:     post
 title:      "Logic Model"
 date:       2014-01-04 00:00:04
 categories: 
-  - child_survival
+  - Child Survival
 topic: nutrition
 tags:       
   - logic-model
