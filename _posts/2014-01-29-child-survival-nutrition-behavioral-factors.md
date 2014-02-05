@@ -9,7 +9,7 @@ tags:
   - studies
   - behavioral-factors
 
-data:       Child Survival-nutrition-behavioral_factors
+data:       child_survival-nutrition-behavioral_factors
 ---
 
 [Download a PDF of all {{ page.title }} Outcome studies (link TBD)]()

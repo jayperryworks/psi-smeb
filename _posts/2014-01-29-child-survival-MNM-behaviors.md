@@ -9,7 +9,7 @@ tags:
   - studies
   - behaviors
 
-data:       Child Survival-MNM-behaviors
+data:       child_survival-MNM-behaviors
 ---
 
 [Download a PDF of all {{ page.title }} Outcome studies (link TBD)]()

@@ -9,7 +9,7 @@ tags:
   - studies
   - behaviors
 
-data:       Child Survival-DD-behavior
+data:       child_survival-DD-behavior
 ---
 
 [Download a PDF of all {{ page.title }} Outcome studies (link TBD)]()

@@ -9,7 +9,7 @@ tags:
   - studies
   - health
 
-data:       Child Survival-MNM-health
+data:       child_survival-MNM-health
 ---
 
 [Download a PDF of all {{ page.title }} Outcome studies (link TBD)]()
