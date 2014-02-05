@@ -29,9 +29,11 @@ slug: home
 
 <section>
   <h3>Print</h3>
-
+  
   {% for category in site.categories %}
   {% unless category contains 'print' %}
+  
+  {% assign words = category[0] | split: " " %}
   <h5>{% if category[0] != "hiv" %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% else %}{{ category | first | upcase }}{% endif %}</h5>
   <ul class="posts">
     {% for posts in category %}
