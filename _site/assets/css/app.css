@@ -711,11 +711,11 @@ header {
   margin-top: 1.5rem;
 }
 /* line 66, ../../_preprocess/sass/core/_layout.scss */
-#social-marketing-evidence-base .subsection h1, #social-marketing-evidence-base .subsection h2, #social-marketing-evidence-base .subsection h3, #social-marketing-evidence-base .subsection h4, #social-marketing-evidence-base .subsection h5, #social-marketing-evidence-base .subsection h6, #social-marketing-evidence-base .subsection strong {
+#social-marketing-evidence-base .subsection h1, #social-marketing-evidence-base .subsection h2, #social-marketing-evidence-base .subsection h3, #social-marketing-evidence-base .subsection .accordion dt, .accordion #social-marketing-evidence-base .subsection dt, #social-marketing-evidence-base .subsection h4, #social-marketing-evidence-base .subsection h5, #social-marketing-evidence-base .subsection h6, #social-marketing-evidence-base .subsection strong {
   color: #013846;
 }
 /* line 71, ../../_preprocess/sass/core/_layout.scss */
-#social-marketing-evidence-base .subsection.light h1, #social-marketing-evidence-base .subsection.light h2, #social-marketing-evidence-base .subsection.light h3, #social-marketing-evidence-base .subsection.light h4, #social-marketing-evidence-base .subsection.light h5, #social-marketing-evidence-base .subsection.light h6, #social-marketing-evidence-base .subsection.light strong {
+#social-marketing-evidence-base .subsection.light h1, #social-marketing-evidence-base .subsection.light h2, #social-marketing-evidence-base .subsection.light h3, #social-marketing-evidence-base .subsection.light .accordion dt, .accordion #social-marketing-evidence-base .subsection.light dt, #social-marketing-evidence-base .subsection.light h4, #social-marketing-evidence-base .subsection.light h5, #social-marketing-evidence-base .subsection.light h6, #social-marketing-evidence-base .subsection.light strong {
   color: #086878;
 }
 
@@ -724,22 +724,22 @@ hgroup {
   margin: 0 0 1em 0;
 }
 /* line 10, ../../_preprocess/sass/core/_content.scss */
-hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {
+hgroup h1, hgroup h2, hgroup h3, hgroup .accordion dt, .accordion hgroup dt, hgroup h4, hgroup h5, hgroup h6 {
   margin-bottom: 0;
 }
 
 /* line 15, ../../_preprocess/sass/core/_content.scss */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, .accordion dt, h4, h5, h6 {
   line-height: 1.2;
   margin: 0 0 0.5em 0;
   padding: 0;
 }
 /* line 20, ../../_preprocess/sass/core/_content.scss */
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a, h2 a, h3 a, .accordion dt a, h4 a, h5 a, h6 a {
   color: inherit;
 }
 /* line 23, ../../_preprocess/sass/core/_content.scss */
-h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:hover, h4 a:active, h5 a:hover, h5 a:active, h6 a:hover, h6 a:active {
+h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, .accordion dt a:hover, h3 a:active, .accordion dt a:active, h4 a:hover, h4 a:active, h5 a:hover, h5 a:active, h6 a:hover, h6 a:active {
   color: inherit;
   border-bottom: none;
 }
@@ -758,7 +758,7 @@ h2 {
 }
 
 /* line 39, ../../_preprocess/sass/core/_content.scss */
-h3 {
+h3, .accordion dt {
   font-size: 18px;
   font-size: 1.125rem;
 }
@@ -785,16 +785,16 @@ h6 {
 }
 
 /* line 59, ../../_preprocess/sass/core/_content.scss */
-#social-marketing-evidence-base h1, #social-marketing-evidence-base h2, #social-marketing-evidence-base h3, #social-marketing-evidence-base h4, #social-marketing-evidence-base h5, #social-marketing-evidence-base h6 {
+#social-marketing-evidence-base h1, #social-marketing-evidence-base h2, #social-marketing-evidence-base h3, #social-marketing-evidence-base .accordion dt, .accordion #social-marketing-evidence-base dt, #social-marketing-evidence-base h4, #social-marketing-evidence-base h5, #social-marketing-evidence-base h6 {
   color: #f7941e;
   text-transform: uppercase;
 }
 /* line 64, ../../_preprocess/sass/core/_content.scss */
-#social-marketing-evidence-base h3 {
+#social-marketing-evidence-base h3, #social-marketing-evidence-base .accordion dt, .accordion #social-marketing-evidence-base dt {
   color: #013846;
 }
 /* line 67, ../../_preprocess/sass/core/_content.scss */
-#social-marketing-evidence-base h3.light {
+#social-marketing-evidence-base h3.light, #social-marketing-evidence-base .accordion dt.light, .accordion #social-marketing-evidence-base dt.light {
   color: #086878;
 }
 /* line 72, ../../_preprocess/sass/core/_content.scss */
@@ -889,7 +889,7 @@ a {
   margin-bottom: 1em;
 }
 /* line 26, ../../_preprocess/sass/modules/_studies.scss */
-.studies-listing hgroup h1, .studies-listing hgroup h2, .studies-listing hgroup h3, .studies-listing hgroup h4, .studies-listing hgroup h5, .studies-listing hgroup h6 {
+.studies-listing hgroup h1, .studies-listing hgroup h2, .studies-listing hgroup h3, .studies-listing hgroup .accordion dt, .accordion .studies-listing hgroup dt, .studies-listing hgroup h4, .studies-listing hgroup h5, .studies-listing hgroup h6 {
   margin: 0 0 0.5em 0;
 }
 /* line 30, ../../_preprocess/sass/modules/_studies.scss */
@@ -1078,6 +1078,97 @@ a {
   vertical-align: top;
   display: block;
   margin: 0 auto;
+}
+
+/* line 9, ../../_preprocess/sass/modules/_accordion.scss */
+.accordion {
+  font-size: 16px;
+  font-size: 1rem;
+}
+/* line 12, ../../_preprocess/sass/modules/_accordion.scss */
+.accordion dt {
+  padding: 0 0 0 1em;
+  margin: 0 0 0 0.5em;
+  line-height: 1;
+  background: transparent;
+  border-bottom: none;
+  position: relative;
+}
+/* line 111, ../../_preprocess/sass/core/_helpers.scss */
+.accordion dt:before {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  border-left-color: #013846;
+  content: " ";
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: 50%;
+  margin-top: -6px;
+}
+/* line 111, ../../_preprocess/sass/core/_helpers.scss */
+.accordion dt.active:before {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  border-top-color: #013846;
+  content: " ";
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: 50%;
+  margin-top: -6px;
+}
+/* line 26, ../../_preprocess/sass/modules/_accordion.scss */
+.accordion dt.active:before {
+  left: -6px;
+  margin-top: -4px;
+}
+/* line 33, ../../_preprocess/sass/modules/_accordion.scss */
+.accordion dd {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+/* line 37, ../../_preprocess/sass/modules/_accordion.scss */
+.accordion li {
+  font-size: 16px !important;
+  font-size: 1rem !important;
+}
+
+/* line 111, ../../_preprocess/sass/core/_helpers.scss */
+.subsection.light .accordion dt:before {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  border-left-color: #086878;
+  content: " ";
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: 50%;
+  margin-top: -6px;
+}
+/* line 111, ../../_preprocess/sass/core/_helpers.scss */
+.subsection.light .accordion dt.active:before {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  border-top-color: #086878;
+  content: " ";
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: 50%;
+  margin-top: -6px;
 }
 
 /* line 9, ../../_preprocess/sass/modules/_table.scss */
@@ -1369,7 +1460,7 @@ table td p strong {
   background: white;
 }
 
-/* line 51, ../../_preprocess/sass/app.scss */
+/* line 52, ../../_preprocess/sass/app.scss */
 .posts-sub {
   margin-left: 12px;
   margin-left: 0.75rem;

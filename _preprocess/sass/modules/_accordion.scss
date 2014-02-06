@@ -1,0 +1,54 @@
+// ==========================================================================
+//  Accordion module
+// ==========================================================================
+$w: 12px;
+
+// BASE
+// -----------------------------------------------------------------------------
+
+.accordion {
+  @include rem(font-size, $type-size--default);
+
+  dt {
+    
+    @extend h3;
+    @include triangle--centered($dir: right, $side: left, $loc: 0, $width: $w, $color: $blue--dark, $selector: before);
+    padding: 0 0 0 1em;
+    margin: 0 0 0 0.5em;
+    line-height: 1;
+    background: transparent;
+    border-bottom: none;
+    position: relative;
+
+    &.active {
+      @include triangle--centered($dir: down, $side: left, $loc: 0, $width: $w, $color: $blue--dark, $selector: before);
+
+      &:before {
+        left: -($w/2);
+        margin-top: -4px;
+      }
+    }
+  }
+
+  dd {
+    @include rem(margin-top, 16px);
+  }
+
+  li {
+    @include rem(font-size, $type-size--default !important);
+  }
+}
+
+.subsection.light .accordion {
+
+  dt {
+    @include triangle--centered($dir: right, $side: left, $loc: 0, $width: $w, $color: $blue, $selector: before);
+
+    &.active {
+      @include triangle--centered($dir: down, $side: left, $loc: 0, $width: $w, $color: $blue, $selector: before);
+    }
+  }
+}
+
+// SUBMODULES
+// -----------------------------------------------------------------------------
