@@ -8,4 +8,3 @@ tags:       health
 data:       HIV-health
 ---
 
-[Download a PDF of all {{ page.title }} studies (link TBD)]()

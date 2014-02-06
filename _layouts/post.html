@@ -32,71 +32,74 @@ layout: default
   {% endif %}
   {% endfor %}
   </ul>
-
 </nav>
 
 <h2>{{ page.title }}</h2>
 
 <div class="post">
-{{ content }}
+  {% if page.pdf %}
+  [Download a PDF of all {{ page.title }} studies (link TBD)]()
+  {% endif %}
 
-<!-- https://github.com/avillafiorita/jekyll-csv_read -->
-{% if page.data %}
-{% for row in site.data.[page.data].content_hash %}
-<section class="studies-listing">
-  <hgroup>
-    <h4><a href="{{ row.link }}">{{ row.title }}</a></h4>
-    <h5>{{ row.authors }}</h5>
-    <h6>{{ row.journal }}</h6>
-  </hgroup>
+  {{ content }}
 
-  <table>
-    <tr>
-      <td class="category">Location</td>
-      <td>{{ row.location }}</td>
-    </tr>
-    <tr>
-      <td class="category">Population</td>
-      <td>{{ row.population }}</td>
-    </tr>
-    <tr>
-      <td class="category">Intervention Description</td>
-      <td>{{ row.intervention }}</td>
-    </tr>
-    <tr>
-      <td class="category">Outcomes</td>
-      <td>
-        {% if row.outcomes-bf %}
-        <p><strong>Behavioral Factors:</strong> {{ row.outcomes-bf }}</p>
-        {% endif %}
+  <!-- https://github.com/avillafiorita/jekyll-csv_read -->
+  {% if page.data %}
+  {% for row in site.data.[page.data].content_hash %}
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="{{ row.link }}">{{ row.title }}</a></h4>
+      <h5>{{ row.authors }}</h5>
+      <h6>{{ row.journal }}</h6>
+    </hgroup>
 
-        {% if row.outcomes-behavior %}
-        <p><strong>Behaviors:</strong> {{ row.outcomes-behavior }}</p>
-        {% endif %}
-        
-        {% if row.outcomes-health %}
-        <p><strong>Health:</strong> {{ row.outcomes-health }}</p>
-        {% endif %}
-      </td>
-    </tr>
-    <tr>
-      <td class="category">Design</td>
-      <td>{{ row.design }}</td>
-    </tr>
-    <tr>
-      <td class="category">Sampling Method</td>
-      <td>{{ row.sampling }}</td>
-    </tr>
-    <tr>
-      <td class="category">Strength of Evidence Score</td>
-      <td>{{ row.soe }}</td>
-    </tr>
-    <tr>
-      <td class="category">Social Marketing Benchmark Criteria</td>
-      <td>{{ row.smbc }}</td>
-    </tr>
-  </table>
-</section>
-{% endfor %}
-{% endif %}
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>{{ row.location }}</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>{{ row.population }}</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>{{ row.intervention }}</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          {% if row.outcomes-bf %}
+          <p><strong>Behavioral Factors:</strong> {{ row.outcomes-bf }}</p>
+          {% endif %}
+
+          {% if row.outcomes-behavior %}
+          <p><strong>Behaviors:</strong> {{ row.outcomes-behavior }}</p>
+          {% endif %}
+          
+          {% if row.outcomes-health %}
+          <p><strong>Health:</strong> {{ row.outcomes-health }}</p>
+          {% endif %}
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>{{ row.design }}</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>{{ row.sampling }}</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>{{ row.soe }}</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>{{ row.smbc }}</td>
+      </tr>
+    </table>
+  </section>
+  {% endfor %}
+  {% endif %}
 </div>

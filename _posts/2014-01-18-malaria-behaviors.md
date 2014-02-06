@@ -8,6 +8,7 @@ tags:
   - behaviors
 
 data:       malaria-behaviors
+pdf:        
 ---
 
 [Download a PDF of all Behavior Change Outcome studies (link TBD)]()

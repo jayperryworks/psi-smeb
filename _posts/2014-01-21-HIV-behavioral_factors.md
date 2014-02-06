@@ -7,5 +7,3 @@ tags:       behavioral-factors
 
 data:       HIV-behaviors
 ---
-
-[Download a PDF of all {{ page.title }} studies (link TBD)]()

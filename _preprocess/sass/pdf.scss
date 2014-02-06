@@ -20,9 +20,9 @@
 
 @import "core/helpers";
 @import "core/base";
-@import "core/print";
+// @import "core/print";
 // @import "core/syntax";
-@import "core/layout";
+// @import "core/layout";
 @import "core/content";
 
 // ===============================================================================
@@ -30,6 +30,8 @@
 // ===============================================================================
 
 $total-cols: 24;
+$header-h: 42px;
+$footer-h: 40px;
 
 @mixin colspan($cols) {
   width: (100%/$total-cols) * $cols;
@@ -49,18 +51,143 @@ $total-cols: 24;
         hyphens: auto;
 }
 
+html, body {
+  width: 100%;
+}
+
+@media print {
+  * {
+    background: transparent !important;
+  }
+}
+
+tr,
+img {
+    page-break-inside: avoid;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+@page {
+    margin: 0.5cm;
+}
+
+p,
+h2,
+h3 {
+    orphans: 3;
+    widows: 3;
+}
+
+h2,
+h3 {
+    page-break-after: avoid;
+}
+
 .wrapper {
   // margin: 0 auto;
   // width: rem(800px);
   width: 100%;
+  padding-top: $header-h;
+  padding-bottom: $footer-h;
+}
+
+
+header, footer {
+  width: 100%;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background: white;
 }
 
 header {
-  max-width: 100%;
+  top: 0;
+  padding: 0;
+  margin: 0 0 2em 0;
+  // @include inline-list--centered($header-h);
+  height: $header-h;
+  text-align: left;
+
+  img {
+    // @include inline-block--centered;
+    position: relative;
+    @include inline-block;
+    // vertical-align: middle;
+  }
+
+  h5 {
+    // @include inline-block--centered($header-h);
+    @include inline-block;
+    // vertical-align: middle;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+  }
+}
+
+footer {
+  @include rem(padding, 6px 0);
+  margin: 2em 0 0 0;
+  color: $color-text--secondary;
+  bottom: 0;
+  text-align: center;
+  // border-top: $hairline;
+
+  ul {
+    @include inline-list;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 1em;
+      font-size: 8pt;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.study {
+  @include rem(padding, 24px 0);
+  border-top: $hairline;
+}
+
+h1 {
+  @include rem(margin, 36px 0);
+  color: $color-text--secondary;
+
+  strong {
+    color: $green;
+  }
+}
+
+hgroup {
+  @include rem(margin-bottom, 24px);
+  line-height: 1.4;
+
+  h4 {
+    margin-top: 0.5em;
+    color: lighten($color-text--primary, 10);
+  }
+
+  h5 {
+    margin-top: 0.5em;
+    color: $beige;
+    font-weight: normal;
+  }
+}
+
+p, dl {
+  font-size: 12pt;
 }
 
 table {
   width: 100%;
+  font-size: 10pt;
 
   p {
     margin: 0 0 1em 0;
@@ -75,11 +202,23 @@ tr {
 
 thead {
   border-bottom: 2px solid #ccc;
-  background: #efefef;
+  // background: #efefef;
+
+  tr {
+    vertical-align: bottom;
+  }
 }
 
 td, th {
   padding: rem(12px);
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
 .title {
@@ -109,13 +248,13 @@ td, th {
 //   @include colspan(2);
 // }
 
-.intervention {
-  @include colspan(4);
-}
+// .intervention {
+//   @include colspan(4);
+// }
 
-.outcomes {
-  @include colspan(5);
-}
+// .outcomes {
+//   @include colspan(5);
+// }
 
 // .design {
 //   @include colspan(2);
@@ -126,9 +265,47 @@ td, th {
 // }
 
 .soe {
-  @include colspan(1);
+  @include colspan(2);
 }
 
 // .smbc {
 //   @include colspan(2);
 // }
+
+.grid {
+@include rem(margin-top, 24px);
+vertical-align: top;
+
+$gutter: 1em;
+
+.outcomes, .intervention {
+  @include inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin-right: -4px;
+}
+
+.outcomes {
+  padding-left: ($gutter/2);
+}
+
+.intervention {
+  padding-right: ($gutter/2);
+}
+}
+
+dl {
+  dt {
+    font-weight: bold;
+    margin-top: 0.5em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  dd {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}

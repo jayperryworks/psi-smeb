@@ -16,76 +16,82 @@
 
   <body>
 
+    <header>
+      <img src="{{ relativepath }}{{ site.baseurl }}assets/images/logo-psi-print.png" alt="Population Services International" />
+      <h5>Social Marketing Evidence Base</h5>
+    </header>
+
     <div class="wrapper">
+      
+      <h1><strong>{{ page.categories | first | replace: '_',' ' | capitalize }}:</strong> Studies Reporting {{ page.title }} Outcomes</h1>
 
-      <header>
-        <h1>{{ page.categories | first | replace: '_',' ' | capitalize }}: {{ page.title }}</h1>
-      </header>
+      {% for row in site.data.[page.data].content_hash %}
+      
+      <section class="study">
+        <hgroup>
+          <h2>{{ row.title }}</h2>
+          <h4>{{ row.authors }}</h4>
+          <h5>{{ row.journal }} | {{ row.link }}</h5>
+        </hgroup>
+        
+        <table>
+          <thead>
+            <tr>
+              <th class="location">Location</th>
+              <th class="population">Population</th>
+              <th class="design">Design</th>
+              <th class="sampling">Sampling Method</th>
+              <th class="soe">SOE Score</th>
+              <th class="smbc">Social Marketing Benchmark Criteria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="location">{{ row.location }}</td>
+              <td class="population">{{ row.population }}</td>
+              <td class="design">{{ row.design }}</td>
+              <td class="sampling">{{ row.sampling }}</td>
+              <td class="soe">{{ row.soe }}</td>
+              <td class="smbc">{{ row.smbc }}</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="grid">
+          <section class="intervention">
+            <h3>Intervention Description</h3>
+            <p>{{ row.intervention }}</p>
+          </section>
 
-      <table>
-        <thead>
-          <tr>
-            <th class="title">Title</th>
-            <!-- <th class="link">Link</th> -->
-            <th class="author">Authors</th>
-            <th class="journal">Journal, Date, volume(Issue): Page</th>
-            <th class="location">Location</th>
-            <th class="population">Population</th>
-            <th class="intervention">Intervention Description</th>
-            <th class="outcomes">Outcomes</th>
-            <th class="design">Design</th>
-            <th class="sampling">Sampling Method</th>
-            <th class="soe">SOE Score</th>
-            <th class="smbc">Social Marketing Benchmark Criteria</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for row in site.data.[page.data].content_hash %}
-          <!-- <hgroup>
-            <h4><a href="{{ row.link }}">{{ row.title }}</a></h4>
-            <h5>{{ row.authors }}</h5>
-            <h6>{{ row.journal }}</h6>
-          </hgroup> -->
-
-          <tr>
-            <td class="title">
-              {{ row.title }}<br /><br />
-              <span class="link">{{ row.link }}</span>
-            </td>
-            <!-- <td class="link">{{ row.link }}</td> -->
-            <td class="author">{{ row.authors }}</td>
-            <td class="journal">{{ row.journal }}</td>
-            <td class="location">{{ row.location }}</td>
-            <td class="population">{{ row.population }}</td>
-            <td class="intervention">{{ row.intervention }}</td>
-            <td class="outcomes">
+          <section class="outcomes">
+            <h3>Outcomes</h3>
+            <dl>
               {% if row.outcomes-bf %}
-              <p><strong>Behavioral Factors:</strong> {{ row.outcomes-bf }}</p>
+              <dt>Behaviorial Factors</dt>
+              <dd>{{ row.outcomes-bf }}</dd>
               {% endif %}
 
               {% if row.outcomes-behavior %}
-              <p><strong>Behaviors:</strong> {{ row.outcomes-behavior }}</p>
+              <dt>Behaviors</dt>
+              <dd>{{ row.outcomes-behavior }}</dd>
               {% endif %}
-              
+
               {% if row.outcomes-health %}
-              <p><strong>Health:</strong> {{ row.outcomes-health }}</p>
+              <dt>Health</dt>
+              <dd>{{ row.outcomes-health }}</dd>
               {% endif %}
-            </td>
-            <td class="design">{{ row.design }}</td>
-            <td class="sampling">{{ row.sampling }}</td>
-            <td class="soe">{{ row.soe }}</td>
-            <td class="smbc">{{ row.smbc }}</td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+            </dl>
+          </section>
+        </div>
+      </section>
+
+      {% endfor %}
 
       <footer>
         <small>
           <ul>
             <li>&copy; Copyright 2014 Population Services International</li>
-            <li>1120 19th Street, NW, Suite 600</li>
-            <li>Washington, DC 20036</li>
+            <li>1120 19th Street, NW, Suite 600, Washington, DC 20036</li>
             <li><strong>P</strong> (202) 785-0072 | <strong>F</strong> (202) 785-0120</li>
           </ul>
         </small>

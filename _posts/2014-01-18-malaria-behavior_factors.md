@@ -8,6 +8,7 @@ tags:
   - behavioral-factors
 
 data:       malaria-behavior_factors
+pdf:        
 ---
 
 [Download a PDF of all Behavioral Factor Outcome studies (link TBD)]()
