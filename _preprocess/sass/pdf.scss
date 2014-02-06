@@ -107,10 +107,34 @@ h4 { font-size: 12pt; }
 h5 { font-size: 10pt; }
 h6 { font-size: 8pt; }
 
+hgroup {
+  @include rem(margin-bottom, 18px);
+  line-height: 1.6;
+
+  h4 {
+    margin-top: 0.5em;
+    color: lighten($color-text--primary, 10);
+  }
+
+  h5 {
+    margin-top: 0.5em;
+    color: $beige;
+    font-weight: normal;
+  }
+}
+
 p, ul, li, dl, dt, dd { font-size: 10pt; }
 
 sup {
   color: $beige;
+}
+
+.link {
+  @include inline-block;
+  border-left: $hairline;
+  padding-left: 1em;
+  margin-left: 0.8em;
+  color: $green;
 }
 
 img {
@@ -155,6 +179,7 @@ img {
     // vertical-align: middle;
     margin-top: 0.5em;
     margin-left: 0.5em;
+    color: $color-text--secondary;
   }
 }
 
@@ -213,22 +238,6 @@ h1 {
 
   strong {
     color: $green;
-  }
-}
-
-hgroup {
-  @include rem(margin-bottom, 24px);
-  line-height: 1.4;
-
-  h4 {
-    margin-top: 0.5em;
-    color: lighten($color-text--primary, 10);
-  }
-
-  h5 {
-    margin-top: 0.5em;
-    color: $beige;
-    font-weight: normal;
   }
 }
 

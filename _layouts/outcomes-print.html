@@ -1,9 +1,10 @@
+{% assign words = page.categories[0] | split: " " %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ page.title }}</title>
+    <title>{{ page.categories | first | replace: " ", "-" | downcase }}-{% if page.topic %}{{ page.topic | replace: " ", "-" | downcase }}-{% endif %}{{ page.title | replace: " ", "-" | downcase }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -28,7 +29,7 @@
       <tbody>
         <tr>
           <td>
-            <h1><strong>{{ page.categories | first | replace: '_',' ' | capitalize }}:</strong> Studies Reporting {% if page.title != "Behaviors" %}{{ page.title }}{% else %}Behavior Change{% endif %} Outcomes</h1>
+            <h1><strong>{% if page.categories[0] != "hiv" %}{% for word in words %}{{ word | capitalize }}{%unless forloop.last %} {% endunless %}{% endfor %}{% else %}{{ page.categories | first | upcase }}{% endif %}:</strong> Studies Reporting {% if page.title != "Behaviors" %}{{ page.title }}{% else %}Behavior Change{% endif %} Outcomes</h1>
           </td>
         </tr>
 
@@ -39,7 +40,7 @@
             <hgroup>
               <h2>{{ row.title }}</h2>
               <h4>{{ row.authors }}</h4>
-              <h5>{{ row.journal }} | {{ row.link }}</h5>
+              <h5>{{ row.journal }} <span class="link">{{ row.link }}</span></h5>
             </hgroup>
             
             <table class="study-stats">
@@ -49,8 +50,8 @@
                   <th class="population">Population</th>
                   <th class="design">Design</th>
                   <th class="sampling">Sampling Method</th>
-                  <th class="soe">SOE Score <sup>1</sup></th>
-                  <th class="smbc">SMBC <sup>2</sup></th>
+                  <th class="soe">SOE Score&nbsp;<sup>1</sup></th>
+                  <th class="smbc">SMBC&nbsp;<sup>2</sup></th>
                 </tr>
               </thead>
               <tbody>

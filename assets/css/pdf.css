@@ -865,31 +865,63 @@ h6 {
 }
 
 /* line 110, ../../_preprocess/sass/pdf.scss */
+hgroup {
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
+  line-height: 1.6;
+}
+/* line 114, ../../_preprocess/sass/pdf.scss */
+hgroup h4 {
+  margin-top: 0.5em;
+  color: #5e5e5e;
+}
+/* line 119, ../../_preprocess/sass/pdf.scss */
+hgroup h5 {
+  margin-top: 0.5em;
+  color: #a99a6f;
+  font-weight: normal;
+}
+
+/* line 126, ../../_preprocess/sass/pdf.scss */
 p, ul, li, dl, dt, dd {
   font-size: 10pt;
 }
 
-/* line 112, ../../_preprocess/sass/pdf.scss */
+/* line 128, ../../_preprocess/sass/pdf.scss */
 sup {
   color: #a99a6f;
 }
 
-/* line 116, ../../_preprocess/sass/pdf.scss */
+/* line 132, ../../_preprocess/sass/pdf.scss */
+.link {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  border-left: 1px solid #c1c1c1;
+  padding-left: 1em;
+  margin-left: 0.8em;
+  color: #73a533;
+}
+
+/* line 140, ../../_preprocess/sass/pdf.scss */
 img {
   max-width: 100% !important;
 }
 
-/* line 124, ../../_preprocess/sass/pdf.scss */
+/* line 148, ../../_preprocess/sass/pdf.scss */
 .wrapper {
   width: 100%;
 }
 
-/* line 133, ../../_preprocess/sass/pdf.scss */
+/* line 157, ../../_preprocess/sass/pdf.scss */
 .header.global, .footer.global {
   width: 100%;
 }
 
-/* line 137, ../../_preprocess/sass/pdf.scss */
+/* line 161, ../../_preprocess/sass/pdf.scss */
 .header.global {
   top: 0;
   padding: 0;
@@ -897,7 +929,7 @@ img {
   height: 42px;
   text-align: left;
 }
-/* line 145, ../../_preprocess/sass/pdf.scss */
+/* line 169, ../../_preprocess/sass/pdf.scss */
 .header.global img {
   position: relative;
   display: -moz-inline-stack;
@@ -907,7 +939,7 @@ img {
   zoom: 1;
   *display: inline;
 }
-/* line 152, ../../_preprocess/sass/pdf.scss */
+/* line 176, ../../_preprocess/sass/pdf.scss */
 .header.global h5 {
   display: -moz-inline-stack;
   display: inline-block;
@@ -917,9 +949,10 @@ img {
   *display: inline;
   margin-top: 0.5em;
   margin-left: 0.5em;
+  color: #999999;
 }
 
-/* line 161, ../../_preprocess/sass/pdf.scss */
+/* line 186, ../../_preprocess/sass/pdf.scss */
 .footer.global {
   padding: 6px 0;
   padding: 0.375rem 0;
@@ -928,7 +961,7 @@ img {
   bottom: 0;
   text-align: left;
 }
-/* line 169, ../../_preprocess/sass/pdf.scss */
+/* line 194, ../../_preprocess/sass/pdf.scss */
 .footer.global ul {
   list-style: none;
   list-style-type: none;
@@ -951,111 +984,93 @@ img {
   zoom: 1;
   *display: inline;
 }
-/* line 176, ../../_preprocess/sass/pdf.scss */
+/* line 201, ../../_preprocess/sass/pdf.scss */
 .footer.global ul li {
   margin-left: 1em;
   font-size: 8pt;
 }
-/* line 180, ../../_preprocess/sass/pdf.scss */
+/* line 205, ../../_preprocess/sass/pdf.scss */
 .footer.global ul li:first-child {
   margin-left: 0;
 }
-/* line 186, ../../_preprocess/sass/pdf.scss */
+/* line 211, ../../_preprocess/sass/pdf.scss */
 .footer.global .footnotes {
   margin: 0;
   padding-left: 2em;
   font-size: 8pt;
   color: #999999;
 }
-/* line 193, ../../_preprocess/sass/pdf.scss */
+/* line 218, ../../_preprocess/sass/pdf.scss */
 .footer.global .footnotes li {
   float: left;
   margin-left: 3em;
 }
-/* line 197, ../../_preprocess/sass/pdf.scss */
+/* line 222, ../../_preprocess/sass/pdf.scss */
 .footer.global .footnotes li:first-child {
   margin-left: 0;
 }
 
-/* line 205, ../../_preprocess/sass/pdf.scss */
+/* line 230, ../../_preprocess/sass/pdf.scss */
 .study {
   padding: 30px 0;
   padding: 1.875rem 0;
   border-top: 1px solid #c1c1c1;
 }
 
-/* line 210, ../../_preprocess/sass/pdf.scss */
+/* line 235, ../../_preprocess/sass/pdf.scss */
 h1 {
   margin: 30px 0;
   margin: 1.875rem 0;
   color: #999999;
 }
-/* line 214, ../../_preprocess/sass/pdf.scss */
+/* line 239, ../../_preprocess/sass/pdf.scss */
 h1 strong {
   color: #73a533;
 }
 
-/* line 219, ../../_preprocess/sass/pdf.scss */
-hgroup {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-  line-height: 1.4;
-}
-/* line 223, ../../_preprocess/sass/pdf.scss */
-hgroup h4 {
-  margin-top: 0.5em;
-  color: #5e5e5e;
-}
-/* line 228, ../../_preprocess/sass/pdf.scss */
-hgroup h5 {
-  margin-top: 0.5em;
-  color: #a99a6f;
-  font-weight: normal;
-}
-
-/* line 235, ../../_preprocess/sass/pdf.scss */
+/* line 244, ../../_preprocess/sass/pdf.scss */
 .study-stats {
   width: 100% !important;
   font-size: 10pt;
 }
-/* line 239, ../../_preprocess/sass/pdf.scss */
+/* line 248, ../../_preprocess/sass/pdf.scss */
 .study-stats tr {
   vertical-align: top;
   text-align: left;
   border-bottom: 1px solid #ccc;
 }
-/* line 245, ../../_preprocess/sass/pdf.scss */
+/* line 254, ../../_preprocess/sass/pdf.scss */
 .study-stats thead {
   border-bottom: 2px solid #ccc;
 }
-/* line 249, ../../_preprocess/sass/pdf.scss */
+/* line 258, ../../_preprocess/sass/pdf.scss */
 .study-stats thead tr {
   vertical-align: bottom;
 }
-/* line 254, ../../_preprocess/sass/pdf.scss */
+/* line 263, ../../_preprocess/sass/pdf.scss */
 .study-stats td, .study-stats th {
   padding: 0.75rem;
 }
-/* line 257, ../../_preprocess/sass/pdf.scss */
+/* line 266, ../../_preprocess/sass/pdf.scss */
 .study-stats td:first-child, .study-stats th:first-child {
   padding-left: 0;
 }
-/* line 261, ../../_preprocess/sass/pdf.scss */
+/* line 270, ../../_preprocess/sass/pdf.scss */
 .study-stats td:last-child, .study-stats th:last-child {
   padding-right: 0;
 }
-/* line 266, ../../_preprocess/sass/pdf.scss */
+/* line 275, ../../_preprocess/sass/pdf.scss */
 .study-stats p {
   margin: 0 0 1em 0;
 }
 
-/* line 271, ../../_preprocess/sass/pdf.scss */
+/* line 280, ../../_preprocess/sass/pdf.scss */
 .title {
   width: 20.83333%;
   font-weight: bold;
 }
 
-/* line 276, ../../_preprocess/sass/pdf.scss */
+/* line 285, ../../_preprocess/sass/pdf.scss */
 .link {
   -ms-word-break: break-all;
   /* Be VERY careful with this, breaks normal words wh_erever */
@@ -1068,23 +1083,23 @@ hgroup h5 {
   font-weight: normal;
 }
 
-/* line 282, ../../_preprocess/sass/pdf.scss */
+/* line 291, ../../_preprocess/sass/pdf.scss */
 .author {
   width: 16.66667%;
 }
 
-/* line 314, ../../_preprocess/sass/pdf.scss */
+/* line 323, ../../_preprocess/sass/pdf.scss */
 .soe {
   width: 8.33333%;
 }
 
-/* line 322, ../../_preprocess/sass/pdf.scss */
+/* line 331, ../../_preprocess/sass/pdf.scss */
 .grid {
   margin-top: 24px;
   margin-top: 1.5rem;
   vertical-align: top;
 }
-/* line 328, ../../_preprocess/sass/pdf.scss */
+/* line 337, ../../_preprocess/sass/pdf.scss */
 .grid .outcomes, .grid .intervention {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1096,25 +1111,25 @@ hgroup h5 {
   width: 50%;
   margin-right: -4px;
 }
-/* line 335, ../../_preprocess/sass/pdf.scss */
+/* line 344, ../../_preprocess/sass/pdf.scss */
 .grid .outcomes {
   padding-left: 0.5em;
 }
-/* line 339, ../../_preprocess/sass/pdf.scss */
+/* line 348, ../../_preprocess/sass/pdf.scss */
 .grid .intervention {
   padding-right: 0.5em;
 }
 
-/* line 345, ../../_preprocess/sass/pdf.scss */
+/* line 354, ../../_preprocess/sass/pdf.scss */
 dl dt {
   font-weight: bold;
   margin-top: 0.5em;
 }
-/* line 349, ../../_preprocess/sass/pdf.scss */
+/* line 358, ../../_preprocess/sass/pdf.scss */
 dl dt:first-child {
   margin-top: 0;
 }
-/* line 354, ../../_preprocess/sass/pdf.scss */
+/* line 363, ../../_preprocess/sass/pdf.scss */
 dl dd {
   margin-left: 0;
   padding-left: 0;
