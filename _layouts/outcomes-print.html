@@ -33,21 +33,24 @@
           </td>
         </tr>
 
-        {% for row in site.data.[page.data].content_hash %}
-        <tr>
-          <td>
-            <section class="study">
-            <hgroup>
+        
+        <tr {% comment %}class="{% cycle "nobreak", "break" %}"{% endcomment %}>
+          <td class="study">
+            {% comment %}<hgroup>
               <h2>{{ row.title }}</h2>
               <h4>{{ row.authors }}</h4>
               <h5>{{ row.journal }} <span class="link">{{ row.link }}</span></h5>
-            </hgroup>
+            </hgroup>{% endcomment %}
             
             <table class="study-stats">
               <thead>
                 <tr>
+                  <th class="name">Title</th>
+                  <th class="journal">Journal &amp; Link</th>
                   <th class="location">Location</th>
                   <th class="population">Population</th>
+                  <th class="intervention">Intervention Description</th>
+                  <th class="outcomes">Outcomes</th>
                   <th class="design">Design</th>
                   <th class="sampling">Sampling Method</th>
                   <th class="soe">SOE Score&nbsp;<sup>1</sup></th>
@@ -55,18 +58,43 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                {% for row in site.data.[page.data].content_hash %}
+                <tr class="study-details">
+                  <td class="name"><strong>{{ row.title }}</strong></td>
+                  <td class="journal">
+                    {{ row.journal }}<br />
+                    <span class="link">{{ row.link }}</span>
+                  </td>
                   <td class="location">{{ row.location }}</td>
                   <td class="population">{{ row.population }}</td>
+                  <td class="intervention">{{ row.intervention }}</td>
+                  <td class="outcomes">
+                    {% if row.outcomes-bf %}
+                    <h5>Behaviorial Factors</h5>
+                    <p>{{ row.outcomes-bf }}</p>
+                    {% endif %}
+
+                    {% if row.outcomes-behavior %}
+                    <h5>Behaviors</h5>
+                    <p>{{ row.outcomes-behavior }}</p>
+                    {% endif %}
+
+                    {% if row.outcomes-health %}
+                    <h5>Health</h5>
+                    <p>{{ row.outcomes-health }}</p>
+                    {% endif %}
+                  </td>
                   <td class="design">{{ row.design }}</td>
                   <td class="sampling">{{ row.sampling }}</td>
                   <td class="soe">{{ row.soe }}</td>
                   <td class="smbc">{{ row.smbc }}</td>
                 </tr>
+                {% endfor %}
+
               </tbody>
             </table>
             
-            <section class="grid">
+            {% comment %}<section class="grid">
               <section class="intervention">
                 <h4>Intervention Description</h4>
                 <p>{{ row.intervention }}</p>
@@ -91,11 +119,10 @@
                   {% endif %}
                 </dl>
               </section>
-            </section>
-          </section>
+            </section>{% endcomment %}
           </td>
         </tr>
-      {% endfor %}
+      
 
       <tfoot class="footer global">
         <tr>
