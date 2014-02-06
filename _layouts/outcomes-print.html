@@ -16,86 +16,105 @@
 
   <body>
 
-    <header>
-      <img src="{{ relativepath }}{{ site.baseurl }}assets/images/logo-psi-print.png" alt="Population Services International" />
-      <h5>Social Marketing Evidence Base</h5>
-    </header>
+    <table class="wrapper">
+      <thead class="header global">
+        <tr>
+          <th>
+            <img src="{{ relativepath }}{{ site.baseurl }}assets/images/logo-psi-print.png" alt="Population Services International" />
+            <h5>Social Marketing Evidence Base</h5>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <h1><strong>{{ page.categories | first | replace: '_',' ' | capitalize }}:</strong> Studies Reporting {% if page.title != "Behaviors" %}{{ page.title }}{% else %}Behavior Change{% endif %} Outcomes</h1>
+          </td>
+        </tr>
 
-    <div class="wrapper">
-      
-      <h1><strong>{{ page.categories | first | replace: '_',' ' | capitalize }}:</strong> Studies Reporting {{ page.title }} Outcomes</h1>
+        {% for row in site.data.[page.data].content_hash %}
+        <tr>
+          <td>
+            <section class="study">
+            <hgroup>
+              <h2>{{ row.title }}</h2>
+              <h4>{{ row.authors }}</h4>
+              <h5>{{ row.journal }} | {{ row.link }}</h5>
+            </hgroup>
+            
+            <table class="study-stats">
+              <thead>
+                <tr>
+                  <th class="location">Location</th>
+                  <th class="population">Population</th>
+                  <th class="design">Design</th>
+                  <th class="sampling">Sampling Method</th>
+                  <th class="soe">SOE Score <sup>1</sup></th>
+                  <th class="smbc">SMBC <sup>2</sup></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="location">{{ row.location }}</td>
+                  <td class="population">{{ row.population }}</td>
+                  <td class="design">{{ row.design }}</td>
+                  <td class="sampling">{{ row.sampling }}</td>
+                  <td class="soe">{{ row.soe }}</td>
+                  <td class="smbc">{{ row.smbc }}</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <section class="grid">
+              <section class="intervention">
+                <h4>Intervention Description</h4>
+                <p>{{ row.intervention }}</p>
+              </section>
 
-      {% for row in site.data.[page.data].content_hash %}
-      
-      <section class="study">
-        <hgroup>
-          <h2>{{ row.title }}</h2>
-          <h4>{{ row.authors }}</h4>
-          <h5>{{ row.journal }} | {{ row.link }}</h5>
-        </hgroup>
-        
-        <table>
-          <thead>
-            <tr>
-              <th class="location">Location</th>
-              <th class="population">Population</th>
-              <th class="design">Design</th>
-              <th class="sampling">Sampling Method</th>
-              <th class="soe">SOE Score</th>
-              <th class="smbc">Social Marketing Benchmark Criteria</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="location">{{ row.location }}</td>
-              <td class="population">{{ row.population }}</td>
-              <td class="design">{{ row.design }}</td>
-              <td class="sampling">{{ row.sampling }}</td>
-              <td class="soe">{{ row.soe }}</td>
-              <td class="smbc">{{ row.smbc }}</td>
-            </tr>
-          </tbody>
-        </table>
-        
-        <div class="grid">
-          <section class="intervention">
-            <h3>Intervention Description</h3>
-            <p>{{ row.intervention }}</p>
+              <section class="outcomes">
+                <h4>Outcomes</h4>
+                <dl>
+                  {% if row.outcomes-bf %}
+                  <dt>Behaviorial Factors</dt>
+                  <dd>{{ row.outcomes-bf }}</dd>
+                  {% endif %}
+
+                  {% if row.outcomes-behavior %}
+                  <dt>Behaviors</dt>
+                  <dd>{{ row.outcomes-behavior }}</dd>
+                  {% endif %}
+
+                  {% if row.outcomes-health %}
+                  <dt>Health</dt>
+                  <dd>{{ row.outcomes-health }}</dd>
+                  {% endif %}
+                </dl>
+              </section>
+            </section>
           </section>
-
-          <section class="outcomes">
-            <h3>Outcomes</h3>
-            <dl>
-              {% if row.outcomes-bf %}
-              <dt>Behaviorial Factors</dt>
-              <dd>{{ row.outcomes-bf }}</dd>
-              {% endif %}
-
-              {% if row.outcomes-behavior %}
-              <dt>Behaviors</dt>
-              <dd>{{ row.outcomes-behavior }}</dd>
-              {% endif %}
-
-              {% if row.outcomes-health %}
-              <dt>Health</dt>
-              <dd>{{ row.outcomes-health }}</dd>
-              {% endif %}
-            </dl>
-          </section>
-        </div>
-      </section>
-
+          </td>
+        </tr>
       {% endfor %}
 
-      <footer>
-        <small>
-          <ul>
-            <li>&copy; Copyright 2014 Population Services International</li>
-            <li>1120 19th Street, NW, Suite 600, Washington, DC 20036</li>
-            <li><strong>P</strong> (202) 785-0072 | <strong>F</strong> (202) 785-0120</li>
-          </ul>
-        </small>
-      </footer>
+      <tfoot class="footer global">
+        <tr>
+          <td>
+            <small>
+              <h5>Notes</h5>
+              <ol class="footnotes">
+                <li>Strength of Evidence Score</li>
+                <li>Social Marketing Benchmark Criteria</li>
+              </ol>
+            <small>
+              <ul>
+                <li>&copy; Copyright 2014 Population Services International</li>
+                <li>1120 19th Street, NW, Suite 600, Washington, DC 20036</li>
+                <li><strong>P</strong> (202) 785-0072 | <strong>F</strong> (202) 785-0120</li>
+              </ul>
+            </small>
+          </td>
+        </tr>
+      </tfoot>
     </div>
   </body>
 </html>

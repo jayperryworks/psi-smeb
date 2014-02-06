@@ -530,7 +530,7 @@ button,
 input,
 select,
 textarea {
-  color: #333333;
+  color: #444444;
   -webkit-appearance: none;
 }
 
@@ -942,7 +942,7 @@ a {
   list-style: none;
   list-style-type: none;
 }
-/* line 293, ../../_preprocess/sass/core/_helpers.scss */
+/* line 295, ../../_preprocess/sass/core/_helpers.scss */
 .tabs li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -980,16 +980,16 @@ a {
   padding: 0.75em 0.75em;
   margin: 0 1px -4px 0;
   border-bottom: 4px solid #eeeeee;
-  color: #b3b3b3;
+  color: #c4c4c4;
 }
 /* line 56, ../../_preprocess/sass/modules/_navigation.scss */
 .tabs.level1 a:hover {
-  color: #666666;
+  color: #777777;
   border-bottom-color: #d4d4d4;
 }
 /* line 61, ../../_preprocess/sass/modules/_navigation.scss */
 .tabs.level1 a.active {
-  color: #333333;
+  color: #444444;
   border-bottom-color: #73a533;
 }
 /* line 68, ../../_preprocess/sass/modules/_navigation.scss */
@@ -1009,16 +1009,16 @@ a {
   font-size: 0.875rem;
   padding: 0.25em 1em;
   margin: 1em 0;
-  color: #b3b3b3;
+  color: #c4c4c4;
 }
 /* line 85, ../../_preprocess/sass/modules/_navigation.scss */
 .tabs.level2 a:hover {
-  color: #666666;
+  color: #777777;
 }
 /* line 89, ../../_preprocess/sass/modules/_navigation.scss */
 .tabs.level2 a.active {
   color: white;
-  background: #333333;
+  background: #444444;
   border-radius: 100px;
 }
 
@@ -1038,7 +1038,7 @@ a {
   list-style: none;
   list-style-type: none;
 }
-/* line 293, ../../_preprocess/sass/core/_helpers.scss */
+/* line 295, ../../_preprocess/sass/core/_helpers.scss */
 [role="navigation"].tile-grid ul li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1244,7 +1244,7 @@ table td p strong {
   list-style: none;
   list-style-type: none;
 }
-/* line 293, ../../_preprocess/sass/core/_helpers.scss */
+/* line 295, ../../_preprocess/sass/core/_helpers.scss */
 .wizard li {
   display: -moz-inline-stack;
   display: inline-block;

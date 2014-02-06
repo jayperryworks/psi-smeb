@@ -287,8 +287,10 @@
   }
 }
 
-@mixin inline-list {
-  @include unstyled-list;
+@mixin inline-list($style: false) {
+  @if ($style == false) {
+    @include unstyled-list;
+  }
 
   li {
     @include inline-block;

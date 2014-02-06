@@ -34,7 +34,7 @@ layout: default
   </ul>
 </nav>
 
-<h2>{{ page.title }}</h2>
+<h2>Studies Reporting {% if page.title != "Behaviors" %}{{ page.title }}{% else %}Behavior Change{% endif %} Outcomes</h2>
 
 <div class="post">
   {% if page.pdf %}

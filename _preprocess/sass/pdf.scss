@@ -51,59 +51,90 @@ $footer-h: 40px;
         hyphens: auto;
 }
 
-html, body {
-  width: 100%;
-}
+// @media screen {
+//   thead {
+//       display: block;
+//   }
+//   tfoot {
+//       display: block;
+//   }
+// }
 
 @media print {
   * {
     background: transparent !important;
   }
+
+  @page {
+      margin: 1cm;
+  }
+
+  .header.global {
+    display: table-header-group;
+  }
+  .footer.global {
+    display: table-footer-group;
+    // position: fixed;
+    bottom: 0;
+  }
+
+  .section,
+  .study-stats,
+  hgroup,
+  img {
+      page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+      orphans: 3;
+      widows: 3;
+  }
+  h2,
+  h3 {
+      page-break-after: avoid;
+  }
 }
 
-tr,
-img {
-    page-break-inside: avoid;
+html, body {
+  width: 100%;
+}
+
+h1 { font-size: 22pt; }
+h2 { font-size: 18pt; }
+h3 { font-size: 14pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 10pt; }
+h6 { font-size: 8pt; }
+
+p, ul, li, dl, dt, dd { font-size: 10pt; }
+
+sup {
+  color: $beige;
 }
 
 img {
     max-width: 100% !important;
 }
 
-@page {
-    margin: 0.5cm;
-}
-
-p,
-h2,
-h3 {
-    orphans: 3;
-    widows: 3;
-}
-
-h2,
-h3 {
-    page-break-after: avoid;
+.study-stats {
+  // page-break-before: avoid;
 }
 
 .wrapper {
   // margin: 0 auto;
   // width: rem(800px);
   width: 100%;
-  padding-top: $header-h;
-  padding-bottom: $footer-h;
+  // padding-top: $header-h;
+  // padding-bottom: $footer-h;
 }
 
 
-header, footer {
+.header.global, .footer.global {
   width: 100%;
-  left: 0;
-  right: 0;
-  position: fixed;
-  background: white;
 }
 
-header {
+.header.global {
   top: 0;
   padding: 0;
   margin: 0 0 2em 0;
@@ -127,18 +158,20 @@ header {
   }
 }
 
-footer {
+.footer.global {
   @include rem(padding, 6px 0);
   margin: 2em 0 0 0;
   color: $color-text--secondary;
   bottom: 0;
-  text-align: center;
+  text-align: left;
   // border-top: $hairline;
 
   ul {
     @include inline-list;
     margin: 0;
-    padding: 0;
+    padding: 0.5em 0;
+    clear: both;
+    border-top: $hairline--light;
 
     li {
       margin-left: 1em;
@@ -149,15 +182,33 @@ footer {
       }
     }
   }
+  
+  .footnotes {
+    margin: 0;
+    padding-left: 2em;
+    font-size: 8pt;
+    color: $color-text--secondary;
+    // @include inline-list(true);
+
+    li {
+      float: left;
+      margin-left: 3em;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
 }
 
 .study {
-  @include rem(padding, 24px 0);
+  @include rem(padding, 30px 0);
   border-top: $hairline;
 }
 
 h1 {
-  @include rem(margin, 36px 0);
+  @include rem(margin, 30px 0);
   color: $color-text--secondary;
 
   strong {
@@ -181,43 +232,39 @@ hgroup {
   }
 }
 
-p, dl {
-  font-size: 12pt;
-}
-
-table {
-  width: 100%;
+.study-stats {
+  width: 100% !important;
   font-size: 10pt;
+
+  tr {
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+
+  thead {
+    border-bottom: 2px solid #ccc;
+    // background: #efefef;
+
+    tr {
+      vertical-align: bottom;
+    }
+  }
+
+  td, th {
+    padding: rem(12px);
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 
   p {
     margin: 0 0 1em 0;
-  }
-}
-
-tr {
-  vertical-align: top;
-  text-align: left;
-  border-bottom: 1px solid #ccc;
-}
-
-thead {
-  border-bottom: 2px solid #ccc;
-  // background: #efefef;
-
-  tr {
-    vertical-align: bottom;
-  }
-}
-
-td, th {
-  padding: rem(12px);
-
-  &:first-child {
-    padding-left: 0;
-  }
-
-  &:last-child {
-    padding-right: 0;
   }
 }
 
