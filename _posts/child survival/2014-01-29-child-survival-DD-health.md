@@ -11,5 +11,3 @@ tags:
 
 data:       child_survival-DD-health
 ---
-
-[Download a PDF of all {{ page.title }} Outcome studies (link TBD)]()

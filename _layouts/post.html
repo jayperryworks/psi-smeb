@@ -14,9 +14,12 @@ layout: default
   <ul class="tabs level1">
     {% for post in site.categories.[cat] %}
     {% if post.topic %}
+    {% unless post.categories contains "print" %}
     {% if post.tags contains "behavioral-factors" %}
-    <li><a href="{{ post.url }}"{% if post.topic == topic %} class="active"{% endif %}>{{ post.topic | replace: '_',' ' | capitalize }}</a></li>
+    {% assign topicwords = post.topic | split: "_" %}
+    <li><a href="{{ post.url }}"{% if post.topic == topic %} class="active"{% endif %}>{% for word in topicwords %}{{ word | capitalize }} {% endfor %}</a></li>
     {% endif %}
+    {% endunless %}
     {% endif %}
     {% endfor %}
     {% comment %} Use the second category (subcategory) to build the second row of tabs {% endcomment %}

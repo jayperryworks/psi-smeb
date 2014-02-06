@@ -11,5 +11,3 @@ tags:
 
 data:       child_survival-DD-behavioral_factors
 ---
-
-[Download a PDF of all {{ page.title }} Outcome studies (link TBD)]()
