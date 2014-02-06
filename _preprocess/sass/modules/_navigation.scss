@@ -111,15 +111,21 @@ $tile-cols: 3;
       vertical-align: top;
       width: 20%;
       margin-right: $margin-whitespace;
+      text-align: center;
     }
   }
 }
 
   .tile {
     @include rem(padding, 6px);
-    @include rem(font-size, 14px);
+    @include rem(font-size, 12px);
     display: block;
     vertical-align: top;
+    text-align: center;
+    font-weight: bold;
+    color: $blue--dark;
+    text-transform: uppercase;
+    line-height: 1.2;
 
     &:hover, &:active {
       background: lighten($beige--light, 10%);
@@ -127,6 +133,8 @@ $tile-cols: 3;
 
     img {
       vertical-align: top;
+      display: block;
+      margin: 0 auto;
     }
   }
 

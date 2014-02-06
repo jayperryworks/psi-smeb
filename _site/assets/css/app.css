@@ -1052,24 +1052,32 @@ a {
   vertical-align: top;
   width: 20%;
   margin-right: -3px;
+  text-align: center;
 }
 
-/* line 118, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 119, ../../_preprocess/sass/modules/_navigation.scss */
 .tile {
   padding: 6px;
   padding: 0.375rem;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   display: block;
   vertical-align: top;
+  text-align: center;
+  font-weight: bold;
+  color: #013846;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
-/* line 124, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 130, ../../_preprocess/sass/modules/_navigation.scss */
 .tile:hover, .tile:active {
   background: #f3f2ec;
 }
-/* line 128, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 134, ../../_preprocess/sass/modules/_navigation.scss */
 .tile img {
   vertical-align: top;
+  display: block;
+  margin: 0 auto;
 }
 
 /* line 9, ../../_preprocess/sass/modules/_table.scss */

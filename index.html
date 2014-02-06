@@ -33,6 +33,7 @@ slug: home
   
   {% for category in site.categories %}
   {% unless category contains 'print' %}
+  {% unless category contains 'landing' %}
   
   {% assign words = category[0] | split: " " %}
   <h5>{% if category[0] != "hiv" %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% else %}{{ category | first | upcase }}{% endif %}</h5>
@@ -47,6 +48,7 @@ slug: home
     {% endfor %}
     {% endfor %}
   </ul>
+  {% endunless %}
   {% endunless %}
   {% endfor %}
 </section>
