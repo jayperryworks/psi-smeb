@@ -37,7 +37,8 @@ $color--hover: lighten($color-text--primary, 20);
 
   .tabs.level1 {
     $border-width: 4px;
-    $border-color: #eee;
+    $border-color: lighten($gray, 50);
+    $border-color--active: $orange;
 
     border-bottom: $border-width solid $border-color;
 
@@ -48,8 +49,8 @@ $color--hover: lighten($color-text--primary, 20);
 
     a {
       @include rem(font-size, 14px);
-      @include rem(margin, 0 18px -#{$border-width} 0);
-      padding: em(12) em(2);
+      @include rem(margin, 0 1px -#{$border-width} 0);
+      padding: em(12) em(8);
       // background: $beige--light;
       border-bottom: $border-width solid $border-color;
       color: $color--inactive;
@@ -63,11 +64,11 @@ $color--hover: lighten($color-text--primary, 20);
         // color: white;
         // background: green;
         color: $color-text--primary;
-        border-bottom-color: $green;
+        border-bottom-color: $border-color--active;
         // border-bottom-color: $green;
 
         &:hover {
-          border-bottom-color: $green;
+          border-bottom-color: $border-color--active;
         }
       }
     }
@@ -90,7 +91,6 @@ $color--hover: lighten($color-text--primary, 20);
       }
 
       &.active {
-
         color: $color-text--primary;
         background: lighten($gray, 45);
         border-radius: 100px;

@@ -10,4 +10,4 @@ tags:
   - landing
 ---
 
-![Child Survival Maternal Neonatal Mortality Logic Model]({{ relativepath }}/assets/images/logic-models/logic_model-r3_CS-MNM.png "Maternal Neonatal Mortality Logic Model")
+![Child Survival Maternal Neonatal Mortality Logic Model]({{ site.assets }}/images/logic-models/logic_model-r3_CS-MNM.png "Maternal Neonatal Mortality Logic Model")

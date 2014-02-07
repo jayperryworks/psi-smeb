@@ -10,4 +10,4 @@ tags:
   - landing
 ---
 
-![Child Survival Diarrheal Disease Logic Model]({{ relativepath }}/assets/images/logic-models/logic_model-r3_CS-DD.png "Diarrheal Disease Logic Model")
+![Child Survival Diarrheal Disease Logic Model]({{ site.assets }}/images/logic-models/logic_model-r3_CS-DD.png "Diarrheal Disease Logic Model")

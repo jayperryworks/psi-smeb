@@ -10,4 +10,4 @@ tags:
   - landing
 ---
 
-![Child Nutrition Logic Model]({{ site.baseurl }}{{ relativepath }}/assets/images/logic-models/logic_model-r3_CS-nutrition.png "Child Nutrition Logic Model")
+![Child Nutrition Logic Model]({{ site.assets }}/images/logic-models/logic_model-r3_CS-nutrition.png "Child Nutrition Logic Model")

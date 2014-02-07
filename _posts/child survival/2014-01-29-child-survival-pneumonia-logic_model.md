@@ -10,4 +10,4 @@ tags:
   - landing
 ---
 
-![Child Survival Pneumonia Logic Model]({{ relativepath }}/assets/images/logic-models/logic_model-r3_CS-pneumonia.png "Pneumonia Logic Model")
+![Child Survival Pneumonia Logic Model]({{ site.assets }}/images/logic-models/logic_model-r3_CS-pneumonia.png "Pneumonia Logic Model")

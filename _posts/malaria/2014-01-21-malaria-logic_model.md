@@ -6,4 +6,4 @@ categories: Malaria
 tags:       logic-model
 ---
 
-![Malaria Logic Model]({{ site.baseurl }}{{ relativepath }}/assets/images/logic-models/logic_model-r3_malaria.png "Malaria Logic Model")
+![Malaria Logic Model]({{ site.assets }}/images/logic-models/logic_model-r3_malaria.png "Malaria Logic Model")

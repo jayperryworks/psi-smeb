@@ -20,7 +20,7 @@ $blue--dark: #013846;
 
 // text
 $color-text--primary: #444;
-$color-text--secondary: #999;
+$color-text--secondary: lighten($gray, 40);
 
 $color-selection: $orange;
 
