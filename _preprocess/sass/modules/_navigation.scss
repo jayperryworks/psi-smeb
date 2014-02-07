@@ -74,12 +74,14 @@ $color--hover: lighten($color-text--primary, 20);
   }
 
   .tabs.level2 {
-    @include rem(margin, 6px 0 0 0);
+    // @include rem(margin, 6px 0 0 0);
     border-bottom: $hairline--light;
 
     a {
       @include rem(font-size, 12px);
-      padding: em(4) em(16);
+      display: block;
+      position: relative;
+      padding: em(2) em(16);
       margin: em(16) 0;
       color: $color--inactive;
 
@@ -88,8 +90,9 @@ $color--hover: lighten($color-text--primary, 20);
       }
 
       &.active {
-        color: white;
-        background: $color-text--primary;
+
+        color: $color-text--primary;
+        background: lighten($gray, 45);
         border-radius: 100px;
 
       }

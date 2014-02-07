@@ -4,7 +4,7 @@ title:      "Logic Model"
 date:       2014-01-05 00:00:04
 categories: 
   - Child Survival
-topic: nutrition
+topic: child_nutrition
 tags:       
   - logic-model
   - landing
