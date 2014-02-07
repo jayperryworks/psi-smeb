@@ -687,34 +687,47 @@ header {
   width: 624px;
 }
 
-/* line 48, ../../_preprocess/sass/core/_layout.scss */
+/* line 46, ../../_preprocess/sass/core/_layout.scss */
+.hero {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+/* line 52, ../../_preprocess/sass/core/_layout.scss */
 #social-marketing-evidence-base section {
   padding: 24px 12px;
   padding: 1.5rem 0.75rem;
   border-top: 2px dotted #73a533;
 }
-/* line 52, ../../_preprocess/sass/core/_layout.scss */
+/* line 56, ../../_preprocess/sass/core/_layout.scss */
 #social-marketing-evidence-base section.first {
   margin-top: 24px;
   margin-top: 1.5rem;
 }
-/* line 57, ../../_preprocess/sass/core/_layout.scss */
+/* line 61, ../../_preprocess/sass/core/_layout.scss */
 #social-marketing-evidence-base .subsection {
   margin-top: 2px;
   margin-top: 0.125rem;
   border-top: none;
   background: #efeee5;
+  overflow: hidden;
 }
-/* line 62, ../../_preprocess/sass/core/_layout.scss */
+/* line 65, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+#social-marketing-evidence-base .subsection:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 68, ../../_preprocess/sass/core/_layout.scss */
 #social-marketing-evidence-base .subsection.first, #social-marketing-evidence-base .subsection.light.first {
   margin-top: 24px;
   margin-top: 1.5rem;
 }
-/* line 66, ../../_preprocess/sass/core/_layout.scss */
+/* line 72, ../../_preprocess/sass/core/_layout.scss */
 #social-marketing-evidence-base .subsection h1, #social-marketing-evidence-base .subsection h2, #social-marketing-evidence-base .subsection h3, #social-marketing-evidence-base .subsection .accordion dt, .accordion #social-marketing-evidence-base .subsection dt, #social-marketing-evidence-base .subsection h4, #social-marketing-evidence-base .subsection h5, #social-marketing-evidence-base .subsection h6, #social-marketing-evidence-base .subsection strong {
   color: #013846;
 }
-/* line 71, ../../_preprocess/sass/core/_layout.scss */
+/* line 77, ../../_preprocess/sass/core/_layout.scss */
 #social-marketing-evidence-base .subsection.light h1, #social-marketing-evidence-base .subsection.light h2, #social-marketing-evidence-base .subsection.light h3, #social-marketing-evidence-base .subsection.light .accordion dt, .accordion #social-marketing-evidence-base .subsection.light dt, #social-marketing-evidence-base .subsection.light h4, #social-marketing-evidence-base .subsection.light h5, #social-marketing-evidence-base .subsection.light h6, #social-marketing-evidence-base .subsection.light strong {
   color: #086878;
 }
@@ -746,8 +759,8 @@ h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, .accordion dt a:ho
 
 /* line 30, ../../_preprocess/sass/core/_content.scss */
 h1 {
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
 }
 
@@ -977,58 +990,61 @@ a {
 }
 /* line 49, ../../_preprocess/sass/modules/_navigation.scss */
 .tabs.level1 a {
-  padding: 0.75em 0.75em;
-  margin: 0 1px -4px 0;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 0 18px -4px 0;
+  margin: 0 18px -4px 0;
+  padding: 0.75em 0.125em;
   border-bottom: 4px solid #eeeeee;
   color: #c4c4c4;
 }
-/* line 56, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 57, ../../_preprocess/sass/modules/_navigation.scss */
 .tabs.level1 a:hover {
   color: #777777;
   border-bottom-color: #d4d4d4;
 }
-/* line 61, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 62, ../../_preprocess/sass/modules/_navigation.scss */
 .tabs.level1 a.active {
   color: #444444;
   border-bottom-color: #73a533;
 }
-/* line 68, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 69, ../../_preprocess/sass/modules/_navigation.scss */
 .tabs.level1 a.active:hover {
   border-bottom-color: #73a533;
 }
 
-/* line 75, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 76, ../../_preprocess/sass/modules/_navigation.scss */
 .tabs.level2 {
   margin: 6px 0 0 0;
   margin: 0.375rem 0 0 0;
   border-bottom: 1px solid #dddddd;
 }
-/* line 79, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 80, ../../_preprocess/sass/modules/_navigation.scss */
 .tabs.level2 a {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   padding: 0.25em 1em;
   margin: 1em 0;
   color: #c4c4c4;
 }
-/* line 85, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 86, ../../_preprocess/sass/modules/_navigation.scss */
 .tabs.level2 a:hover {
   color: #777777;
 }
-/* line 89, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 90, ../../_preprocess/sass/modules/_navigation.scss */
 .tabs.level2 a.active {
   color: white;
   background: #444444;
   border-radius: 100px;
 }
 
-/* line 102, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 103, ../../_preprocess/sass/modules/_navigation.scss */
 [role="navigation"].tile-grid {
   margin-bottom: 18px;
   margin-bottom: 1.125rem;
   text-align: center;
 }
-/* line 106, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 107, ../../_preprocess/sass/modules/_navigation.scss */
 [role="navigation"].tile-grid ul {
   list-style: none;
   list-style-type: none;
@@ -1047,7 +1063,7 @@ a {
   zoom: 1;
   *display: inline;
 }
-/* line 110, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 111, ../../_preprocess/sass/modules/_navigation.scss */
 [role="navigation"].tile-grid ul li {
   vertical-align: top;
   width: 20%;
@@ -1055,7 +1071,7 @@ a {
   text-align: center;
 }
 
-/* line 119, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 120, ../../_preprocess/sass/modules/_navigation.scss */
 .tile {
   padding: 6px;
   padding: 0.375rem;
@@ -1069,11 +1085,11 @@ a {
   text-transform: uppercase;
   line-height: 1.2;
 }
-/* line 130, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 131, ../../_preprocess/sass/modules/_navigation.scss */
 .tile:hover, .tile:active {
   background: #f3f2ec;
 }
-/* line 134, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 135, ../../_preprocess/sass/modules/_navigation.scss */
 .tile img {
   vertical-align: top;
   display: block;

@@ -8,6 +8,7 @@ topic: nutrition
 tags:       
   - studies
   - health
+pdf:        child-survival-nutrition-health
 
 data:       child_survival-nutrition-health
 ---

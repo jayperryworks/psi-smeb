@@ -8,6 +8,7 @@ topic: diarrheal_disease
 tags:       
   - studies
   - health
+pdf:        child-survival-diarrheal_disease-health
 
 data:       child_survival-DD-health
 ---

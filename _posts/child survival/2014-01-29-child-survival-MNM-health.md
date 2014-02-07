@@ -8,6 +8,7 @@ topic: maternal-neonatal_mortality
 tags:       
   - studies
   - health
+pdf:        child-survival-maternal-neonatal_mortality-health
 
 data:       child_survival-MNM-health
 ---

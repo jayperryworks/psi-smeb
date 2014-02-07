@@ -8,6 +8,7 @@ topic: nutrition
 tags:       
   - studies
   - behavioral-factors
+pdf:        child-survival-nutrition-behavioral-factors
 
 data:       child_survival-nutrition-behavioral_factors
 ---

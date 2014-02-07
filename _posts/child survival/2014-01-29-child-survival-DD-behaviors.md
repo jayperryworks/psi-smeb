@@ -8,6 +8,7 @@ topic: diarrheal_disease
 tags:       
   - studies
   - behaviors
+pdf:        child-survival-diarrheal_disease-behaviors
 
 data:       child_survival-DD-behavior
 ---

@@ -6,8 +6,8 @@ categories:
   - Child Survival
 topic: overview
 tags:       
-  - behavioral-factors
   - overview
+  - landing
 ---
 
 We identified 37 studies that assessed the effectiveness of social marketing on behavioral factors, behaviors, and health outcomes related to child survival.  Child survival interventions covered diarrheal disease, pneumonia, child nutrition, and maternal and neonatal mortality. 

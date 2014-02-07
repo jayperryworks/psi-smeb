@@ -3,6 +3,9 @@ layout: default
 ---
 
 {% assign words = page.categories[0] | split: " " %}
+{% assign pdfurl = "http://learning.psi.org/jay/table-pdf/" %}
+
+<img src="{{ relativepath }}/assets/images/photos/{{ page.categories | first | replace: ' ','-' | downcase }}.png" alt="page.title" class="hero" />
 
 <h1>{% if page.categories[0] != "hiv" %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% else %}{{ page.categories | first | upcase }}{% endif %}</h1>
 
@@ -15,7 +18,7 @@ layout: default
     {% for post in site.categories.[cat] %}
     {% if post.topic %}
     {% unless post.categories contains "print" %}
-    {% if post.tags contains "behavioral-factors" %}
+    {% if post.tags contains "landing" %}
     {% assign topicwords = post.topic | split: "_" %}
     <li><a href="{{ post.url }}"{% if post.topic == topic %} class="active"{% endif %}>{% for word in topicwords %}{{ word | capitalize }} {% endfor %}</a></li>
     {% endif %}
@@ -26,22 +29,24 @@ layout: default
   </ul>
   {% endif %}
   
+  {% unless post.topic == "overview" %}
   <ul class="tabs {% if page.topic %}level2{% else %}level1{% endif %}">
   {% for post in site.categories.[cat] %}
-  {% if post.topic == topic %}
+    {% if post.topic == topic %}
     {% unless post.categories contains "print" %}
     <li><a href="{{ post.url }}"{% if post.title == page.title %} class="active"{% endif %}>{{ post.title }}</a></li>
     {% endunless %}
-  {% endif %}
+    {% endif %}
   {% endfor %}
   </ul>
+  {% endunless %}
 </nav>
 
 <h2>{{ page.title }}</h2>
 
 <div class="post">
   {% if page.pdf %}
-  [Download a PDF of all {{ page.title }} studies (link TBD)]()
+  <p><a href="http://learning.psi.org/jay/table-pdf/{{ page.pdf }}.pdf">Download a PDF of all {% if page.title != "Behaviors" %}{{ page.title }}{% else %}Behavior Change{% endif %} studies</a></p>
   {% endif %}
 
   {{ content }}

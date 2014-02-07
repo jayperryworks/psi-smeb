@@ -8,6 +8,7 @@ topic: diarrheal_disease
 tags:       
   - studies
   - behavioral-factors
+pdf:        child-survival-diarrheal_disease-behavioral-factors
 
 data:       child_survival-DD-behavioral_factors
 ---

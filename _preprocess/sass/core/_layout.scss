@@ -43,6 +43,10 @@ header {
   width: 624px;
 }
 
+.hero {
+  @include rem(margin-bottom, 24px);
+}
+
 #social-marketing-evidence-base {
 
   section {
@@ -56,8 +60,10 @@ header {
   
   .subsection {
     @include rem(margin-top, 2px);
+    @include clearfix;
     border-top: none;
     background: lighten($beige--light, 8%);
+    overflow: hidden;
 
     &.first, &.light.first {
       @include rem(margin-top, 24px);

@@ -28,7 +28,7 @@ hgroup {
 }
 
 h1, %h1 {
-	@include rem(font-size, 32px);
+	@include rem(font-size, 20px);
 	line-height: 1.2;
 }
 
