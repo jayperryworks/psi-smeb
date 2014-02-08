@@ -97,14 +97,6 @@ p, table, li {
 	font-size: em(16);
 }
 
-ol, ul {
-	margin-left: 1.5em; // bump to the right a little @ mobile sizes so the numbers/bullets don't run off
-
-	@include breakpoint($small) {
-		margin-left: 0;
-	}
-}
-
 a {
 	@include base-transition;
 }
@@ -117,8 +109,40 @@ a {
 }
 
 #social-marketing-evidence-base {
+
+	h1, %h1 {
+		font-size: 27px;
+		line-height: 1.2;
+	}
+
+	h2, %h2 {
+		font-size: 24px;
+	}
+
+	h3, %h3 {
+		font-size: 20px;
+		border-bottom: none;
+
+	}
+
+	h4, %h4 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	h5, %h5 {
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	h6, %h6 {
+		font-size: 12px;
+		// font-weight: bold;
+	}
+
 	p {
 		margin: 0 0 0.5em 0;
+
 	}
 
 	p, li, td {

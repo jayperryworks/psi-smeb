@@ -22,6 +22,14 @@ ul {
   }
 }
 
+ol {
+  // @extend ul;
+
+  li {
+    list-style-type: decimal;
+  }
+}
+
 // SUBMODULES
 // -----------------------------------------------------------------------------
 
@@ -41,10 +49,17 @@ ul {
 
 .has-icons {
  @include unstyled-list;
+ padding-left: 0;
+ margin-left: 0;
 
- strong {
+  strong {
   text-transform: uppercase;
- }
+  }
+
+  li {
+    padding: 0;
+    margin-left: 0;
+  }
 }
 
   .icon {
@@ -83,34 +98,45 @@ ul {
     $size: 40px;
     $margin: 6px;
     @extend .icon;
-    padding-left: ($size + $margin);
+    // padding-left: ($size + $margin);
 
-    &:before {
-      height: $size;
+    & > img {
       width: $size;
-      display: block;
-      position: absolute;
-      left: -#{$margin/3};
-      top: 0;
-      content: " ";
-      vertical-align: middle;
+      margin-top: -(em(6));
     }
 
-    &.one:before {
-      background: url("#{$path-images}infographic/number-1.png") center center no-repeat;
+    & > h4 {
+      @include inline-block;
+      width: 240px;
+      vertical-align: top;
     }
 
-    &.two:before {
-      background: url("#{$path-images}infographic/number-2.png") center center no-repeat;
-    }
+    // &:before {
+    //   height: $size;
+    //   width: $size;
+    //   display: block;
+    //   position: absolute;
+    //   left: -#{$margin/3};
+    //   top: 0;
+    //   content: " ";
+    //   vertical-align: middle;
+    // }
 
-    &.three:before {
-      background: url("#{$path-images}infographic/number-3.png") center center no-repeat;
-    }
+    // &.one:before {
+    //   background: url("#{$path-images}/number-1.png") center center no-repeat;
+    // }
 
-    &.four:before {
-      background: url("#{$path-images}infographic/number-4.png") center center no-repeat;
-    }
+    // &.two:before {
+    //   background: url("#{$path-images}/number-2.png") center center no-repeat;
+    // }
+
+    // &.three:before {
+    //   background: url("#{$path-images}/number-3.png") center center no-repeat;
+    // }
+
+    // &.four:before {
+    //   background: url("#{$path-images}/number-4.png") center center no-repeat;
+    // }
   }
 
 .details {
@@ -119,39 +145,16 @@ ul {
 
 
 // ------- Wizard -------------------------------------------
+$size: 24px;
 
   .wizard {
     @include inline-list;
-
-    &.with-arrows {
-      .wizard-step {
-        $size: 24px;
-
-        &:before {
-          @include triangle($size, white, right);
-          content: ' ';
-          position: absolute;
-          right: -($size);
-          top: 50%;
-          margin-top: -($size/2);
-          z-index: 999;
-        }
-
-        &:after {
-          @include triangle($size, $blue--light, right);
-          content: ' ';
-          position: absolute;
-          right: -($size - 2px);
-          top: 50%;
-          margin-top: -($size/2);
-          z-index: 10000;
-        }
-      }
-    }
+    padding-left: 0;
+    margin-left: 0;
   }
 
-    .wizard-step {
-      padding: 6px 6px 6px 22px;
+    .wizard-step-light, .wizard-step-medium, .wizard-step-dark {
+      padding: 6px 12px 6px 22px;
       font-size: em(14);
       // vertical-align: top;
       position: relative;
@@ -163,34 +166,62 @@ ul {
         margin-left: 0;
       }
 
-      &.light {
-        background: $blue--light;
-
-        &:after {
-          border-left-color: $blue--light !important;
-        }
+      &:before {
+        @include triangle($size, white, right);
+        content: ' ';
+        position: absolute;
+        right: -($size);
+        top: 50%;
+        margin-top: -($size/2);
+        z-index: 999;
       }
+    }
 
-      &.medium {
-        background: $blue;
+    .wizard-step-light {
+      background: $blue--light;
 
-        &:after {
-          border-left-color: $blue !important;
-        }
+      &:after {
+        @include triangle($size, $blue--light, right);
+        content: ' ';
+        position: absolute;
+        right: -($size - 2px);
+        top: 50%;
+        margin-top: -($size/2);
+        z-index: 10000;
       }
+    }
 
-      &.dark {
-        background: $blue--dark;
+    .wizard-step-medium {
+      background: $blue;
 
-        &:after {
-          border-left-color: $blue--dark !important;
-        }
+      &:after {
+        @include triangle($size, $blue, right);
+        content: ' ';
+        position: absolute;
+        right: -($size - 2px);
+        top: 50%;
+        margin-top: -($size/2);
+        z-index: 10000;
+      }
+    }
+
+    .wizard-step-dark {
+      background: $blue--dark;
+
+      &:after {
+        @include triangle($size, $blue--dark, right);
+        content: ' ';
+        position: absolute;
+        right: -($size - 2px);
+        top: 50%;
+        margin-top: -($size/2);
+        z-index: 10000;
       }
     }
 
     #social-marketing-evidence-base {
 
-      .wizard-step {
+      .wizard-step-light, .wizard-step-medium, .wizard-step-dark {
         height: 80px;
         width: 20%;
       }
@@ -199,6 +230,7 @@ ul {
         $border: 2px solid $green;
         font-size: 10px;
         margin-top: 6px;
+        margin-left: $margin-whitespace;
         height: 12px;
         // margin-left: $margin-whitespace;
         display: block;

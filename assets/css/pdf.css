@@ -716,17 +716,6 @@ p, table, li {
 }
 
 /* line 100, ../../_preprocess/sass/core/_content.scss */
-ol, ul {
-  margin-left: 1.5em;
-}
-@media (min-width: 48em) {
-  /* line 100, ../../_preprocess/sass/core/_content.scss */
-  ol, ul {
-    margin-left: 0;
-  }
-}
-
-/* line 108, ../../_preprocess/sass/core/_content.scss */
 a {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out false;
@@ -734,7 +723,7 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-/* line 112, ../../_preprocess/sass/core/_content.scss */
+/* line 104, ../../_preprocess/sass/core/_content.scss */
 .amp {
   font-family: "Baskerville", "Palatino", "Book Antiqua", serif;
   font-style: italic;
@@ -742,16 +731,44 @@ a {
   font-size: 1.1em;
 }
 
-/* line 120, ../../_preprocess/sass/core/_content.scss */
+/* line 113, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h1 {
+  font-size: 27px;
+  line-height: 1.2;
+}
+/* line 118, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h2 {
+  font-size: 24px;
+}
+/* line 122, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h3 {
+  font-size: 20px;
+  border-bottom: none;
+}
+/* line 128, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 133, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 138, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h6 {
+  font-size: 12px;
+}
+/* line 143, ../../_preprocess/sass/core/_content.scss */
 #social-marketing-evidence-base p {
   margin: 0 0 0.5em 0;
 }
-/* line 124, ../../_preprocess/sass/core/_content.scss */
+/* line 148, ../../_preprocess/sass/core/_content.scss */
 #social-marketing-evidence-base p, #social-marketing-evidence-base li, #social-marketing-evidence-base td {
   color: #086878;
 }
 
-/* line 129, ../../_preprocess/sass/core/_content.scss */
+/* line 153, ../../_preprocess/sass/core/_content.scss */
 .credits {
   font-size: 0.75em;
   margin-top: 1.5em;

@@ -16,7 +16,8 @@ $w: 12px;
     padding: 0 0 0 1em;
     margin: 0 0 0 0.5em;
     line-height: 1;
-    background: transparent;
+    background: none !important;
+    background-color: transparent !important;
     border-bottom: none;
     position: relative;
 

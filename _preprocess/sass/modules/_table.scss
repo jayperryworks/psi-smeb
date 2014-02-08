@@ -50,10 +50,10 @@ table {
     color: $color-text--secondary;
   }
 
-  tr {
-    &:nth-child(2n) {
+  tr.highlight {
+    // &:nth-child(2n) {
       background: lighten($beige--light, 10%);
-    }
+    // }
   }
 
   td {

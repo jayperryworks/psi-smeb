@@ -808,17 +808,6 @@ p, table, li {
 }
 
 /* line 100, ../../_preprocess/sass/core/_content.scss */
-ol, ul {
-  margin-left: 1.5em;
-}
-@media (min-width: 48em) {
-  /* line 100, ../../_preprocess/sass/core/_content.scss */
-  ol, ul {
-    margin-left: 0;
-  }
-}
-
-/* line 108, ../../_preprocess/sass/core/_content.scss */
 a {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out false;
@@ -826,7 +815,7 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-/* line 112, ../../_preprocess/sass/core/_content.scss */
+/* line 104, ../../_preprocess/sass/core/_content.scss */
 .amp {
   font-family: "Baskerville", "Palatino", "Book Antiqua", serif;
   font-style: italic;
@@ -834,16 +823,44 @@ a {
   font-size: 1.1em;
 }
 
-/* line 120, ../../_preprocess/sass/core/_content.scss */
+/* line 113, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h1 {
+  font-size: 27px;
+  line-height: 1.2;
+}
+/* line 118, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h2 {
+  font-size: 24px;
+}
+/* line 122, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h3, #social-marketing-evidence-base .accordion dt, .accordion #social-marketing-evidence-base dt {
+  font-size: 20px;
+  border-bottom: none;
+}
+/* line 128, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 133, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 138, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h6 {
+  font-size: 12px;
+}
+/* line 143, ../../_preprocess/sass/core/_content.scss */
 #social-marketing-evidence-base p {
   margin: 0 0 0.5em 0;
 }
-/* line 124, ../../_preprocess/sass/core/_content.scss */
+/* line 148, ../../_preprocess/sass/core/_content.scss */
 #social-marketing-evidence-base p, #social-marketing-evidence-base li, #social-marketing-evidence-base td {
   color: #086878;
 }
 
-/* line 129, ../../_preprocess/sass/core/_content.scss */
+/* line 153, ../../_preprocess/sass/core/_content.scss */
 .credits {
   font-size: 0.75em;
   margin-top: 1.5em;
@@ -897,6 +914,11 @@ a {
   clear: right;
   width: 55%;
   float: left;
+}
+
+/* line 9, ../../_preprocess/sass/modules/_navigation.scss */
+[role="navigation"], .nav {
+  margin-bottom: 1.5em;
 }
 
 /* line 28, ../../_preprocess/sass/modules/_navigation.scss */
@@ -979,7 +1001,7 @@ a {
   font-size: 12px;
   display: block;
   position: relative;
-  padding: 0.125em 1em;
+  padding: 0.25em 1em;
   margin: 1em 0;
   color: #c4c4c4;
 }
@@ -995,40 +1017,37 @@ a {
 }
 
 /* line 111, ../../_preprocess/sass/modules/_navigation.scss */
-[role="navigation"].tile-grid {
+nav.tile-grid {
   margin-bottom: 1.125em;
   text-align: center;
 }
 /* line 115, ../../_preprocess/sass/modules/_navigation.scss */
-[role="navigation"].tile-grid ul {
+nav.tile-grid ul {
   list-style: none;
   list-style-type: none;
 }
-/* line 284, ../../_preprocess/sass/core/_helpers.scss */
-[role="navigation"].tile-grid ul li {
-  list-style: none;
-  list-style-type: none;
-}
-/* line 295, ../../_preprocess/sass/core/_helpers.scss */
-[role="navigation"].tile-grid ul li {
+/* line 121, ../../_preprocess/sass/modules/_navigation.scss */
+nav.tile-grid ul li {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-}
-/* line 119, ../../_preprocess/sass/modules/_navigation.scss */
-[role="navigation"].tile-grid ul li {
   vertical-align: top;
   width: 20%;
-  margin-right: -3px;
+  padding: 0;
+  margin-left: 0;
+  margin-right: -4px;
   text-align: center;
+  list-style: none;
+  list-style-type: none;
 }
 
-/* line 128, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 135, ../../_preprocess/sass/modules/_navigation.scss */
 .tile {
   padding: 0.375em;
+  margin: 0;
   font-size: 0.75em;
   display: block;
   vertical-align: top;
@@ -1038,11 +1057,7 @@ a {
   text-transform: uppercase;
   line-height: 1.2;
 }
-/* line 139, ../../_preprocess/sass/modules/_navigation.scss */
-.tile:hover, .tile:active {
-  background: #f3f2ec;
-}
-/* line 143, ../../_preprocess/sass/modules/_navigation.scss */
+/* line 151, ../../_preprocess/sass/modules/_navigation.scss */
 .tile img {
   vertical-align: top;
   display: block;
@@ -1058,7 +1073,8 @@ a {
   padding: 0 0 0 1em;
   margin: 0 0 0 0.5em;
   line-height: 1;
-  background: transparent;
+  background: none !important;
+  background-color: transparent !important;
   border-bottom: none;
   position: relative;
 }
@@ -1092,16 +1108,16 @@ a {
   top: 50%;
   margin-top: -6px;
 }
-/* line 26, ../../_preprocess/sass/modules/_accordion.scss */
+/* line 27, ../../_preprocess/sass/modules/_accordion.scss */
 .accordion dt.active:before {
   left: -6px;
   margin-top: -4px;
 }
-/* line 33, ../../_preprocess/sass/modules/_accordion.scss */
+/* line 34, ../../_preprocess/sass/modules/_accordion.scss */
 .accordion dd {
   margin-top: 1em;
 }
-/* line 37, ../../_preprocess/sass/modules/_accordion.scss */
+/* line 38, ../../_preprocess/sass/modules/_accordion.scss */
 .accordion li {
   font-size: 16px !important;
 }
@@ -1179,8 +1195,8 @@ table td p strong {
   padding: 0.375em;
   color: #d3d5d7;
 }
-/* line 54, ../../_preprocess/sass/modules/_table.scss */
-.findings tr:nth-child(2n) {
+/* line 53, ../../_preprocess/sass/modules/_table.scss */
+.findings tr.highlight {
   background: #f3f2ec;
 }
 /* line 59, ../../_preprocess/sass/modules/_table.scss */
@@ -1210,22 +1226,34 @@ ul li p {
   padding-left: 0;
 }
 
-/* line 42, ../../_preprocess/sass/modules/_list.scss */
+/* line 28, ../../_preprocess/sass/modules/_list.scss */
+ol li {
+  list-style-type: decimal;
+}
+
+/* line 50, ../../_preprocess/sass/modules/_list.scss */
 .has-icons, .has-numbers {
   list-style: none;
   list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 /* line 284, ../../_preprocess/sass/core/_helpers.scss */
 .has-icons li, .has-numbers li {
   list-style: none;
   list-style-type: none;
 }
-/* line 45, ../../_preprocess/sass/modules/_list.scss */
+/* line 55, ../../_preprocess/sass/modules/_list.scss */
 .has-icons strong, .has-numbers strong {
   text-transform: uppercase;
 }
+/* line 59, ../../_preprocess/sass/modules/_list.scss */
+.has-icons li, .has-numbers li {
+  padding: 0;
+  margin-left: 0;
+}
 
-/* line 50, ../../_preprocess/sass/modules/_list.scss */
+/* line 65, ../../_preprocess/sass/modules/_list.scss */
 .icon, .number {
   padding-right: 0.75em;
   margin-top: 1.125em;
@@ -1237,11 +1265,11 @@ ul li p {
   *display: inline;
   position: relative;
   width: 50%;
-  margin-right: -3px;
+  margin-right: -4px;
   vertical-align: top;
   clear: both;
 }
-/* line 64, ../../_preprocess/sass/modules/_list.scss */
+/* line 79, ../../_preprocess/sass/modules/_list.scss */
 .icon > img, .number > img {
   margin-top: -0.75em;
   padding: 0 0.75em 0 0;
@@ -1253,7 +1281,7 @@ ul li p {
   *display: inline;
   vertical-align: top;
 }
-/* line 71, ../../_preprocess/sass/modules/_list.scss */
+/* line 86, ../../_preprocess/sass/modules/_list.scss */
 .icon > p, .number > p {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1265,47 +1293,34 @@ ul li p {
   vertical-align: top;
 }
 
-/* line 82, ../../_preprocess/sass/modules/_list.scss */
-.number {
-  padding-left: 46px;
-}
-/* line 88, ../../_preprocess/sass/modules/_list.scss */
-.number:before {
-  height: 40px;
-  width: 40px;
-  display: block;
-  position: absolute;
-  left: -2px;
-  top: 0;
-  content: " ";
-  vertical-align: middle;
-}
-/* line 99, ../../_preprocess/sass/modules/_list.scss */
-.number.one:before {
-  background: url("../images/infographic/number-1.png") center center no-repeat;
-}
 /* line 103, ../../_preprocess/sass/modules/_list.scss */
-.number.two:before {
-  background: url("../images/infographic/number-2.png") center center no-repeat;
+.number > img {
+  width: 40px;
+  margin-top: -0.375em;
 }
-/* line 107, ../../_preprocess/sass/modules/_list.scss */
-.number.three:before {
-  background: url("../images/infographic/number-3.png") center center no-repeat;
-}
-/* line 111, ../../_preprocess/sass/modules/_list.scss */
-.number.four:before {
-  background: url("../images/infographic/number-4.png") center center no-repeat;
+/* line 108, ../../_preprocess/sass/modules/_list.scss */
+.number > h4 {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 240px;
+  vertical-align: top;
 }
 
-/* line 116, ../../_preprocess/sass/modules/_list.scss */
+/* line 142, ../../_preprocess/sass/modules/_list.scss */
 .details {
   display: none;
 }
 
-/* line 123, ../../_preprocess/sass/modules/_list.scss */
+/* line 150, ../../_preprocess/sass/modules/_list.scss */
 .wizard {
   list-style: none;
   list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 /* line 284, ../../_preprocess/sass/core/_helpers.scss */
 .wizard li {
@@ -1321,8 +1336,22 @@ ul li p {
   zoom: 1;
   *display: inline;
 }
-/* line 130, ../../_preprocess/sass/modules/_list.scss */
-.wizard.with-arrows .wizard-step:before {
+
+/* line 156, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-light, .wizard-step-medium, .wizard-step-dark {
+  padding: 6px 12px 6px 22px;
+  font-size: 0.875em;
+  position: relative;
+  color: white !important;
+  margin-left: -4px;
+  border-left: 1px solid white;
+}
+/* line 165, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-light:first-child, .wizard-step-medium:first-child, .wizard-step-dark:first-child {
+  margin-left: 0;
+}
+/* line 169, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-light:before, .wizard-step-medium:before, .wizard-step-dark:before {
   height: 0;
   width: 0;
   border-color: transparent;
@@ -1336,8 +1365,13 @@ ul li p {
   margin-top: -12px;
   z-index: 999;
 }
-/* line 140, ../../_preprocess/sass/modules/_list.scss */
-.wizard.with-arrows .wizard-step:after {
+
+/* line 180, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-light {
+  background: #4b8998;
+}
+/* line 183, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-light:after {
   height: 0;
   width: 0;
   border-color: transparent;
@@ -1352,53 +1386,56 @@ ul li p {
   z-index: 10000;
 }
 
-/* line 153, ../../_preprocess/sass/modules/_list.scss */
-.wizard-step {
-  padding: 6px 6px 6px 22px;
-  font-size: 0.875em;
-  position: relative;
-  color: white !important;
-  margin-left: -3px;
-  border-left: 1px solid white;
-}
-/* line 162, ../../_preprocess/sass/modules/_list.scss */
-.wizard-step:first-child {
-  margin-left: 0;
-}
-/* line 166, ../../_preprocess/sass/modules/_list.scss */
-.wizard-step.light {
-  background: #4b8998;
-}
-/* line 169, ../../_preprocess/sass/modules/_list.scss */
-.wizard-step.light:after {
-  border-left-color: #4b8998 !important;
-}
-/* line 174, ../../_preprocess/sass/modules/_list.scss */
-.wizard-step.medium {
+/* line 194, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-medium {
   background: #086878;
 }
-/* line 177, ../../_preprocess/sass/modules/_list.scss */
-.wizard-step.medium:after {
-  border-left-color: #086878 !important;
-}
-/* line 182, ../../_preprocess/sass/modules/_list.scss */
-.wizard-step.dark {
-  background: #013846;
-}
-/* line 185, ../../_preprocess/sass/modules/_list.scss */
-.wizard-step.dark:after {
-  border-left-color: #013846 !important;
+/* line 197, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-medium:after {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 12px;
+  border-left-color: #086878;
+  content: ' ';
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  margin-top: -12px;
+  z-index: 10000;
 }
 
-/* line 193, ../../_preprocess/sass/modules/_list.scss */
-#social-marketing-evidence-base .wizard-step {
+/* line 208, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-dark {
+  background: #013846;
+}
+/* line 211, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-dark:after {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 12px;
+  border-left-color: #013846;
+  content: ' ';
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  margin-top: -12px;
+  z-index: 10000;
+}
+
+/* line 224, ../../_preprocess/sass/modules/_list.scss */
+#social-marketing-evidence-base .wizard-step-light, #social-marketing-evidence-base .wizard-step-medium, #social-marketing-evidence-base .wizard-step-dark {
   height: 80px;
   width: 20%;
 }
-/* line 198, ../../_preprocess/sass/modules/_list.scss */
+/* line 229, ../../_preprocess/sass/modules/_list.scss */
 #social-marketing-evidence-base .wizard-label {
   font-size: 10px;
   margin-top: 6px;
+  margin-left: -4px;
   height: 12px;
   display: block;
   position: relative;
@@ -1410,7 +1447,7 @@ ul li p {
   border-left: 2px solid #73a533;
   border-right: 2px solid #73a533;
 }
-/* line 214, ../../_preprocess/sass/modules/_list.scss */
+/* line 246, ../../_preprocess/sass/modules/_list.scss */
 #social-marketing-evidence-base .wizard-label > span {
   padding: 6px 10px;
   display: -moz-inline-stack;

@@ -9,7 +9,7 @@ layout: default
 
 <h1>{% if page.categories[0] != "hiv" %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% else %}{{ page.categories | first | upcase }}{% endif %}</h1>
 
-<nav role="navigation">
+<nav role="navigation" class="nav">
   {% capture cat %}{{ page.categories | first }}{% endcapture %}
   {% comment %} If a page has a second category, create another local nav {% endcomment %}
   {% if page.topic %}

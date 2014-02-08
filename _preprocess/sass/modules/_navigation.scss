@@ -7,7 +7,7 @@
 // -----------------------------------------------------------------------------
 
 [role="navigation"], .nav {
-	// margin-bottom: 24px;
+	margin-bottom: em(24);
 }
 
 // SUBMODULES
@@ -87,7 +87,7 @@ $color--hover: lighten($color-text--primary, 20);
       font-size: 12px;
       display: block;
       position: relative;
-      padding: em(2) em(16);
+      padding: em(4) em(16);
       margin: em(16) 0;
       color: $color--inactive;
 
@@ -108,25 +108,33 @@ $color--hover: lighten($color-text--primary, 20);
 
 $tile-cols: 3;
 
-[role="navigation"].tile-grid {
+nav.tile-grid {
   margin-bottom: em(18);
   text-align: center;
 
   ul {
-    @include inline-list;
+    // @include inline-list;
     // vertical-align: top;
+    list-style: none;
+    list-style-type: none;
 
     li {
+      @include inline-block;
       vertical-align: top;
       width: 20%;
+      padding: 0;
+      margin-left: 0;
       margin-right: $margin-whitespace;
       text-align: center;
+      list-style: none;
+      list-style-type: none;
     }
   }
 }
 
   .tile {
     padding: em(6);
+    margin: 0;
     font-size: em(12);
     display: block;
     vertical-align: top;
@@ -136,9 +144,9 @@ $tile-cols: 3;
     text-transform: uppercase;
     line-height: 1.2;
 
-    &:hover, &:active {
-      background: lighten($beige--light, 10%);
-    }
+    // &:hover, &:active {
+    //   background: lighten($beige--light, 10%);
+    // }
 
     img {
       vertical-align: top;

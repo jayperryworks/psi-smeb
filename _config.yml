@@ -10,3 +10,4 @@ exclude: ["README.md", "config.rb", "scratch.html", "psi-smeb-updates.sublime-pr
 
 
 assets: http://psilearning.org/jay
+serverurl: /resources/social-marketing-evidence-base
