@@ -7,25 +7,37 @@
 // -----------------------------------------------------------------------------
 
 ul {
+  // padding-left: 1em;
+  // margin-left: 1em;
 
+  li {
+    background: none;
+    list-style-type: disc;
+    padding-left: 0;
+    margin-left: 2em;
+
+    p {
+      padding-left: 0;
+    }
+  }
 }
 
 // SUBMODULES
 // -----------------------------------------------------------------------------
 
-.post {
-  ul {
-    margin: 1em 0;
+// .post {
+//   ul {
+//     margin: 1em 0;
 
-    p {
-      margin-bottom: 0;
-    }
-  }
+//     p {
+//       margin-bottom: 0;
+//     }
+//   }
 
-  li ul {
-    margin-left: 1em;
-  }
-}
+//   li ul {
+//     margin-left: 1em;
+//   }
+// }
 
 .has-icons {
  @include unstyled-list;
@@ -36,8 +48,8 @@ ul {
 }
 
   .icon {
-    @include rem(padding-right, 12px);
-    @include rem(margin-top, 18px);
+    padding-right: em(12);
+    margin-top: em(18);
     @include inline-block;
     position: relative;
     width: 50%;
@@ -50,8 +62,8 @@ ul {
     // }
     
     & > img {
-      @include rem(margin-top, -12px);
-      @include rem(padding, 0 12px 0 0);
+      margin-top: -(em(12));
+      padding: 0 em(12) 0 0;
       @include inline-block;
       vertical-align: top;
     }
@@ -71,11 +83,11 @@ ul {
     $size: 40px;
     $margin: 6px;
     @extend .icon;
-    @include rem(padding-left, $size + $margin);
+    padding-left: ($size + $margin);
 
     &:before {
-      @include rem(height, $size);
-      @include rem(width, $size);
+      height: $size;
+      width: $size;
       display: block;
       position: absolute;
       left: -#{$margin/3};
@@ -139,8 +151,8 @@ ul {
   }
 
     .wizard-step {
-      @include rem(padding, 6px 6px 6px 22px);
-      @include rem(font-size, 14px);
+      padding: 6px 6px 6px 22px;
+      font-size: em(14);
       // vertical-align: top;
       position: relative;
       color: white !important;
@@ -179,15 +191,15 @@ ul {
     #social-marketing-evidence-base {
 
       .wizard-step {
-        @include rem(height, 80px);
+        height: 80px;
         width: 20%;
       }
 
       .wizard-label {
         $border: 2px solid $green;
-        @include rem(font-size, 10px);
-        @include rem(margin-top, 6px);
-        @include rem(height, 12px);
+        font-size: 10px;
+        margin-top: 6px;
+        height: 12px;
         // margin-left: $margin-whitespace;
         display: block;
         position: relative;
@@ -200,8 +212,8 @@ ul {
         border-right: $border;
 
         & > span {
-          // @include rem(margin-bottom, -2px);
-          @include rem(padding, 6px 10px);
+          // margin-bottom, -2px);
+          padding: 6px 10px;
           @include inline-block;
           background: white;
         }

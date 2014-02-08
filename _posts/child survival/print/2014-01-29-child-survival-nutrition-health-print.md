@@ -1,6 +1,6 @@
 ---
 layout:     outcomes-print
-title:      "Health"
+title:      "Health Outcomes"
 date:       2014-01-03 00:00:01
 categories: 
   - Child Survival

@@ -661,41 +661,17 @@ h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:
 
 /* line 30, ../../_preprocess/sass/core/_content.scss */
 h1 {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 1.25em;
   line-height: 1.2;
-}
-
-/* line 35, ../../_preprocess/sass/core/_content.scss */
-h2 {
-  font-size: 27px;
-  font-size: 1.6875rem;
-}
-
-/* line 39, ../../_preprocess/sass/core/_content.scss */
-h3 {
-  font-size: 18px;
-  font-size: 1.125rem;
 }
 
 /* line 43, ../../_preprocess/sass/core/_content.scss */
 h4 {
-  font-size: 18px;
-  font-size: 1.125rem;
   font-weight: bold;
 }
 
 /* line 48, ../../_preprocess/sass/core/_content.scss */
 h5 {
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-}
-
-/* line 53, ../../_preprocess/sass/core/_content.scss */
-h6 {
-  font-size: 12px;
-  font-size: 0.75rem;
   font-weight: bold;
 }
 
@@ -731,14 +707,12 @@ h6 {
 
 /* line 92, ../../_preprocess/sass/core/_content.scss */
 .intro {
-  font-size: 21px;
-  font-size: 1.3125rem;
+  font-size: 1.3125em;
 }
 
 /* line 96, ../../_preprocess/sass/core/_content.scss */
 p, table, li {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 /* line 100, ../../_preprocess/sass/core/_content.scss */
@@ -779,10 +753,8 @@ a {
 
 /* line 129, ../../_preprocess/sass/core/_content.scss */
 .credits {
-  font-size: 12px;
-  font-size: 0.75rem;
-  margin-top: 24px;
-  margin-top: 1.5rem;
+  font-size: 0.75em;
+  margin-top: 1.5em;
   display: block;
 }
 

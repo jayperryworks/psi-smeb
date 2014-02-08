@@ -28,7 +28,7 @@
     }
 
     h6 {
-      color: $color-text--secondary;
+      color: $gray;
     }
   }
 
@@ -36,10 +36,6 @@
     margin: em(12) 0;
     clear: both;
     overflow: hidden;
-    
-    &:after {
-      @include clearfix;
-    }
   }
   
   dt {

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Health"
+title:      "Health Outcomes"
 date:       2014-01-01 00:00:01
 categories: 
   - Child Survival

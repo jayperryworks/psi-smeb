@@ -7,7 +7,7 @@ $w: 12px;
 // -----------------------------------------------------------------------------
 
 .accordion {
-  @include rem(font-size, $type-size--default);
+  font-size: $type-size--default;
 
   dt {
     
@@ -31,11 +31,11 @@ $w: 12px;
   }
 
   dd {
-    @include rem(margin-top, 16px);
+    margin-top: em(16);
   }
 
   li {
-    @include rem(font-size, $type-size--default !important);
+    font-size: $type-size--default !important;
   }
 }
 

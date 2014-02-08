@@ -11,7 +11,7 @@
     {% capture level %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
     {% capture relativepath %}{% for i in (3..level) %}../{% endfor %}{% endcapture %}
 
-    <link rel="stylesheet" href="{{ site.baseurl }}{{ relativepath }}assets/css/pdf.css">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}{{ serverpath }}/assets/css/pdf.css">
     
   </head>
 
@@ -21,7 +21,7 @@
       <thead class="header global">
         <tr>
           <th>
-            <img src="{{ relativepath }}{{ site.baseurl }}assets/images/logo-psi-print.png" alt="Population Services International" />
+            <img src="{{ site.url }}{{ site.baseurl }}{{ serverpath }}/assets/images/logo-psi-print.png" alt="Population Services International" />
             <h5>Social Marketing Evidence Base</h5>
           </th>
         </tr>

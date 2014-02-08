@@ -28,31 +28,31 @@ hgroup {
 }
 
 h1, %h1 {
-	@include rem(font-size, 20px);
+	font-size: em(20);
 	line-height: 1.2;
 }
 
 h2, %h2 {
-	@include rem(font-size, 27px);
+	// font-size: em(27);
 }
 
 h3, %h3 {
-	@include rem(font-size, 18px);
+	// font-size: em(18);
 }
 
 h4, %h4 {
-	@include rem(font-size, 18px);
+	// font-size: em(18);
 	font-weight: bold;
 }
 
 h5, %h5 {
-	@include rem(font-size, 14px);
+	// font-size: em(14);
 	font-weight: bold;
 }
 
 h6, %h6 {
-	@include rem(font-size, 12px);
-	font-weight: bold;
+	// font-size: em(12);
+	// font-weight: bold;
 }
 
 #social-marketing-evidence-base {
@@ -90,11 +90,11 @@ h6, %h6 {
 
 // bigger first paragraph
 .intro {
-	@include rem(font-size, 21px);
+	font-size: em(21);
 }
 
 p, table, li {
-	@include rem(font-size, 16px);
+	font-size: em(16);
 }
 
 ol, ul {
@@ -127,8 +127,8 @@ a {
 }
 
 .credits {
-	@include rem(font-size, 12px);
-	@include rem(margin-top, 24px);
+	font-size: em(12);
+	margin-top: em(24);
 	display: block;
 }
 

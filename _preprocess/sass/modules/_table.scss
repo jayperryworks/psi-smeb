@@ -22,7 +22,9 @@ table {
 
     p {
       font-size: inherit;
-      margin-top: 0;
+      margin-left: 0;
+      padding-left: 0;
+      margin-bottom: 1em;
 
       strong {
         font-size: inherit;
@@ -43,8 +45,8 @@ table {
   }
 
   th {
-    @include rem(font-size, 14px);
-    @include rem(padding, 6px);
+    font-size: em(14);
+    padding: em(6);
     color: $color-text--secondary;
   }
 
@@ -55,8 +57,8 @@ table {
   }
 
   td {
-    @include rem(font-size, 18px);
-    @include rem(padding, 6px);
+    font-size: em(18);
+    padding: em(6);
     vertical-align: middle;
     text-align: center;
     font-weight: bold;

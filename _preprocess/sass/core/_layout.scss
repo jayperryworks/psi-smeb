@@ -9,30 +9,30 @@ html, body {
 }
 
 body {
-  @include rem(padding-bottom, 36px);
+  padding-bottom: em(36);
 }
 
 header {
   max-width: $page-width;
   margin: 0 auto;
-  padding: rem(12px) 0;
+  padding: em(12) 0;
   border-bottom: $hairline--light;
-  font-size: rem(12px);
+  font-size: em(12);
 }
 
 #home section {
   border-top: 1px solid #ccc;
-  padding: rem(12) 0;
+  padding: em(12) 0;
 }
 
 [role="main"] {
-  margin: rem(18px) auto;
+  margin: em(18) auto;
   max-width: $page-width;
 }
 
 .posts {
   @include unstyled-list;
-  margin: 0 0 rem(12px) 0;
+  margin: 0 0 em(12) 0;
   padding: 0;
 }
 
@@ -44,29 +44,29 @@ header {
 }
 
 .hero {
-  @include rem(margin-bottom, 24px);
+  margin-bottom: em(24);
 }
 
 #social-marketing-evidence-base {
 
   section {
-    @include rem(padding, 24px 12px);
+    padding: em(24) em(12);
     border-top: 2px dotted $green;
 
     &.first {
-      @include rem(margin-top, 24px);
+      margin-top: em(24);
     }
   }
   
   .subsection {
-    @include rem(margin-top, 2px);
+    margin-top: 2px;
     @include clearfix;
     border-top: none;
     background: lighten($beige--light, 8%);
     overflow: hidden;
 
     &.first, &.light.first {
-      @include rem(margin-top, 24px);
+      margin-top: em(24);
     }
 
     #{headers()}, strong {

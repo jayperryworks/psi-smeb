@@ -5,7 +5,7 @@ layout: default
 {% assign words = page.categories[0] | split: " " %}
 {% assign pdfurl = "http://learning.psi.org/jay/table-pdf/" %}
 
-<img src="{{ site.assets }}/images/banners/{{ page.categories | first | replace: ' ','-' | downcase }}.png" alt="page.title" class="hero" />
+{% comment %}<img src="{{ site.assets }}/images/banners/{{ page.categories | first | replace: ' ','-' | downcase }}.png" alt="page.title" class="hero" />{% endcomment %}
 
 <h1>{% if page.categories[0] != "hiv" %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% else %}{{ page.categories | first | upcase }}{% endif %}</h1>
 
@@ -17,10 +17,11 @@ layout: default
   <ul class="tabs level1">
     {% for post in site.categories.[cat] %}
     {% if post.topic %}
+    {% capture urltopic %}/{{ cat | replace: ' ', '-' | downcase }}/{{ post.topic | replace: '_', '-' | downcase }}/{{ post.title | replace: ' ', '-' | downcase }}{% endcapture %}
     {% unless post.categories contains "print" %}
     {% if post.tags contains "landing" %}
     {% assign topicwords = post.topic | split: "_" %}
-    <li><a href="{{ post.url }}"{% if post.topic == topic %} class="active"{% endif %}>{% for word in topicwords %}{{ word | capitalize }} {% endfor %}</a></li>
+    <li><a href="{{ site.url }}{{ site.baseurl }}{{ urltopic }}"{% if post.topic == topic %} class="active"{% endif %}>{% for word in topicwords %}{{ word | capitalize }} {% endfor %}</a></li>
     {% endif %}
     {% endunless %}
     {% endif %}
@@ -32,9 +33,10 @@ layout: default
   {% unless post.topic == "overview" %}
   <ul class="tabs {% if page.topic %}level2{% else %}level1{% endif %}">
   {% for post in site.categories.[cat] %}
+    {% capture urlpost %}/{{ cat | replace: ' ', '-' | downcase }}/{% if post.topic %}{{ post.topic | replace: '_', '-' | downcase }}/{% endif %}{{ post.title | replace: ' ', '-' | downcase }}{% endcapture %}
     {% if post.topic == topic %}
     {% unless post.categories contains "print" %}
-    <li><a href="{{ post.url }}"{% if post.title == page.title %} class="active"{% endif %}>{{ post.title }}</a></li>
+    <li><a href="{{ site.url }}{{ site.baseurl }}{{ urlpost }}"{% if post.title == page.title %} class="active"{% endif %}>{{ post.title }}</a></li>
     {% endunless %}
     {% endif %}
   {% endfor %}
@@ -51,60 +53,60 @@ layout: default
 
   {{ content }}
 
-  <!-- https://github.com/avillafiorita/jekyll-csv_read -->
+  {% comment %} https://github.com/avillafiorita/jekyll-csv_read {% endcomment %}
   {% if page.data %}
   {% for row in site.data.[page.data].content_hash %}
   <section class="studies-listing">
     <hgroup>
       <h4><a href="{{ row.link }}">{{ row.title }}</a></h4>
-      <h5>{{ row.authors }}</h5>
-      <h6>{{ row.journal }}</h6>
+      <h5>{{ row.authors | strip }}</h5>
+      <h6>{{ row.journal | strip }}</h6>
     </hgroup>
 
     <table>
       <tr>
         <td class="category">Location</td>
-        <td>{{ row.location }}</td>
+        <td>{{ row.location | strip }}</td>
       </tr>
       <tr>
         <td class="category">Population</td>
-        <td>{{ row.population }}</td>
+        <td>{{ row.population | strip }}</td>
       </tr>
       <tr>
         <td class="category">Intervention Description</td>
-        <td>{{ row.intervention }}</td>
+        <td>{{ row.intervention | strip }}</td>
       </tr>
       <tr>
         <td class="category">Outcomes</td>
         <td>
           {% if row.outcomes-bf %}
-          <p><strong>Behavioral Factors:</strong> {{ row.outcomes-bf }}</p>
+          <p><strong>Behavioral Factors:</strong> {{ row.outcomes-bf | strip }}</p>
           {% endif %}
 
           {% if row.outcomes-behavior %}
-          <p><strong>Behaviors:</strong> {{ row.outcomes-behavior }}</p>
+          <p><strong>Behaviors:</strong> {{ row.outcomes-behavior | strip }}</p>
           {% endif %}
           
           {% if row.outcomes-health %}
-          <p><strong>Health:</strong> {{ row.outcomes-health }}</p>
+          <p><strong>Health:</strong> {{ row.outcomes-health | strip }}</p>
           {% endif %}
         </td>
       </tr>
       <tr>
         <td class="category">Design</td>
-        <td>{{ row.design }}</td>
+        <td>{{ row.design | strip }}</td>
       </tr>
       <tr>
         <td class="category">Sampling Method</td>
-        <td>{{ row.sampling }}</td>
+        <td>{{ row.sampling | strip }}</td>
       </tr>
       <tr>
         <td class="category">Strength of Evidence Score</td>
-        <td>{{ row.soe }}</td>
+        <td>{{ row.soe | strip }}</td>
       </tr>
       <tr>
         <td class="category">Social Marketing Benchmark Criteria</td>
-        <td>{{ row.smbc }}</td>
+        <td>{{ row.smbc | strip }}</td>
       </tr>
     </table>
   </section>

@@ -7,7 +7,7 @@
 // -----------------------------------------------------------------------------
 
 [role="navigation"], .nav {
-	@include rem(margin-bottom, 24px);
+	// margin-bottom: 24px;
 }
 
 // SUBMODULES
@@ -45,11 +45,12 @@ $color--hover: lighten($color-text--primary, 20);
     li {
       margin: 0 -3px 0 0;
       padding: 0;
+      list-style: none;
     }
 
     a {
-      @include rem(font-size, 14px);
-      @include rem(margin, 0 1px -#{$border-width} 0);
+      font-size: 14px;
+      margin: 0 1px -#{$border-width} 0;
       padding: em(12) em(8);
       // background: $beige--light;
       border-bottom: $border-width solid $border-color;
@@ -79,7 +80,7 @@ $color--hover: lighten($color-text--primary, 20);
     border-bottom: $hairline--light;
 
     a {
-      @include rem(font-size, 12px);
+      font-size: 12px;
       display: block;
       position: relative;
       padding: em(2) em(16);
@@ -104,7 +105,7 @@ $color--hover: lighten($color-text--primary, 20);
 $tile-cols: 3;
 
 [role="navigation"].tile-grid {
-  @include rem(margin-bottom, 18px);
+  margin-bottom: em(18);
   text-align: center;
 
   ul {
@@ -121,8 +122,8 @@ $tile-cols: 3;
 }
 
   .tile {
-    @include rem(padding, 6px);
-    @include rem(font-size, 12px);
+    padding: em(6);
+    font-size: em(12);
     display: block;
     vertical-align: top;
     text-align: center;
