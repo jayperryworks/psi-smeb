@@ -79,6 +79,10 @@ $color--hover: lighten($color-text--primary, 20);
     // @include rem(margin, 6px 0 0 0);
     border-bottom: $hairline--light;
 
+    li {
+      margin: 0;
+    }
+
     a {
       font-size: 12px;
       display: block;

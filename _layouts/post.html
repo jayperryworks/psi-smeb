@@ -59,54 +59,54 @@ layout: default
   <section class="studies-listing">
     <hgroup>
       <h4><a href="{{ row.link }}">{{ row.title }}</a></h4>
-      <h5>{{ row.authors | strip }}</h5>
-      <h6>{{ row.journal | strip }}</h6>
+      <h5>{{ row.authors | strip | strip_newlines }}</h5>
+      <h6>{{ row.journal | strip | strip_newlines }}</h6>
     </hgroup>
 
     <table>
       <tr>
         <td class="category">Location</td>
-        <td>{{ row.location | strip }}</td>
+        <td>{{ row.location | strip | strip_newlines }}</td>
       </tr>
       <tr>
         <td class="category">Population</td>
-        <td>{{ row.population | strip }}</td>
+        <td>{{ row.population | strip | strip_newlines }}</td>
       </tr>
       <tr>
         <td class="category">Intervention Description</td>
-        <td>{{ row.intervention | strip }}</td>
+        <td>{{ row.intervention | strip | strip_newlines }}</td>
       </tr>
       <tr>
         <td class="category">Outcomes</td>
         <td>
           {% if row.outcomes-bf %}
-          <p><strong>Behavioral Factors:</strong> {{ row.outcomes-bf | strip }}</p>
+          <p><strong>Behavioral Factors:</strong> {{ row.outcomes-bf | strip | strip_newlines }}</p>
           {% endif %}
 
           {% if row.outcomes-behavior %}
-          <p><strong>Behaviors:</strong> {{ row.outcomes-behavior | strip }}</p>
+          <p><strong>Behaviors:</strong> {{ row.outcomes-behavior | strip | strip_newlines }}</p>
           {% endif %}
           
           {% if row.outcomes-health %}
-          <p><strong>Health:</strong> {{ row.outcomes-health | strip }}</p>
+          <p><strong>Health:</strong> {{ row.outcomes-health | strip | strip_newlines }}</p>
           {% endif %}
         </td>
       </tr>
       <tr>
         <td class="category">Design</td>
-        <td>{{ row.design | strip }}</td>
+        <td>{{ row.design | strip | strip_newlines }}</td>
       </tr>
       <tr>
         <td class="category">Sampling Method</td>
-        <td>{{ row.sampling | strip }}</td>
+        <td>{{ row.sampling | strip | strip_newlines }}</td>
       </tr>
       <tr>
         <td class="category">Strength of Evidence Score</td>
-        <td>{{ row.soe | strip }}</td>
+        <td>{{ row.soe | strip | strip_newlines }}</td>
       </tr>
       <tr>
         <td class="category">Social Marketing Benchmark Criteria</td>
-        <td>{{ row.smbc | strip }}</td>
+        <td>{{ row.smbc | strip | strip_newlines }}</td>
       </tr>
     </table>
   </section>
