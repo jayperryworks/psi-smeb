@@ -1219,19 +1219,23 @@ ul li {
   background: none;
   list-style-type: disc;
   padding-left: 0;
-  margin-left: 2em;
 }
 /* line 19, ../../_preprocess/sass/modules/_list.scss */
 ul li p {
   padding-left: 0;
 }
 
-/* line 28, ../../_preprocess/sass/modules/_list.scss */
+/* line 25, ../../_preprocess/sass/modules/_list.scss */
+.post li ul {
+  margin-bottom: 1em;
+}
+
+/* line 32, ../../_preprocess/sass/modules/_list.scss */
 ol li {
   list-style-type: decimal;
 }
 
-/* line 50, ../../_preprocess/sass/modules/_list.scss */
+/* line 54, ../../_preprocess/sass/modules/_list.scss */
 .has-icons, .has-numbers {
   list-style: none;
   list-style-type: none;
@@ -1243,17 +1247,17 @@ ol li {
   list-style: none;
   list-style-type: none;
 }
-/* line 55, ../../_preprocess/sass/modules/_list.scss */
+/* line 59, ../../_preprocess/sass/modules/_list.scss */
 .has-icons strong, .has-numbers strong {
   text-transform: uppercase;
 }
-/* line 59, ../../_preprocess/sass/modules/_list.scss */
+/* line 63, ../../_preprocess/sass/modules/_list.scss */
 .has-icons li, .has-numbers li {
   padding: 0;
   margin-left: 0;
 }
 
-/* line 65, ../../_preprocess/sass/modules/_list.scss */
+/* line 69, ../../_preprocess/sass/modules/_list.scss */
 .icon, .number {
   padding-right: 0.75em;
   margin-top: 1.125em;
@@ -1269,7 +1273,7 @@ ol li {
   vertical-align: top;
   clear: both;
 }
-/* line 79, ../../_preprocess/sass/modules/_list.scss */
+/* line 83, ../../_preprocess/sass/modules/_list.scss */
 .icon > img, .number > img {
   margin-top: -0.75em;
   padding: 0 0.75em 0 0;
@@ -1281,7 +1285,7 @@ ol li {
   *display: inline;
   vertical-align: top;
 }
-/* line 86, ../../_preprocess/sass/modules/_list.scss */
+/* line 90, ../../_preprocess/sass/modules/_list.scss */
 .icon > p, .number > p {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1293,12 +1297,12 @@ ol li {
   vertical-align: top;
 }
 
-/* line 103, ../../_preprocess/sass/modules/_list.scss */
+/* line 107, ../../_preprocess/sass/modules/_list.scss */
 .number > img {
   width: 40px;
   margin-top: -0.375em;
 }
-/* line 108, ../../_preprocess/sass/modules/_list.scss */
+/* line 112, ../../_preprocess/sass/modules/_list.scss */
 .number > h4 {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1310,12 +1314,12 @@ ol li {
   vertical-align: top;
 }
 
-/* line 142, ../../_preprocess/sass/modules/_list.scss */
+/* line 146, ../../_preprocess/sass/modules/_list.scss */
 .details {
   display: none;
 }
 
-/* line 150, ../../_preprocess/sass/modules/_list.scss */
+/* line 154, ../../_preprocess/sass/modules/_list.scss */
 .wizard {
   list-style: none;
   list-style-type: none;
@@ -1337,7 +1341,7 @@ ol li {
   *display: inline;
 }
 
-/* line 156, ../../_preprocess/sass/modules/_list.scss */
+/* line 160, ../../_preprocess/sass/modules/_list.scss */
 .wizard-step-light, .wizard-step-medium, .wizard-step-dark {
   padding: 6px 12px 6px 22px;
   font-size: 0.875em;
@@ -1346,11 +1350,11 @@ ol li {
   margin-left: -4px;
   border-left: 1px solid white;
 }
-/* line 165, ../../_preprocess/sass/modules/_list.scss */
+/* line 169, ../../_preprocess/sass/modules/_list.scss */
 .wizard-step-light:first-child, .wizard-step-medium:first-child, .wizard-step-dark:first-child {
   margin-left: 0;
 }
-/* line 169, ../../_preprocess/sass/modules/_list.scss */
+/* line 173, ../../_preprocess/sass/modules/_list.scss */
 .wizard-step-light:before, .wizard-step-medium:before, .wizard-step-dark:before {
   height: 0;
   width: 0;
@@ -1366,11 +1370,11 @@ ol li {
   z-index: 999;
 }
 
-/* line 180, ../../_preprocess/sass/modules/_list.scss */
+/* line 184, ../../_preprocess/sass/modules/_list.scss */
 .wizard-step-light {
   background: #4b8998;
 }
-/* line 183, ../../_preprocess/sass/modules/_list.scss */
+/* line 187, ../../_preprocess/sass/modules/_list.scss */
 .wizard-step-light:after {
   height: 0;
   width: 0;
@@ -1386,11 +1390,11 @@ ol li {
   z-index: 10000;
 }
 
-/* line 194, ../../_preprocess/sass/modules/_list.scss */
+/* line 198, ../../_preprocess/sass/modules/_list.scss */
 .wizard-step-medium {
   background: #086878;
 }
-/* line 197, ../../_preprocess/sass/modules/_list.scss */
+/* line 201, ../../_preprocess/sass/modules/_list.scss */
 .wizard-step-medium:after {
   height: 0;
   width: 0;
@@ -1406,11 +1410,11 @@ ol li {
   z-index: 10000;
 }
 
-/* line 208, ../../_preprocess/sass/modules/_list.scss */
+/* line 212, ../../_preprocess/sass/modules/_list.scss */
 .wizard-step-dark {
   background: #013846;
 }
-/* line 211, ../../_preprocess/sass/modules/_list.scss */
+/* line 215, ../../_preprocess/sass/modules/_list.scss */
 .wizard-step-dark:after {
   height: 0;
   width: 0;
@@ -1426,12 +1430,12 @@ ol li {
   z-index: 10000;
 }
 
-/* line 224, ../../_preprocess/sass/modules/_list.scss */
+/* line 228, ../../_preprocess/sass/modules/_list.scss */
 #social-marketing-evidence-base .wizard-step-light, #social-marketing-evidence-base .wizard-step-medium, #social-marketing-evidence-base .wizard-step-dark {
   height: 80px;
   width: 20%;
 }
-/* line 229, ../../_preprocess/sass/modules/_list.scss */
+/* line 233, ../../_preprocess/sass/modules/_list.scss */
 #social-marketing-evidence-base .wizard-label {
   font-size: 10px;
   margin-top: 6px;
@@ -1447,7 +1451,7 @@ ol li {
   border-left: 2px solid #73a533;
   border-right: 2px solid #73a533;
 }
-/* line 246, ../../_preprocess/sass/modules/_list.scss */
+/* line 250, ../../_preprocess/sass/modules/_list.scss */
 #social-marketing-evidence-base .wizard-label > span {
   padding: 6px 10px;
   display: -moz-inline-stack;

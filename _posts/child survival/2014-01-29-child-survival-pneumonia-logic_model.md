@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Logic Model"
-date:       2014-01-03 00:00:01
+date:       2014-01-02 00:00:01
 categories: 
   - Child Survival
 topic: pneumonia

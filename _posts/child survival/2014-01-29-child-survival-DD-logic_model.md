@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Logic Model"
-date:       2014-01-04 00:00:02
+date:       2014-01-03 00:00:02
 categories: 
   - Child Survival
 topic: diarrheal_disease

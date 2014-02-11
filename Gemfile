@@ -20,6 +20,7 @@ group :development do
   # gem 'terminal-notifier-guard'
   gem 'guard-compass'
   gem 'guard-concat'
+  # gem 'guard-premailer'
   # gem 'guard-uglify'
   # gem 'guard-jekyll-plus' # not compatible with github-pages : (
   gem 'guard-livereload'

@@ -54,7 +54,8 @@
     <script type="text/javascript" src="http://psi.org/sites/default/themes/psi/scripts/niftycube.js?k"></script>{% endcomment %}
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="{{ relativepath }}assets/css/app.css">
+    {% comment %}{{ relativepath }}assets/css/app.css{% endcomment %}
+    <link rel="stylesheet" href="http://smeb.jayperryworks.com/_deploy/assets/css/app.css">
     {% comment %}<script src="{{ relativepath }}assets/js/vendor/modernizr.custom.11128.js"></script>{% endcomment %}
   </head>
   <body id="{% if page.slug %}{{ page.slug | replace: ' ','-' | downcase }}{% else %}{{ page.title | replace: ' ','-' | downcase }}{% endif %}">

@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<!-- http://zurb.com/ink/inliner.php -->
+
 {% assign words = page.categories[0] | split: " " %}
 {% assign pdfurl = "http://learning.psi.org/jay/table-pdf/" %}
 
@@ -30,7 +32,8 @@ layout: default
   </ul>
   {% endif %}
   
-  {% unless post.topic == "overview" %}
+  {% unless page.topic contains "overview" %}
+  {% unless page.topic contains "pneumonia" %}
   <ul class="tabs {% if page.topic %}level2{% else %}level1{% endif %}">
   {% for post in site.categories.[cat] %}
     {% capture urlpost %}/{{ cat | replace: ' ', '-' | downcase }}/{% if post.topic %}{{ post.topic | replace: '_', '-' | downcase }}/{% endif %}{{ post.title | replace: ' ', '-' | downcase }}{% endcapture %}
@@ -41,6 +44,7 @@ layout: default
     {% endif %}
   {% endfor %}
   </ul>
+  {% endunless %}
   {% endunless %}
 </nav>
 
