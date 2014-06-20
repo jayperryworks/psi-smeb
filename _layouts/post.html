@@ -9,7 +9,12 @@ layout: default
 
 {% comment %}<img src="{{ site.assets }}/images/banners/{{ page.categories | first | replace: ' ','-' | downcase }}.png" alt="page.title" class="hero" />{% endcomment %}
 
-<h1>{% if page.categories[0] != "hiv" %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% else %}{{ page.categories | first | upcase }}{% endif %}</h1>
+<style type="text/css" scoped>
+</style>
+
+{% unless site.deploy %}
+<h1>{% if page.categories[0] != "hiv" %}{% include capitalize.html phrase=words %}{% else %}{{ page.categories | first | upcase }}{% endif %}</h1>
+{% endunless %}
 
 <nav role="navigation" class="nav">
   {% capture cat %}{{ page.categories | first }}{% endcapture %}
@@ -23,7 +28,7 @@ layout: default
     {% unless post.categories contains "print" %}
     {% if post.tags contains "landing" %}
     {% assign topicwords = post.topic | split: "_" %}
-    <li><a href="{{ site.url }}{{ site.baseurl }}{{ urltopic }}"{% if post.topic == topic %} class="active"{% endif %}>{% for word in topicwords %}{{ word | capitalize }} {% endfor %}</a></li>
+    <li><a href="{{ site.url }}{{ site.baseurl }}{{ urltopic }}"{% if post.topic == topic %} class="active"{% endif %}>{% include capitalize.html phrase=topicwords %}</a></li>
     {% endif %}
     {% endunless %}
     {% endif %}

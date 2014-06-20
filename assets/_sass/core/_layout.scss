@@ -1,0 +1,82 @@
+// ==============================================================================
+// Global layout styles
+// ==============================================================================
+
+// Dev site styles
+// -------------------------------------------------------------------------------
+html, body {
+  background: #fff;
+}
+
+body {
+  padding-bottom: em(36);
+}
+
+header {
+  max-width: $page-width;
+  margin: 0 auto;
+  padding: em(12) 0;
+  border-bottom: $hairline--light;
+  font-size: em(12);
+}
+
+#home section {
+  border-top: 1px solid #ccc;
+  padding: em(12) 0;
+}
+
+[role="main"] {
+  margin: em(18) auto;
+  max-width: $page-width;
+}
+
+.posts {
+  @include unstyled-list;
+  margin: 0 0 em(12) 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 2em;
+  width: 624px;
+}
+
+.hero {
+  margin-bottom: em(24);
+}
+
+#social-marketing-evidence-base {
+
+  section {
+    padding: em(24) em(12);
+    border-top: 2px dotted $green;
+
+    &.first {
+      margin-top: em(24);
+    }
+  }
+  
+  .subsection {
+    margin-top: 2px;
+    @include clearfix;
+    border-top: none;
+    background: lighten($beige--light, 8%);
+    overflow: hidden;
+
+    &.first, &.light.first {
+      margin-top: em(24);
+    }
+
+    #{headers()}, strong {
+      color: $blue--dark;
+    }
+
+    &.light {
+      #{headers()}, strong {
+        color: $blue;
+      }
+    }
+  }
+}

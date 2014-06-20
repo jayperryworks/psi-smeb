@@ -1,3 +1,4 @@
+{% unless site.deploy %}
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -11,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    {% endunless %}
     
     {% comment %} Calculate a relative path {% endcomment %}
     {% capture level %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
@@ -22,6 +25,7 @@
     {% capture urltopic %}{{ page.topic | replace: "_", "-" | downcase }}{% endcapture %}
     {% capture serverpath %}{{ urlcat }}{% if page.topic %}/{{ urltopic }}{% endif %}/{{ urltitle }}{% endcapture %}
     
+    {% unless site.deploy %}
 
     <!-- PSI.org styles -->
     <link type="text/css" rel="stylesheet" media="all" href="http://www.psi.org/modules/node/node.css?">
@@ -55,7 +59,7 @@
 
     <!-- Custom styles -->
     {% comment %}{{ relativepath }}assets/css/app.css{% endcomment %}
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="{{ relativepath }}assets/css/app.css">
     {% comment %}<script src="{{ relativepath }}assets/js/vendor/modernizr.custom.11128.js"></script>{% endcomment %}
   </head>
   <body id="{% if page.slug %}{{ page.slug | replace: ' ','-' | downcase }}{% else %}{{ page.title | replace: ' ','-' | downcase }}{% endif %}">
@@ -68,17 +72,12 @@
     {% endif %}{% endcomment %}
 
     <main role="main">
+{% endunless %}
 
       {{ content }}
 
+{% unless site.deploy %}
     </main>
-
-    {% comment%}<footer role="contentinfo">
-    </footer>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ site.url }}{{ site.baseurl }}{{ serverpath }}/assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="{{ site.url }}{{ site.baseurl }}{{ serverpath }}/assets/js/app.js"></script>
-    {% endcomment %}
   </body>
 </html>
+{% endunless %}

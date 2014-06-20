@@ -1,0 +1,257 @@
+// ==========================================================================
+//  List modules
+// ==========================================================================
+
+
+// BASE
+// -----------------------------------------------------------------------------
+
+ul {
+  // padding-left: 1em;
+  // margin-left: 0;
+
+  li {
+    background: none;
+    list-style-type: disc;
+    padding-left: 0;
+    // margin-left: 2em;
+
+    p {
+      padding-left: 0;
+    }
+  }
+}
+
+.post li ul {
+  margin-bottom: 1em;
+}
+
+ol {
+  // @extend ul;
+
+  li {
+    list-style-type: decimal;
+  }
+}
+
+// SUBMODULES
+// -----------------------------------------------------------------------------
+
+// .post {
+//   ul {
+//     margin: 1em 0;
+
+//     p {
+//       margin-bottom: 0;
+//     }
+//   }
+
+//   li ul {
+//     margin-left: 1em;
+//   }
+// }
+
+.has-icons {
+ @include unstyled-list;
+ padding-left: 0;
+ margin-left: 0;
+
+  strong {
+  text-transform: uppercase;
+  }
+
+  li {
+    padding: 0;
+    margin-left: 0;
+  }
+}
+
+  .icon {
+    padding-right: em(12);
+    margin-top: em(18);
+    @include inline-block;
+    position: relative;
+    width: 50%;
+    margin-right: $margin-whitespace;
+    vertical-align: top;
+    clear: both;
+
+    // &:first-child {
+    //   @include rem(margin-top, 24px);
+    // }
+    
+    & > img {
+      margin-top: -(em(12));
+      padding: 0 em(12) 0 0;
+      @include inline-block;
+      vertical-align: top;
+    }
+
+    & > p {
+      @include inline-block;
+      width: 65%;
+      vertical-align: top;
+    }
+  }
+
+.has-numbers {
+  @extend .has-icons;
+}
+
+  .number {
+    $size: 40px;
+    $margin: 6px;
+    @extend .icon;
+    // padding-left: ($size + $margin);
+
+    & > img {
+      width: $size;
+      margin-top: -(em(6));
+    }
+
+    & > h4 {
+      @include inline-block;
+      width: 240px;
+      vertical-align: top;
+    }
+
+    // &:before {
+    //   height: $size;
+    //   width: $size;
+    //   display: block;
+    //   position: absolute;
+    //   left: -#{$margin/3};
+    //   top: 0;
+    //   content: " ";
+    //   vertical-align: middle;
+    // }
+
+    // &.one:before {
+    //   background: url("#{$path-images}/number-1.png") center center no-repeat;
+    // }
+
+    // &.two:before {
+    //   background: url("#{$path-images}/number-2.png") center center no-repeat;
+    // }
+
+    // &.three:before {
+    //   background: url("#{$path-images}/number-3.png") center center no-repeat;
+    // }
+
+    // &.four:before {
+    //   background: url("#{$path-images}/number-4.png") center center no-repeat;
+    // }
+  }
+
+.details {
+  display: none;
+}
+
+
+// ------- Wizard -------------------------------------------
+$size: 24px;
+
+  .wizard {
+    @include inline-list;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+    .wizard-step-light, .wizard-step-medium, .wizard-step-dark {
+      padding: 6px 12px 6px 22px;
+      font-size: em(14);
+      // vertical-align: top;
+      position: relative;
+      color: white !important;
+      margin-left: $margin-whitespace;
+      border-left: 1px solid white;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:before {
+        @include triangle($size, white, right);
+        content: ' ';
+        position: absolute;
+        right: -($size);
+        top: 50%;
+        margin-top: -($size/2);
+        z-index: 999;
+      }
+    }
+
+    .wizard-step-light {
+      background: $blue--light;
+
+      &:after {
+        @include triangle($size, $blue--light, right);
+        content: ' ';
+        position: absolute;
+        right: -($size - 2px);
+        top: 50%;
+        margin-top: -($size/2);
+        z-index: 10000;
+      }
+    }
+
+    .wizard-step-medium {
+      background: $blue;
+
+      &:after {
+        @include triangle($size, $blue, right);
+        content: ' ';
+        position: absolute;
+        right: -($size - 2px);
+        top: 50%;
+        margin-top: -($size/2);
+        z-index: 10000;
+      }
+    }
+
+    .wizard-step-dark {
+      background: $blue--dark;
+
+      &:after {
+        @include triangle($size, $blue--dark, right);
+        content: ' ';
+        position: absolute;
+        right: -($size - 2px);
+        top: 50%;
+        margin-top: -($size/2);
+        z-index: 10000;
+      }
+    }
+
+    #social-marketing-evidence-base {
+
+      .wizard-step-light, .wizard-step-medium, .wizard-step-dark {
+        height: 80px;
+        width: 20%;
+      }
+
+      .wizard-label {
+        $border: 2px solid $green;
+        font-size: 10px;
+        margin-top: 6px;
+        margin-left: $margin-whitespace;
+        height: 12px;
+        // margin-left: $margin-whitespace;
+        display: block;
+        position: relative;
+        width: 60%;
+        left: 40%;
+        text-align: center;
+        text-transform: uppercase;
+        border-bottom: $border;
+        border-left: $border;
+        border-right: $border;
+
+        & > span {
+          // margin-bottom, -2px);
+          padding: 6px 10px;
+          @include inline-block;
+          background: white;
+        }
+      }
+    }

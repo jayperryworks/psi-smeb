@@ -3,6 +3,8 @@ url: http://clients.jayperryworks.com/psi-smeb
 baseurl: 
 permalink: none
 
+deploy: false
+
 markdown: redcarpet
 highlighter: true
 

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ page.categories | first | replace: " ", "-" | downcase }}-{% if page.topic %}{{ page.topic | replace: " ", "-" | downcase }}-{% endif %}{{ page.title | replace: " ", "-" | downcase }}</title>
+    <title>{{ page.categories | first | replace: " ", "-" | downcase }}-{% if page.topic %}{{ page.topic | replace: " ", "-" | downcase }}-{% endif %}{{ page.title | replace: " ", "-" | downcase | remove: "-outcomes" }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -32,8 +32,7 @@
           <td>
             <h1><strong>
               {% comment %}Loop through the words in the page title and topic and capitalize. For topic, split first at the spaces, then (inside the loop) split by hyphens.{% endcomment %}
-              {% if page.categories[0] != "hiv" %}{% for word in pagewords %}{{ word | capitalize }}{% unless forloop.last %} {% endunless %}{% endfor %}{% else %}{{ page.categories | first | upcase }}{% endif %}
-              {% if page.topic %} &rsaquo; {% for word in topicwords %}{% assign hyphens = word | split: "-" %}{% for w in hyphens %}{{ w | capitalize }}{% unless forloop.last %}-{% endunless %}{% endfor %}{% unless forloop.last %} {% endunless %}{% endfor %}{% endif %}:</strong> Studies Reporting {% if page.title != "Behaviors" %}{{ page.title }}{% else %}Behavior Change{% endif %} Outcomes</h1>
+              {% if page.categories[0] != "hiv" %}{% include capitalize.html phrase=pagewords %}{% else %}{{ page.categories | first | upcase }}{% endif %}{% if page.topic %} &rsaquo; {% include capitalize.html phrase=topicwords %}{% endif %}:</strong> Studies Reporting {% if page.title != "Behaviors" %}{{ page.title }}{% else %}Behavior Change{% endif %}{% unless page.title contains "Outcomes" %} Outcomes{% endunless %}</h1>
           </td>
         </tr>
 

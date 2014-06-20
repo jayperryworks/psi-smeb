@@ -6,5 +6,5 @@ categories: tuberculosis
 tags:       behaviors
 pdf:        tuberculosis-behaviors
 
-data:       TB-health
+data:       TB-behaviors
 ---

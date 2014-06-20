@@ -1,0 +1,2624 @@
+<style type="text/css">
+
+/* line 14, ../../_preprocess/sass/core/_fonts.scss */
+[data-icon]:before {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+}
+
+/* line 24, ../../_preprocess/sass/core/_fonts.scss */
+[data-icon]:before {
+  content: attr(data-icon);
+  speak: none;
+  /* Not to be trusted, but hey. */
+}
+
+/* line 30, ../../_preprocess/sass/core/_fonts.scss */
+.screen-reader-text {
+  /* For text that explains what the icon is (ie "RSS" or "Menu") */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../../_preprocess/sass/core/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, ../../_preprocess/sass/core/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../../_preprocess/sass/core/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 52, ../../_preprocess/sass/core/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 56, ../../_preprocess/sass/core/_normalize.scss */
+script {
+  display: none !important;
+}
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 70, ../../_preprocess/sass/core/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 80, ../../_preprocess/sass/core/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 92, ../../_preprocess/sass/core/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 100, ../../_preprocess/sass/core/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 109, ../../_preprocess/sass/core/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 122, ../../_preprocess/sass/core/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 131, ../../_preprocess/sass/core/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 140, ../../_preprocess/sass/core/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 148, ../../_preprocess/sass/core/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 156, ../../_preprocess/sass/core/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 166, ../../_preprocess/sass/core/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 178, ../../_preprocess/sass/core/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 187, ../../_preprocess/sass/core/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 195, ../../_preprocess/sass/core/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 203, ../../_preprocess/sass/core/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 212, ../../_preprocess/sass/core/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 219, ../../_preprocess/sass/core/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 223, ../../_preprocess/sass/core/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 235, ../../_preprocess/sass/core/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 243, ../../_preprocess/sass/core/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 255, ../../_preprocess/sass/core/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 267, ../../_preprocess/sass/core/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 278, ../../_preprocess/sass/core/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 292, ../../_preprocess/sass/core/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 304, ../../_preprocess/sass/core/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 316, ../../_preprocess/sass/core/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 331, ../../_preprocess/sass/core/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 341, ../../_preprocess/sass/core/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 351, ../../_preprocess/sass/core/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 362, ../../_preprocess/sass/core/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 375, ../../_preprocess/sass/core/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 384, ../../_preprocess/sass/core/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 394, ../../_preprocess/sass/core/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 407, ../../_preprocess/sass/core/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@-moz-keyframes spin {
+  /* line 155, ../../_preprocess/sass/core/_helpers.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 162, ../../_preprocess/sass/core/_helpers.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 170, ../../_preprocess/sass/core/_helpers.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 177, ../../_preprocess/sass/core/_helpers.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes spin {
+  /* line 185, ../../_preprocess/sass/core/_helpers.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 192, ../../_preprocess/sass/core/_helpers.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-ms-keyframes spin {
+  /* line 200, ../../_preprocess/sass/core/_helpers.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 207, ../../_preprocess/sass/core/_helpers.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  /* line 215, ../../_preprocess/sass/core/_helpers.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 222, ../../_preprocess/sass/core/_helpers.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* line 17, ../../_preprocess/sass/core/_base.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #444444;
+  -webkit-appearance: none;
+}
+
+/* line 22, ../../_preprocess/sass/core/_base.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5;
+}
+/* line 29, ../../_preprocess/sass/core/_base.scss */
+html * {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+/* line 38, ../../_preprocess/sass/core/_base.scss */
+main {
+  display: block;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 48, ../../_preprocess/sass/core/_base.scss */
+::-moz-selection {
+  background: #f7941e;
+  text-shadow: none;
+}
+
+/* line 53, ../../_preprocess/sass/core/_base.scss */
+::selection {
+  background: #f7941e;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 62, ../../_preprocess/sass/core/_base.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 79, ../../_preprocess/sass/core/_base.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 88, ../../_preprocess/sass/core/_base.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 98, ../../_preprocess/sass/core/_base.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 103, ../../_preprocess/sass/core/_base.scss */
+ol, ul, dl {
+  margin-bottom: 0;
+}
+
+/*
+ * Reset lists that appear in nav elements
+ */
+/* line 110, ../../_preprocess/sass/core/_base.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 116, ../../_preprocess/sass/core/_base.scss */
+p {
+  text-align: left;
+}
+
+/* line 7, ../../_preprocess/sass/core/_layout.scss */
+html, body {
+  background: #fff;
+}
+
+/* line 11, ../../_preprocess/sass/core/_layout.scss */
+body {
+  padding-bottom: 2.25em;
+}
+
+/* line 15, ../../_preprocess/sass/core/_layout.scss */
+header {
+  max-width: 624px;
+  margin: 0 auto;
+  padding: 0.75em 0;
+  border-bottom: 1px solid #dddddd;
+  font-size: 0.75em;
+}
+
+/* line 23, ../../_preprocess/sass/core/_layout.scss */
+#home section {
+  border-top: 1px solid #ccc;
+  padding: 0.75em 0;
+}
+
+/* line 28, ../../_preprocess/sass/core/_layout.scss */
+[role="main"] {
+  margin: 1.125em auto;
+  max-width: 624px;
+}
+
+/* line 33, ../../_preprocess/sass/core/_layout.scss */
+.posts {
+  list-style: none;
+  list-style-type: none;
+  margin: 0 0 0.75em 0;
+  padding: 0;
+}
+/* line 284, ../../_preprocess/sass/core/_helpers.scss */
+.posts li {
+  list-style: none;
+  list-style-type: none;
+}
+
+/* line 39, ../../_preprocess/sass/core/_layout.scss */
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 2em;
+  width: 624px;
+}
+
+/* line 46, ../../_preprocess/sass/core/_layout.scss */
+.hero {
+  margin-bottom: 1.5em;
+}
+
+/* line 52, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base section {
+  padding: 1.5em 0.75em;
+  border-top: 2px dotted #73a533;
+}
+/* line 56, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base section.first {
+  margin-top: 1.5em;
+}
+/* line 61, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base .subsection {
+  margin-top: 2px;
+  border-top: none;
+  background: #efeee5;
+  overflow: hidden;
+}
+/* line 65, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+#social-marketing-evidence-base .subsection:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 68, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base .subsection.first, #social-marketing-evidence-base .subsection.light.first {
+  margin-top: 1.5em;
+}
+/* line 72, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base .subsection h1, #social-marketing-evidence-base .subsection h2, #social-marketing-evidence-base .subsection h3, #social-marketing-evidence-base .subsection .accordion dt, .accordion #social-marketing-evidence-base .subsection dt, #social-marketing-evidence-base .subsection h4, #social-marketing-evidence-base .subsection h5, #social-marketing-evidence-base .subsection h6, #social-marketing-evidence-base .subsection strong {
+  color: #013846;
+}
+/* line 77, ../../_preprocess/sass/core/_layout.scss */
+#social-marketing-evidence-base .subsection.light h1, #social-marketing-evidence-base .subsection.light h2, #social-marketing-evidence-base .subsection.light h3, #social-marketing-evidence-base .subsection.light .accordion dt, .accordion #social-marketing-evidence-base .subsection.light dt, #social-marketing-evidence-base .subsection.light h4, #social-marketing-evidence-base .subsection.light h5, #social-marketing-evidence-base .subsection.light h6, #social-marketing-evidence-base .subsection.light strong {
+  color: #086878;
+}
+
+/* line 7, ../../_preprocess/sass/core/_content.scss */
+hgroup {
+  margin: 0 0 1em 0;
+}
+/* line 10, ../../_preprocess/sass/core/_content.scss */
+hgroup h1, hgroup h2, hgroup h3, hgroup .accordion dt, .accordion hgroup dt, hgroup h4, hgroup h5, hgroup h6 {
+  margin-bottom: 0;
+}
+
+/* line 15, ../../_preprocess/sass/core/_content.scss */
+h1, h2, h3, .accordion dt, h4, h5, h6 {
+  line-height: 1.2;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+/* line 20, ../../_preprocess/sass/core/_content.scss */
+h1 a, h2 a, h3 a, .accordion dt a, h4 a, h5 a, h6 a {
+  color: inherit;
+}
+/* line 23, ../../_preprocess/sass/core/_content.scss */
+h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, .accordion dt a:hover, h3 a:active, .accordion dt a:active, h4 a:hover, h4 a:active, h5 a:hover, h5 a:active, h6 a:hover, h6 a:active {
+  color: inherit;
+  border-bottom: none;
+}
+
+/* line 30, ../../_preprocess/sass/core/_content.scss */
+h1 {
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+
+/* line 43, ../../_preprocess/sass/core/_content.scss */
+h4 {
+  font-weight: bold;
+}
+
+/* line 48, ../../_preprocess/sass/core/_content.scss */
+h5 {
+  font-weight: bold;
+}
+
+/* line 59, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h1, #social-marketing-evidence-base h2, #social-marketing-evidence-base h3, #social-marketing-evidence-base .accordion dt, .accordion #social-marketing-evidence-base dt, #social-marketing-evidence-base h4, #social-marketing-evidence-base h5, #social-marketing-evidence-base h6 {
+  color: #f7941e;
+  text-transform: uppercase;
+}
+/* line 64, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h3, #social-marketing-evidence-base .accordion dt, .accordion #social-marketing-evidence-base dt {
+  color: #013846;
+}
+/* line 67, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h3.light, #social-marketing-evidence-base .accordion dt.light, .accordion #social-marketing-evidence-base dt.light {
+  color: #086878;
+}
+/* line 72, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h4 {
+  color: #086878;
+  font-weight: normal;
+}
+/* line 76, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h4 strong {
+  color: #f7941e;
+  font-weight: bold;
+}
+
+/* line 83, ../../_preprocess/sass/core/_content.scss */
+.category {
+  font-weight: bold;
+  width: 40%;
+}
+
+/* line 92, ../../_preprocess/sass/core/_content.scss */
+.intro {
+  font-size: 1.3125em;
+}
+
+/* line 96, ../../_preprocess/sass/core/_content.scss */
+p, table, li {
+  font-size: 1em;
+}
+
+/* line 100, ../../_preprocess/sass/core/_content.scss */
+a {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out false;
+  -o-transition: all 0.5s ease-in-out false;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 104, ../../_preprocess/sass/core/_content.scss */
+.amp {
+  font-family: "Baskerville", "Palatino", "Book Antiqua", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+
+/* line 113, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h1 {
+  font-size: 27px;
+  line-height: 1.2;
+}
+/* line 118, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h2 {
+  font-size: 24px;
+}
+/* line 122, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h3, #social-marketing-evidence-base .accordion dt, .accordion #social-marketing-evidence-base dt {
+  font-size: 20px;
+  border-bottom: none;
+}
+/* line 128, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 133, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 138, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base h6 {
+  font-size: 12px;
+}
+/* line 143, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base p {
+  margin: 0 0 0.5em 0;
+}
+/* line 148, ../../_preprocess/sass/core/_content.scss */
+#social-marketing-evidence-base p, #social-marketing-evidence-base li, #social-marketing-evidence-base td {
+  color: #086878;
+}
+
+/* line 153, ../../_preprocess/sass/core/_content.scss */
+.credits {
+  font-size: 0.75em;
+  margin-top: 1.5em;
+  display: block;
+}
+
+/* line 9, ../../_preprocess/sass/modules/_studies.scss */
+.studies {
+  clear: both;
+  overflow: hidden;
+}
+
+/* line 17, ../../_preprocess/sass/modules/_studies.scss */
+.studies-listing {
+  border-top: 1px solid #c1c1c1;
+  clear: both;
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/* line 23, ../../_preprocess/sass/modules/_studies.scss */
+.studies-listing hgroup {
+  margin-bottom: 1em;
+}
+/* line 26, ../../_preprocess/sass/modules/_studies.scss */
+.studies-listing hgroup h1, .studies-listing hgroup h2, .studies-listing hgroup h3, .studies-listing hgroup .accordion dt, .accordion .studies-listing hgroup dt, .studies-listing hgroup h4, .studies-listing hgroup h5, .studies-listing hgroup h6 {
+  margin: 0 0 0.5em 0;
+}
+/* line 30, ../../_preprocess/sass/modules/_studies.scss */
+.studies-listing hgroup h6 {
+  color: #6b7073;
+}
+/* line 35, ../../_preprocess/sass/modules/_studies.scss */
+.studies-listing dl {
+  margin: 0.75em 0;
+  clear: both;
+  overflow: hidden;
+}
+/* line 41, ../../_preprocess/sass/modules/_studies.scss */
+.studies-listing dt {
+  font-weight: bold;
+  display: table-cell;
+  float: left;
+  clear: left;
+  width: 40%;
+  margin-right: 0.3125em;
+}
+/* line 50, ../../_preprocess/sass/modules/_studies.scss */
+.studies-listing dd {
+  display: table-cell;
+  margin-left: 0;
+  clear: right;
+  width: 55%;
+  float: left;
+}
+
+/* line 9, ../../_preprocess/sass/modules/_navigation.scss */
+[role="navigation"], .nav {
+  margin-bottom: 1.5em;
+}
+
+/* line 28, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs {
+  list-style: none;
+  list-style-type: none;
+}
+/* line 284, ../../_preprocess/sass/core/_helpers.scss */
+.tabs li {
+  list-style: none;
+  list-style-type: none;
+}
+/* line 295, ../../_preprocess/sass/core/_helpers.scss */
+.tabs li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 31, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out false;
+  -o-transition: all 0.5s ease-in-out false;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+/* line 38, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level1 {
+  border-bottom: 4px solid #eeefef;
+}
+/* line 45, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level1 li {
+  margin: 0 -3px 0 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 51, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level1 a {
+  font-size: 14px;
+  margin: 0 1px -4px 0;
+  padding: 0.75em 0.5em;
+  border-bottom: 4px solid #eeefef;
+  color: #c4c4c4;
+}
+/* line 59, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level1 a:hover {
+  color: #777777;
+  border-bottom-color: #d3d5d7;
+}
+/* line 64, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level1 a.active {
+  color: #444444;
+  border-bottom-color: #f7941e;
+}
+/* line 71, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level1 a.active:hover {
+  border-bottom-color: #f7941e;
+}
+
+/* line 78, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level2 {
+  border-bottom: 1px solid #dddddd;
+}
+/* line 82, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level2 li {
+  margin: 0;
+}
+/* line 86, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level2 a {
+  font-size: 12px;
+  display: block;
+  position: relative;
+  padding: 0.25em 1em;
+  margin: 1em 0;
+  color: #c4c4c4;
+}
+/* line 94, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level2 a:hover {
+  color: #777777;
+}
+/* line 98, ../../_preprocess/sass/modules/_navigation.scss */
+.tabs.level2 a.active {
+  color: #444444;
+  background: #e1e2e3;
+  border-radius: 100px;
+}
+
+/* line 111, ../../_preprocess/sass/modules/_navigation.scss */
+nav.tile-grid {
+  margin-bottom: 1.125em;
+  text-align: center;
+}
+/* line 115, ../../_preprocess/sass/modules/_navigation.scss */
+nav.tile-grid ul {
+  list-style: none;
+  list-style-type: none;
+}
+/* line 121, ../../_preprocess/sass/modules/_navigation.scss */
+nav.tile-grid ul li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  width: 20%;
+  padding: 0;
+  margin-left: 0;
+  margin-right: -4px;
+  text-align: center;
+  list-style: none;
+  list-style-type: none;
+}
+
+/* line 135, ../../_preprocess/sass/modules/_navigation.scss */
+.tile {
+  padding: 0.375em;
+  margin: 0;
+  font-size: 0.75em;
+  display: block;
+  vertical-align: top;
+  text-align: center;
+  font-weight: bold;
+  color: #013846;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+/* line 151, ../../_preprocess/sass/modules/_navigation.scss */
+.tile img {
+  vertical-align: top;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 9, ../../_preprocess/sass/modules/_accordion.scss */
+.accordion {
+  font-size: 16px;
+}
+/* line 12, ../../_preprocess/sass/modules/_accordion.scss */
+.accordion dt {
+  padding: 0 0 0 1em;
+  margin: 0 0 0 0.5em;
+  line-height: 1;
+  background: none !important;
+  background-color: transparent !important;
+  border-bottom: none;
+  position: relative;
+}
+/* line 111, ../../_preprocess/sass/core/_helpers.scss */
+.accordion dt:before {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  border-left-color: #013846;
+  content: " ";
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: 50%;
+  margin-top: -6px;
+}
+/* line 111, ../../_preprocess/sass/core/_helpers.scss */
+.accordion dt.active:before {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  border-top-color: #013846;
+  content: " ";
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: 50%;
+  margin-top: -6px;
+}
+/* line 26, ../../_preprocess/sass/modules/_accordion.scss */
+.accordion dt.active:before {
+  left: -6px;
+  margin-top: -4px;
+}
+/* line 33, ../../_preprocess/sass/modules/_accordion.scss */
+.accordion dd {
+  margin-top: 1em;
+}
+/* line 37, ../../_preprocess/sass/modules/_accordion.scss */
+.accordion li {
+  font-size: 16px !important;
+}
+
+/* line 111, ../../_preprocess/sass/core/_helpers.scss */
+.subsection.light .accordion dt:before {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  border-left-color: #086878;
+  content: " ";
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: 50%;
+  margin-top: -6px;
+}
+/* line 111, ../../_preprocess/sass/core/_helpers.scss */
+.subsection.light .accordion dt.active:before {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  border-top-color: #086878;
+  content: " ";
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: 50%;
+  margin-top: -6px;
+}
+
+/* line 9, ../../_preprocess/sass/modules/_table.scss */
+table {
+  width: 100%;
+  margin: 0.75em 0;
+  font-size: 0.875rem;
+}
+/* line 14, ../../_preprocess/sass/modules/_table.scss */
+table tr {
+  border-top: 1px solid #dddddd;
+}
+/* line 18, ../../_preprocess/sass/modules/_table.scss */
+table td {
+  padding: 0.375em 0.375em;
+  vertical-align: top;
+}
+/* line 23, ../../_preprocess/sass/modules/_table.scss */
+table td p {
+  font-size: inherit;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 1em;
+}
+/* line 29, ../../_preprocess/sass/modules/_table.scss */
+table td p strong {
+  font-size: inherit;
+}
+
+/* line 39, ../../_preprocess/sass/modules/_table.scss */
+.findings {
+  vertical-align: middle;
+}
+/* line 42, ../../_preprocess/sass/modules/_table.scss */
+.findings thead tr {
+  border-top: none;
+  border-bottom: 1px solid #c1c1c1;
+}
+/* line 47, ../../_preprocess/sass/modules/_table.scss */
+.findings th {
+  font-size: 0.875em;
+  padding: 0.375em;
+  color: #d3d5d7;
+}
+/* line 53, ../../_preprocess/sass/modules/_table.scss */
+.findings tr.highlight {
+  background: #f3f2ec;
+}
+/* line 59, ../../_preprocess/sass/modules/_table.scss */
+.findings td {
+  font-size: 1.125em;
+  padding: 0.375em;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  color: #f7941e !important;
+}
+
+/* line 69, ../../_preprocess/sass/modules/_table.scss */
+.findings-icon {
+  text-align: left;
+}
+
+/* line 13, ../../_preprocess/sass/modules/_list.scss */
+ul li {
+  background: none;
+  list-style-type: disc;
+  padding-left: 0;
+}
+/* line 19, ../../_preprocess/sass/modules/_list.scss */
+ul li p {
+  padding-left: 0;
+}
+
+/* line 25, ../../_preprocess/sass/modules/_list.scss */
+.post li ul {
+  margin-bottom: 1em;
+}
+
+/* line 32, ../../_preprocess/sass/modules/_list.scss */
+ol li {
+  list-style-type: decimal;
+}
+
+/* line 54, ../../_preprocess/sass/modules/_list.scss */
+.has-icons, .has-numbers {
+  list-style: none;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+/* line 284, ../../_preprocess/sass/core/_helpers.scss */
+.has-icons li, .has-numbers li {
+  list-style: none;
+  list-style-type: none;
+}
+/* line 59, ../../_preprocess/sass/modules/_list.scss */
+.has-icons strong, .has-numbers strong {
+  text-transform: uppercase;
+}
+/* line 63, ../../_preprocess/sass/modules/_list.scss */
+.has-icons li, .has-numbers li {
+  padding: 0;
+  margin-left: 0;
+}
+
+/* line 69, ../../_preprocess/sass/modules/_list.scss */
+.icon, .number {
+  padding-right: 0.75em;
+  margin-top: 1.125em;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  position: relative;
+  width: 50%;
+  margin-right: -4px;
+  vertical-align: top;
+  clear: both;
+}
+/* line 83, ../../_preprocess/sass/modules/_list.scss */
+.icon > img, .number > img {
+  margin-top: -0.75em;
+  padding: 0 0.75em 0 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 90, ../../_preprocess/sass/modules/_list.scss */
+.icon > p, .number > p {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 65%;
+  vertical-align: top;
+}
+
+/* line 107, ../../_preprocess/sass/modules/_list.scss */
+.number > img {
+  width: 40px;
+  margin-top: -0.375em;
+}
+/* line 112, ../../_preprocess/sass/modules/_list.scss */
+.number > h4 {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 240px;
+  vertical-align: top;
+}
+
+/* line 146, ../../_preprocess/sass/modules/_list.scss */
+.details {
+  display: none;
+}
+
+/* line 154, ../../_preprocess/sass/modules/_list.scss */
+.wizard {
+  list-style: none;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+/* line 284, ../../_preprocess/sass/core/_helpers.scss */
+.wizard li {
+  list-style: none;
+  list-style-type: none;
+}
+/* line 295, ../../_preprocess/sass/core/_helpers.scss */
+.wizard li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 160, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-light, .wizard-step-medium, .wizard-step-dark {
+  padding: 6px 12px 6px 22px;
+  font-size: 0.875em;
+  position: relative;
+  color: white !important;
+  margin-left: -4px;
+  border-left: 1px solid white;
+}
+/* line 169, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-light:first-child, .wizard-step-medium:first-child, .wizard-step-dark:first-child {
+  margin-left: 0;
+}
+/* line 173, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-light:before, .wizard-step-medium:before, .wizard-step-dark:before {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 12px;
+  border-left-color: white;
+  content: ' ';
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  margin-top: -12px;
+  z-index: 999;
+}
+
+/* line 184, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-light {
+  background: #4b8998;
+}
+/* line 187, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-light:after {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 12px;
+  border-left-color: #4b8998;
+  content: ' ';
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  margin-top: -12px;
+  z-index: 10000;
+}
+
+/* line 198, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-medium {
+  background: #086878;
+}
+/* line 201, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-medium:after {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 12px;
+  border-left-color: #086878;
+  content: ' ';
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  margin-top: -12px;
+  z-index: 10000;
+}
+
+/* line 212, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-dark {
+  background: #013846;
+}
+/* line 215, ../../_preprocess/sass/modules/_list.scss */
+.wizard-step-dark:after {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 12px;
+  border-left-color: #013846;
+  content: ' ';
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  margin-top: -12px;
+  z-index: 10000;
+}
+
+/* line 228, ../../_preprocess/sass/modules/_list.scss */
+#social-marketing-evidence-base .wizard-step-light, #social-marketing-evidence-base .wizard-step-medium, #social-marketing-evidence-base .wizard-step-dark {
+  height: 80px;
+  width: 20%;
+}
+/* line 233, ../../_preprocess/sass/modules/_list.scss */
+#social-marketing-evidence-base .wizard-label {
+  font-size: 10px;
+  margin-top: 6px;
+  margin-left: -4px;
+  height: 12px;
+  display: block;
+  position: relative;
+  width: 60%;
+  left: 40%;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #73a533;
+  border-left: 2px solid #73a533;
+  border-right: 2px solid #73a533;
+}
+/* line 250, ../../_preprocess/sass/modules/_list.scss */
+#social-marketing-evidence-base .wizard-label > span {
+  padding: 6px 10px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background: white;
+}
+
+/* line 52, ../../_preprocess/sass/app.scss */
+.posts-sub {
+  margin-left: 0.75em;
+}
+</style>
+
+<h1>Malaria</h1>
+
+<nav role="navigation" class="nav">
+  
+  
+  
+  
+  
+  
+  <ul class="tabs level1">
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    <li><a href="http://clients.jayperryworks.com/psi-smeb/malaria/overview">Overview</a></li>
+    
+    
+  
+    
+    
+    
+    <li><a href="http://clients.jayperryworks.com/psi-smeb/malaria/logic-model">Logic Model</a></li>
+    
+    
+  
+    
+    
+    
+    <li><a href="http://clients.jayperryworks.com/psi-smeb/malaria/behavioral-factors" class="active">Behavioral Factors</a></li>
+    
+    
+  
+    
+    
+    
+    <li><a href="http://clients.jayperryworks.com/psi-smeb/malaria/behaviors">Behaviors</a></li>
+    
+    
+  
+    
+    
+    
+    <li><a href="http://clients.jayperryworks.com/psi-smeb/malaria/health-outcomes">Health Outcomes</a></li>
+    
+    
+  
+  </ul>
+  
+  
+</nav>
+
+<h2>Behavioral Factors</h2>
+
+<div class="post">
+  
+  <p><a href="http://psilearning.org/jay/table-pdf/malaria-behavioral-factors.pdf">Download a PDF of all Behavioral Factors studies</a></p>
+  
+
+  
+
+  
+  
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.malariajournal.com/content/12/1/155">Access to artemisinin-based anti-malarial
+treatment and its related factors in rural Tanzania</a></h4>
+      <h5>Khatib RA, Selemani M, Mrisho GA, Masanja IM, Amuri M, Njozi MH, Kajungu D, Kuepfer I, Abdulla SM, de Savigny D</h5>
+      <h6>Malaria Journal, 2013, 12(155): 1-8</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Kilombero-Ulanga and Rufiji Districts in Tanzania</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Rolling household surveys from 2009-2011</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Social marketing of ACTs and private and accredited drug dispensing outlets (ADDOs) were implemented in certain districts</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> No significance  difference in 24 hour access to ACT outlets for households experiencing fever between a district with ADDOs plus  social marketing and one without.</p>
+          
+
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Quasi-experimental</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>0</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://heapol.oxfordjournals.org/cgi/pmidlookup?view=long&pmid=23144228">Narrowing the treatment gap with equitable access: Mid-term outcomes of a community case management program in Cameroon</a></h4>
+      <h5>Littrell M, Moukam LV, Libite R, Youmba JC, Baugh G</h5>
+      <h6>Health Policy and Planning, 2013, 28 (7): 705-716</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>East region of Cameroon</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Households with children under 5</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Community case management for childhood ilnesses. CCM package providedcommunity-based diagnosis, treatment and referral for suspectedmalaria with artemisinin combination therapy (ACT)and diarrheal disease with ORS and zinc through community health workers (PSI)</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> Awareness, access and attitudes towards CHWservices among caregivers improved with intervention</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> Children living in intervention vs comparisonareas were significantly more likely to receive treatmentat a public health facility or through a CHW for fever  and diarrhoeaAppropriate treatment was significantly higher among childrenin intervention vs comparison areas including: antimalarialtreatment for fever , ACTfor fever , ORS fordiarrhoea and zinc fordiarrhoea</p>
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Quasi-experimental</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Purposive</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>1: Behavior, Method mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.malariajournal.com/content/9/1/163/">Improvements in access to malaria treatment in Tanzania following community, retail sector and health facility interventions: A user perspective</a></h4>
+      <h5>Alba S, Dillip A, Hetzel MW, Mayumana I, Mshana C, Makemba A, Alexander M, Obrist B, Schulze A, Kessy F, Mshinda H, Lengeler C</h5>
+      <h6>Malaria Journal,2010, 9(163): 1-16</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Ifakara, Tanzania</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Treatment-seeking survey of people who had suffered a fever case in  the previous 14 days</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Social marketing for improved treatment seeking</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> Improvements in understanding causes of malaria (from 62% to 84%); higher treatment coveragewith anti-malarials (86% to 96%)</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> Increases in health facility attendance as first treatment option for patients older than five years (27% to 52%);  more timely use of anti-malarials (80% to 93-97% treatments taken within 24 hrs).</p>
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>3: Behavior, Segmentation, Methods mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.bmj.com/content/339/bmj.b2434">Household ownership and use of insecticide treated nets among target groups after implementation of a national voucher programme in the United Republic of Tanzania:
+Plausibility study using three annual cross sectional household surveys</a></h4>
+      <h5>Hanson K, Marchant T, Nathan R, Mponda H, Jones C, Bruce J, Mshinda H, Schellenberg JA</h5>
+      <h6>British Medical Journal, 2009, 339: 1-10</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Tanzania</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Household survey</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Social marketing combined with the National Voucher Scheme targeting mothers of young children at antenatal clinics</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> ITN ownership increased from 18% to 36%</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> Among infants under 1 year of age, use of an ITN increased from 16% to 34%</p>
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>3: Exchange, Segmentation, Methods mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2527521/">Distribution systems of insecticide-treated bed nets for
+malaria control in rural Burkina Faso: Cluster-
+randomized controlled trial</a></h4>
+      <h5>Müller O, De Allegri M, Becher H, Tiendrebogo J, Beiersmann C, Ye M, Kouyate B, Sie A, Jahn A</h5>
+      <h6>PLoS ONE, 2008, 3(9): e3182</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Burkina Faso</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Households</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Subsidized ITN distribution through social marketing with or without free ITN distribution (free distribution took place through antenatal clinics)</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> ITN ownership increased in SM with free distribution areas more than in SM only areas from  baseline  to  follow-up</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> Increases in Bednet use in previous night was similarly higher in both groups from baseline to follow-up; use among pregnant women and children under five increased in SM with free distribution from   44% to 50% and in SM only from 37% to 44%.</p>
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Experimental</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>3: Behavior, Segmentation, Methods Mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.tandfonline.com/doi/abs/10.1080/01900690701226935#.UtBtqtJDtQg">Health microinsurance, social marketing, and
+disease prevention: Perspectives from the field</a></h4>
+      <h5>McCord J,  Rivers K</h5>
+      <h6>Intl Journal of Public Administration, 2007, 30: 791–812</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td> Kisiizi and Ishaka in southwestern Uganda</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Microinsurance organization clients over the age  of 18</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Comparison of health microinsurance organization clients who only had basic health education  verus those exposed to social marketing of SmartNet ITN</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> knowledge, perceptions, barriers, sources of information; perceptions of ITNs were  more positive and rates  of ownership were higher among those exposed to social marketing</p>
+          
+
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Purposive</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>4: Behavior, Customer orientation, Theory, Method mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1794246/">The impact of a hybrid social marketing intervention on inequities in access, ownership and use of insecticide-treated nets</a></h4>
+      <h5>Agha S, Van Rossem R, Stallworthy G, Kusanthan T</h5>
+      <h6>Malaria Journal, 2007, 6(13): 1-11</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Eastern Province, Zambia</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Household survey of men and women ages 15-49</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>ITN subsidy  and social marketing intervention  to increase knowledge,  access, and use of ITNs as part of the  Roll Back Malaria Campain. Distribution was through public health facilities.</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> Knowledge of malaria and ITNs, access to ITNs, beliefs about malaria protection, ownership (number of ITNs in  the household)</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> Usage of  ITNs (respondent usually sleeps under a net)</p>
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Quasi-experimental</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>7: Customer orientation, Behavior, Insight, Exchange, Competition, Segmentation, Methods  mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://heapol.oxfordjournals.org/content/22/2/103.long">Lessons learned from bednet distribution in Central Mozambique</a></h4>
+      <h5>Brentlinger PE</h5>
+      <h6>Health Policy Plan, 2007, 22(2):103-10</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Sofala and Manica, Central Mozambique</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Household survey</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Commericial shopkeepers and community leaders were trained to  promote and sell ITNs in 19 sites between 2000-2004</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> ITN ownership;</p>
+          
+
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>2:Exchange, Methods mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-3156.2007.01862.x/abstract">Sustained high coverage of insecticide-treated bednets through
+combined catch-up and keep-up strategies</a></h4>
+      <h5>Grabowsky M, Nobiya T, Selanikio J</h5>
+      <h6>Tropical Medicine and International Health, 2007, 12(7): 815–822</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Ghana</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Households with at least one child less than 5 years of age</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Mass, free distribution (Catch-up) of insecticide-treated bednets (ITNs) during measlesvaccination campaigns, followed by antenatal clinic-based social marketing for routine Keep-up on ITN coverage and use</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> 95.7% of children slept in a household that had a net, 86.1% slept in a household that had a campaignnet</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> 59.6% of children slept under an ITN</p>
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>4: Behavior, Exchange, Segmentation, Method mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.malariajournal.com/content/5/1/44/">Comparison of coverage with insecticide-treated nets in a
+Tanzanian town and villages where nets and insecticide are either marketed or provided free of charge</a></h4>
+      <h5>Maxwell CA, Rwegoshora RT,  Magesa SM, Curtis CF</h5>
+      <h6>Malaria Journal, 2006, 5(44): 1-6</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Northeast Tanzania</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Household survey of men and women</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Social marketing of ITNs and insecticide</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> % of households that purchased a net, % of households with  intact treated nexts</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> % of households reporting usage in urban and rural areas that had social marketing were compared to areas with free distribution</p>
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Purposive</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>0</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-3156.2006.01684.x/abstract">Socially marketed insecticide-treated nets effectively reduce Plasmodium infection and anaemia among children in urban Malawi</a></h4>
+      <h5>Mathanga DP, Campbell CH, Taylor TE, Barlow R, Wilson ML</h5>
+      <h6>Tropical Medicine and International Health, 2006, 11(9): 1367-1374</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Ndirande, Blantyre, Malawi</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Children age  6-59 months</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>ITN social marketing by PSI</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> Knowledge of ITNs</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> 42% of children reported ITN use the previous night</p>
+          
+          
+          
+          <p><strong>Health:</strong> 42% of children reported ITN use the previous night</p>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>2: Segmentation, Methods mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.ajtmh.org/content/73/3/622.long">Reduction of childhood malaria by social marketing of insecticide-treated nets: A case-control study of effectiveness in Malawi</a></h4>
+      <h5>Mathanga DP, Campbell CH, Taylor TE, Barlow R, Wilson ML</h5>
+      <h6>The American journal of tropical medicine and hygiene, 2005, 73(3): 622-625</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Blantyre, Malawi</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Case-control study of children under  age 5 with history of fever within last 48 hours</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>ITN social marketing (PSI)</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> ITN coverage</p>
+          
+
+          
+          
+          
+          <p><strong>Health:</strong> Individual effectiveness of ITN use was 40% (95% confidence interval [CI] 10–60%) when cases werecompared with clinic controls and 50% (95% CI 0–60%) in comparison with community controls; 1,480malaria cases averted by the intervention in a population of 15,000 children</p>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Quasi-experimental</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>2: Segmentation, Methods  mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-3156.2004.01354.x/abstract">Spatial effects of the social marketing of insecticide-treated nets on malaria morbidity</a></h4>
+      <h5>Abdulla S, Gemperli A, Mukasa O, Armstrong Schellenberg JR, Lengeler C, Vounatsou P, Smith T</h5>
+      <h6>Tropical Medicine and International Health, 2005, 10(1): 11–18</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Tanzania</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Households</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Social marketing of ITNs</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> Coverage, distribution pattern and resultant spatial effects</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> Percent of children using a treated net</p>
+          
+          
+          
+          <p><strong>Health:</strong> Prevalence of parasitaemia, mild anaemia (Hb <11 g/dl) and moderate/severe anaemia (Hb <8 g/dl) in children under five; children living in areas of moderately high ITN coverage were</p>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>0</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.sciencedirect.com/science/article/pii/S0277953604002291">The economics of social marketing: The case of
+mosquito nets in Tanzania</a></h4>
+      <h5>Kikumbih N, Hanson K, Mills A, Mponda H, Schellenberg JA</h5>
+      <h6>Social Science & Medicine, 2005, 60: 369–381</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Kilombero and Kilosa, Uganda</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Household survey of men and women</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Kilombero and Ulanga insecticide-treated net (KINET) project used social marketing to  promote Zuia  Mbu nets and insecticide treatment kits</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> Knowledge  about ITNS and insecticide treatment, coverage (proportion of households with at least one net)</p>
+          
+
+          
+          
+          
+          <p><strong>Health:</strong> About half as likely to have moderate/severe anaemia</p>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>4: Customer orientation, Behavior, Segmentation, Methods mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-3156.2004.01309.x/abstract">Mosquito nets and the poor: Can social marketing redress
+inequities in access?</a></h4>
+      <h5>Nathan R, Masanja H, Mshinda H, Schellenberg JA, de Savigny D, Lengeler C, Tanner M, Victora CG</h5>
+      <h6>Tropical Medicine and International Health, 2004, 9(10):1121–1126</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Rural Tanzania</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Households</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Social marketing of treated nets over three year period</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> Ownership  increased 37% to 73%; among poorest households ownership of at least one net  increased 20% to 54%</p>
+          
+
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>5: Customer orientation, Insight, Competition, Segmentation, Methods mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://onlinelibrary.wiley.com/doi/10.1046/j.1365-3156.2002.00846.x/abstract">Insecticide-treated bednet use, anaemia, and malaria parasitaemia in Blantyre District, Malawi</a></h4>
+      <h5>Holtz TH, Marum LH, Mkandala C, Chizani N, Roberts JM, Macheso A, Parise ME, Kachur SP</h5>
+      <h6>Tropical Medicine and International Health, 2002, 7(3): 220–230</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Blantyre District, Malawi</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Households with at least one child less than 5 years of age</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Social marketing of ITNs by PSI</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> Bednet ownership was low(20.5% of households)</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> Only 3.3% of rural children under 5 had slept under a net the previous night, compared</p>
+          
+          
+          
+          <p><strong>Health:</strong> Health: rural children under 5 in households without nets experienced a statistically significant higher prevalence of malaria parasitaemia [RR  4.9] than children in households with at least one bednet</p>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>6: Behavior, Customer orientation, Insight, Exchange, Segmentation, Methods mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.bmj.com/content/322/7281/270">Impact of malaria morbidity of a programme supplying insecticide treated nets in children aged under 2 years in Tanzania: Community cross sectional study</a></h4>
+      <h5>Abdulla S, Schellenberg JA, Nathan R, Mukasa O, Marchant T, Smith T, Tanner M, Lengeler C</h5>
+      <h6>British Medical Journal, 2001, 322: 270-273</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Tanzania</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Children under  age  2</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Social marketing of ITNs and insecticide</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> Net ownership of treated nets increased 10% to 61%</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> with 24.0% of urban children</p>
+          
+          
+          
+          <p><strong>Health:</strong> Prevalence  of parasitemia and haemoglobin levels; prevalence  of anemia  decreased from  49% to 26%; Treated nets had a protective efficacy of 62% on prevalence of parasitaemia and of 63% on anaemia.</p>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>1: Methods mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(00)04404-4/fulltext">Effect of large-scale social marketing of insecticide-treated nets on child survival in rural Tanzania</a></h4>
+      <h5>Schellenberg JR, Abdulla S, Nathan R, Mukasa O, Marchant TJ, Kikumbih N, Mushi AK, Mponda H, Minja H, Mshinda H, Tanner M, Lengeler C</h5>
+      <h6>Lancet, 2001, 357(9264): 1241-7</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Kilombero and Ulanga Districts in  southwestern Tanzania</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Case-control study among children age 1 month to 4 years and a demographic surveillance system survey of households</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>ITN social marketing</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> Insecticide-treated net coverage of infants in the study area rose from less than 10% at baseline to more than50% 3 years later.</p>
+          
+
+          
+          
+          
+          <p><strong>Health:</strong> 18 months after launching, 46% of 312 families with children aged under 5 years reported that their children were sleeping under treated nets</p>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Quasi-experimental</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Purposive</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>6: Behavior, Customer orientation, Insight, Exchange, Segmentation, Methods mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.malariajournal.com/content/10/1/243">Socially-marketed rapid diagnostic tests and ACT
+in the private sector: Ten years of experience in
+Cambodia</a></h4>
+      <h5>Yeung S, Patouillard E, Allen H, Socheat D</h5>
+      <h6>Malaria Journal, 2001, 10(243): 1-14</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Cambodia</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Providers and households</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>Social  marketing of RDTs and ACT</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> Providers knowledge of RDTS and ACT, product availablity, sales/selling price; Consumer awareness of RDTS and ACT</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> 18 months after launching, 46% of 312 families with children aged under 5 years reported that their children were sleeping under treated nets</p>
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Purposive</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>7: Behavior, Customer orientation,  Insight, Exchange, Competition, Segmentation, Methods mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="studies-listing">
+    <hgroup>
+      <h4><a href="http://www.sciencedirect.com/science/article/pii/S0035920399900019">KINET: A social marketing programme of treated nets and net treatment for malaria control in Tanzania, with evaluation of child health and long-term survival</a></h4>
+      <h5>Schellenberg JR, Abdulla S, Minja H, Nathan R, Mukasa O, Marchant T, Mponda H, Kikumbih N, Lyimo E, Manchester T, Tanner M, Lengeler C</h5>
+      <h6>Trans R Soc Trop Med Hyg, 1999,  93(3): 225-31</h6>
+    </hgroup>
+
+    <table>
+      <tr>
+        <td class="category">Location</td>
+        <td>Kilombero and Ulanga Districts in  southwestern Tanzania</td>
+      </tr>
+      <tr>
+        <td class="category">Population</td>
+        <td>Cross-sectional  survey among households</td>
+      </tr>
+      <tr>
+        <td class="category">Intervention Description</td>
+        <td>ITN and insecticide social marketing</td>
+      </tr>
+      <tr>
+        <td class="category">Outcomes</td>
+        <td>
+          
+          <p><strong>Behavioral Factors:</strong> 24% of households had at least one treated net</p>
+          
+
+          
+          <p><strong>Behaviors:</strong> 18 months after launching, 46% of 312 families with children aged under 5 years reported that their children were sleeping under treated nets</p>
+          
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="category">Design</td>
+        <td>Observational</td>
+      </tr>
+      <tr>
+        <td class="category">Sampling Method</td>
+        <td>Probability</td>
+      </tr>
+      <tr>
+        <td class="category">Strength of Evidence Score</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td class="category">Social Marketing Benchmark Criteria</td>
+        <td>6: Behavior, Customer orientation, Insight, Exchange, Segmentation, Methods mix</td>
+      </tr>
+    </table>
+  </section>
+  
+  
+</div>

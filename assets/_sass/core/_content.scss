@@ -1,0 +1,163 @@
+// ==============================================================================
+// 	Global type
+// ==============================================================================
+
+// Headers
+// ------------------------------------------------------------------------------
+hgroup {
+	margin: 0 0 1em 0;
+
+	#{headers()} {
+		margin-bottom: 0;
+	}
+}
+
+#{headers()} {
+	line-height: 1.2;
+	margin: 0 0 0.5em 0;
+	padding: 0;
+
+	a {
+		color: inherit;
+
+		&:hover, &:active {
+			color: inherit;
+			border-bottom: none;
+		}
+	}
+}
+
+h1, %h1 {
+	font-size: em(20);
+	line-height: 1.2;
+}
+
+h2, %h2 {
+	// font-size: em(27);
+}
+
+h3, %h3 {
+	// font-size: em(18);
+}
+
+h4, %h4 {
+	// font-size: em(18);
+	font-weight: bold;
+}
+
+h5, %h5 {
+	// font-size: em(14);
+	font-weight: bold;
+}
+
+h6, %h6 {
+	// font-size: em(12);
+	// font-weight: bold;
+}
+
+#social-marketing-evidence-base {
+	#{headers()} {
+		color: $orange;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		color: $blue--dark;
+
+		&.light {
+			color: $blue;
+		}
+	}
+
+	h4 {
+		color: $blue;
+		font-weight: normal;
+
+		strong {
+			color: $orange;
+			font-weight: bold;
+		}
+	}
+}
+
+.category {
+  font-weight: bold;
+  width: 40%;
+}
+
+// Body type
+// ------------------------------------------------------------------------------
+
+// bigger first paragraph
+.intro {
+	font-size: em(21);
+}
+
+p, table, li {
+	font-size: em(16);
+}
+
+a {
+	@include base-transition;
+}
+
+.amp {
+	font-family: "Baskerville", "Palatino", "Book Antiqua", serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 1.1em; // relative to whatever type surrounds it -- it renders slightly bigger
+}
+
+#social-marketing-evidence-base {
+
+	h1, %h1 {
+		font-size: 27px;
+		line-height: 1.2;
+	}
+
+	h2, %h2 {
+		font-size: 24px;
+	}
+
+	h3, %h3 {
+		font-size: 20px;
+		border-bottom: none;
+
+	}
+
+	h4, %h4 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	h5, %h5 {
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	h6, %h6 {
+		font-size: 12px;
+		// font-weight: bold;
+	}
+
+	p {
+		margin: 0 0 0.5em 0;
+
+	}
+
+	p, li, td {
+		color: $blue;
+	}
+}
+
+.credits {
+	font-size: em(12);
+	margin-top: em(24);
+	display: block;
+}
+
+// ==============================================================================
+// 	Themes
+// ==============================================================================
+
+

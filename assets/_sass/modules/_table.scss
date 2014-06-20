@@ -1,0 +1,71 @@
+// ==========================================================================
+//  Navigation modules
+// ==========================================================================
+
+
+// BASE
+// -----------------------------------------------------------------------------
+ 
+table {
+  width: 100%;
+  margin: em(12) 0;
+  font-size: rem(14px);
+  
+  tr {
+    border-top: $hairline--light;
+  }
+  
+  td {
+    //width: 100%/$table-cols;
+    padding: em(6) em(6);
+    vertical-align: top;
+
+    p {
+      font-size: inherit;
+      margin-left: 0;
+      padding-left: 0;
+      margin-bottom: 1em;
+
+      strong {
+        font-size: inherit;
+      }
+    }
+  }
+}
+
+// SUBMODULES
+// -----------------------------------------------------------------------------
+
+.findings {
+  vertical-align: middle;
+
+  thead tr {
+    border-top: none;
+    border-bottom: $hairline;
+  }
+
+  th {
+    font-size: em(14);
+    padding: em(6);
+    color: $color-text--secondary;
+  }
+
+  tr.highlight {
+    // &:nth-child(2n) {
+      background: lighten($beige--light, 10%);
+    // }
+  }
+
+  td {
+    font-size: em(18);
+    padding: em(6);
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    color: $orange !important;
+  }
+}
+
+  .findings-icon {
+    text-align: left;
+  }

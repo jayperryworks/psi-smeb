@@ -1,0 +1,160 @@
+// ==========================================================================
+//  Navigation modules
+// ==========================================================================
+
+
+// BASE
+// -----------------------------------------------------------------------------
+
+[role="navigation"], .nav {
+	margin-bottom: em(24);
+}
+
+// SUBMODULES
+// -----------------------------------------------------------------------------
+
+// ------- Global/main nav -------------------------------------------
+
+[role="navigation"].global {
+
+}
+
+
+// ------- Local nav -------------------------------------------
+
+$color--inactive: lighten($color-text--primary, 50);
+$color--hover: lighten($color-text--primary, 20);
+
+.tabs {
+  @include inline-list;
+
+  a {
+    @include inline-block;
+    @include base-transition;
+    text-decoration: none;
+  }
+}
+
+  .tabs.level1 {
+    $border-width: 4px;
+    $border-color: lighten($gray, 50);
+    $border-color--active: $orange;
+
+    border-bottom: $border-width solid $border-color;
+
+    li {
+      margin: 0 -3px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      font-size: 14px;
+      margin: 0 1px -#{$border-width} 0;
+      padding: em(12) em(8);
+      // background: $beige--light;
+      border-bottom: $border-width solid $border-color;
+      color: $color--inactive;
+
+      &:hover {
+        color: $color--hover;
+        border-bottom-color: darken($border-color, 10);
+      }
+
+      &.active {
+        // color: white;
+        // background: green;
+        color: $color-text--primary;
+        border-bottom-color: $border-color--active;
+        // border-bottom-color: $green;
+
+        &:hover {
+          border-bottom-color: $border-color--active;
+        }
+      }
+    }
+  }
+
+  .tabs.level2 {
+    // @include rem(margin, 6px 0 0 0);
+    border-bottom: $hairline--light;
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      font-size: 12px;
+      display: block;
+      position: relative;
+      padding: em(4) em(16);
+      margin: em(16) 0;
+      color: $color--inactive;
+
+      &:hover {
+        color: $color--hover;
+      }
+
+      &.active {
+        color: $color-text--primary;
+        background: lighten($gray, 45);
+        border-radius: 100px;
+
+      }
+    }
+  }
+
+// ------- Tiles/thumbs -------------------------------------------
+
+$tile-cols: 3;
+
+nav.tile-grid {
+  margin-bottom: em(18);
+  text-align: center;
+
+  ul {
+    // @include inline-list;
+    // vertical-align: top;
+    list-style: none;
+    list-style-type: none;
+
+    li {
+      @include inline-block;
+      vertical-align: top;
+      width: 20%;
+      padding: 0;
+      margin-left: 0;
+      margin-right: $margin-whitespace;
+      text-align: center;
+      list-style: none;
+      list-style-type: none;
+    }
+  }
+}
+
+  .tile {
+    padding: em(6);
+    margin: 0;
+    font-size: em(12);
+    display: block;
+    vertical-align: top;
+    text-align: center;
+    font-weight: bold;
+    color: $blue--dark;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    // &:hover, &:active {
+    //   background: lighten($beige--light, 10%);
+    // }
+
+    img {
+      vertical-align: top;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+
+
+
