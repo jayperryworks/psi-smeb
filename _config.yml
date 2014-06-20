@@ -1,10 +1,10 @@
 name: PSI SMEB
-url: http://psi.hfwebdev.com
-baseurl: /resources/social-marketing-evidence-base
+url: http://clients.jayperryworks.com/psi-smeb
+baseurl: 
 permalink: none
 
 markdown: redcarpet
-pygments: true
+highlighter: true
 
 exclude: ["README.md", "config.rb", "scratch.html", "psi-smeb-updates.sublime-project", "psi-smeb-updates.sublime-workspace", "Guardfile", "Gemfile", "Gemfile.lock", ".sass-cache"]
 

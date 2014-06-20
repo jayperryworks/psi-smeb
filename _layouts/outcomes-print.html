@@ -1,4 +1,5 @@
-{% assign words = page.categories[0] | split: " " %}
+{% assign pagewords = page.categories[0] | split: " " %}
+{% if page.topic %}{% assign topicwords = page.topic | split: "_" %}{% endif %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,7 +12,7 @@
     {% capture level %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
     {% capture relativepath %}{% for i in (3..level) %}../{% endfor %}{% endcapture %}
 
-    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}{{ serverpath }}/assets/css/pdf.css">
+    <link rel="stylesheet" href="{{ relativepath }}/assets/css/pdf.css">
     
   </head>
 
@@ -29,23 +30,22 @@
       <tbody>
         <tr>
           <td>
-            <h1><strong>{% if page.categories[0] != "hiv" %}{% for word in words %}{{ word | capitalize }}{%unless forloop.last %} {% endunless %}{% endfor %}{% else %}{{ page.categories | first | upcase }}{% endif %}:</strong> Studies Reporting {% if page.title != "Behaviors" %}{{ page.title }}{% else %}Behavior Change{% endif %} Outcomes</h1>
+            <h1><strong>
+              {% comment %}Loop through the words in the page title and topic and capitalize. For topic, split first at the spaces, then (inside the loop) split by hyphens.{% endcomment %}
+              {% if page.categories[0] != "hiv" %}{% for word in pagewords %}{{ word | capitalize }}{% unless forloop.last %} {% endunless %}{% endfor %}{% else %}{{ page.categories | first | upcase }}{% endif %}
+              {% if page.topic %} &rsaquo; {% for word in topicwords %}{% assign hyphens = word | split: "-" %}{% for w in hyphens %}{{ w | capitalize }}{% unless forloop.last %}-{% endunless %}{% endfor %}{% unless forloop.last %} {% endunless %}{% endfor %}{% endif %}:</strong> Studies Reporting {% if page.title != "Behaviors" %}{{ page.title }}{% else %}Behavior Change{% endif %} Outcomes</h1>
           </td>
         </tr>
 
         
-        <tr {% comment %}class="{% cycle "nobreak", "break" %}"{% endcomment %}>
+        <tr{% comment %} class="{% cycle "nobreak", "break" %}"{% endcomment %}>
           <td class="study">
-            {% comment %}<hgroup>
-              <h2>{{ row.title }}</h2>
-              <h4>{{ row.authors }}</h4>
-              <h5>{{ row.journal }} <span class="link">{{ row.link }}</span></h5>
-            </hgroup>{% endcomment %}
             
             <table class="study-stats">
               <thead>
                 <tr>
-                  <th class="name">Title</th>
+                  <th class="title">Title</th>
+                  <th class="name">Authors</th>
                   <th class="journal">Journal &amp; Link</th>
                   <th class="location">Location</th>
                   <th class="population">Population</th>
@@ -60,7 +60,12 @@
               <tbody>
                 {% for row in site.data.[page.data].content_hash %}
                 <tr class="study-details">
-                  <td class="name"><strong>{{ row.title }}</strong></td>
+                  <td class="title">
+                    <strong>{{ row.title }}</strong>
+                  </td>
+                  <td class="name">
+                    <strong>{{ row.authors }}</strong>
+                  </td>
                   <td class="journal">
                     {{ row.journal }}<br />
                     <span class="link">{{ row.link }}</span>

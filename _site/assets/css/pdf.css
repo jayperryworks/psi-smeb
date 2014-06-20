@@ -1016,7 +1016,7 @@ h1 strong {
 /* line 245, ../../_preprocess/sass/pdf.scss */
 .study-stats {
   width: 100% !important;
-  font-size: 10pt;
+  font-size: 9pt;
 }
 /* line 249, ../../_preprocess/sass/pdf.scss */
 .study-stats tr {
@@ -1054,12 +1054,6 @@ h1 strong {
   font-size: inherit;
 }
 
-/* line 290, ../../_preprocess/sass/pdf.scss */
-.title {
-  width: 20.83333%;
-  font-weight: bold;
-}
-
 /* line 295, ../../_preprocess/sass/pdf.scss */
 .link {
   -ms-word-break: break-all;
@@ -1071,21 +1065,6 @@ h1 strong {
   -moz-hyphens: auto;
   hyphens: auto;
   font-weight: normal;
-}
-
-/* line 301, ../../_preprocess/sass/pdf.scss */
-.author {
-  width: 16.66667%;
-}
-
-/* line 333, ../../_preprocess/sass/pdf.scss */
-.soe {
-  width: 4.16667%;
-}
-
-/* line 337, ../../_preprocess/sass/pdf.scss */
-.smbc {
-  width: 4.16667%;
 }
 
 /* line 341, ../../_preprocess/sass/pdf.scss */

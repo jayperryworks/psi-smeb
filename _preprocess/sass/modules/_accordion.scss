@@ -10,7 +10,6 @@ $w: 12px;
   font-size: $type-size--default;
 
   dt {
-    
     @extend h3;
     @include triangle--centered($dir: right, $side: left, $loc: 0, $width: $w, $color: $blue--dark, $selector: before);
     padding: 0 0 0 1em;

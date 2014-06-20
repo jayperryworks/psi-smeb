@@ -244,7 +244,7 @@ h1 {
 
 .study-stats {
   width: 100% !important;
-  font-size: 10pt;
+  font-size: 9pt;
 
   tr {
     vertical-align: top;
@@ -287,10 +287,10 @@ h1 {
   }
 }
 
-.title {
-  @include colspan(5);
-  font-weight: bold;
-}
+// .title {
+//   @include colspan(5);
+//   font-weight: bold;
+// }
 
 .link {
   // @include colspan(2);
@@ -298,9 +298,9 @@ h1 {
   font-weight: normal;
 }
 
-.author {
-  @include colspan(4);
-}
+// .author {
+//   @include colspan(4);
+// }
 
 // .journal {
 //   @include colspan(2);
@@ -330,13 +330,13 @@ h1 {
 //   @include colspan(2);
 // }
 
-.soe {
-  @include colspan(1);
-}
+// .soe {
+//   @include colspan(1);
+// }
 
-.smbc {
-  @include colspan(1);
-}
+// .smbc {
+//   @include colspan(1);
+// }
 
 .grid {
 @include rem(margin-top, 24px);
