@@ -1,6 +1,8 @@
 name: PSI SMEB
-url: http://clients.jayperryworks.com/psi-smeb
-baseurl: 
+url: http://www.psi.org/resources/social-marketing-evidence-base
+# url: http://clients.jayperryworks.com/psi-smeb
+# url: http://localhost:4000
+# baseurl: /resources/social-marketing-evidence-base
 permalink: none
 
 deploy: false
